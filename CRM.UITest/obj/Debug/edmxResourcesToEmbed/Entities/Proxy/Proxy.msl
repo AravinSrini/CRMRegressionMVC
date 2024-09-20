@@ -1,0 +1,2870 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ProxyEntitiesStoreContainer" CdmEntityContainer="WWProxyEntities">
+    <EntitySetMapping Name="CarrierAddtionalServiceDays">
+      <EntityTypeMapping TypeName="ProxyEntities.CarrierAddtionalServiceDay">
+        <MappingFragment StoreEntitySet="CarrierAddtionalServiceDays">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CarrierName" ColumnName="CarrierName" />
+          <ScalarProperty Name="ScacCode" ColumnName="ScacCode" />
+          <ScalarProperty Name="AdditionalServiceDays" ColumnName="AdditionalServiceDays" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CodeTables">
+      <EntityTypeMapping TypeName="ProxyEntities.CodeTable">
+        <MappingFragment StoreEntitySet="CodeTable">
+          <ScalarProperty Name="CodeTableId" ColumnName="CodeTableId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="SourceSystem" ColumnName="SourceSystem" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CommissionExtractUploadedFiles">
+      <EntityTypeMapping TypeName="ProxyEntities.CommissionExtractUploadedFile">
+        <MappingFragment StoreEntitySet="CommissionExtractUploadedFile">
+          <ScalarProperty Name="CommissionExtractUploadedFileId" ColumnName="CommissionExtractUploadedFileId" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DefaultInsSettings">
+      <EntityTypeMapping TypeName="ProxyEntities.DefaultInsSetting">
+        <MappingFragment StoreEntitySet="DefaultInsSetting">
+          <ScalarProperty Name="DefaultMaximumInsCost" ColumnName="DefaultMaximumInsCost" />
+          <ScalarProperty Name="DefaultInsSettingId" ColumnName="DefaultInsSettingId" />
+          <ScalarProperty Name="DefaultCostPerHundred" ColumnName="DefaultCostPerHundred" />
+          <ScalarProperty Name="DefaultMinimumInsCost" ColumnName="DefaultMinimumInsCost" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GuaranteedCarriers">
+      <EntityTypeMapping TypeName="ProxyEntities.GuaranteedCarrier">
+        <MappingFragment StoreEntitySet="GuaranteedCarriers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CarrierCode" ColumnName="CarrierCode" />
+          <ScalarProperty Name="CarrierName" ColumnName="CarrierName" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+          <ScalarProperty Name="MinimumCharge" ColumnName="MinimumCharge" />
+          <ScalarProperty Name="AdditionalServiceDays" ColumnName="AdditionalServiceDays" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceAllRiskUploadedFiles">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceAllRiskUploadedFile">
+        <MappingFragment StoreEntitySet="InsuranceAllRiskUploadedFile">
+          <ScalarProperty Name="InsuranceAllRiskUploadedFileIdId" ColumnName="InsuranceAllRiskUploadedFileIdId" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuredRateCarriers">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuredRateCarrier">
+        <MappingFragment StoreEntitySet="InsuredRateCarriers">
+          <ScalarProperty Name="IsExcluded" ColumnName="IsExcluded" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CarrierName" ColumnName="CarrierName" />
+          <ScalarProperty Name="CarrierCode" ColumnName="CarrierCode" />
+          <ScalarProperty Name="CostPerPoundNew" ColumnName="CostPerPoundNew" />
+          <ScalarProperty Name="CostPerPoundUsed_" ColumnName="CostPerPoundUsed " />
+          <ScalarProperty Name="MaximumLiabilityNew__" ColumnName="MaximumLiabilityNew  " />
+          <ScalarProperty Name="MaximumLiabilityUsed__" ColumnName="MaximumLiabilityUsed  " />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MetricsHistoryTables">
+      <EntityTypeMapping TypeName="ProxyEntities.MetricsHistoryTable">
+        <MappingFragment StoreEntitySet="MetricsHistoryTable">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CustomerSetupId" ColumnName="CustomerSetupId" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="TotalRateRequest" ColumnName="TotalRateRequest" />
+          <ScalarProperty Name="TotalSavedQuote" ColumnName="TotalSavedQuote" />
+          <ScalarProperty Name="TotalShipments" ColumnName="TotalShipments" />
+          <ScalarProperty Name="TotalQuoteToShipmentConversion" ColumnName="TotalQuoteToShipmentConversion" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MetricsTransactionTables">
+      <EntityTypeMapping TypeName="ProxyEntities.MetricsTransactionTable">
+        <MappingFragment StoreEntitySet="MetricsTransactionTable">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CustomerSetupId" ColumnName="CustomerSetupId" />
+          <ScalarProperty Name="TotalRateRequest" ColumnName="TotalRateRequest" />
+          <ScalarProperty Name="TotalSavedQuote" ColumnName="TotalSavedQuote" />
+          <ScalarProperty Name="TotalShipments" ColumnName="TotalShipments" />
+          <ScalarProperty Name="TotalQuoteToShipmentConversion" ColumnName="TotalQuoteToShipmentConversion" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MgDocuments">
+      <EntityTypeMapping TypeName="ProxyEntities.MgDocument">
+        <MappingFragment StoreEntitySet="MgDocuments">
+          <ScalarProperty Name="MgDocumentId" ColumnName="MgDocumentId" />
+          <ScalarProperty Name="ReferenceNumber" ColumnName="ReferenceNumber" />
+          <ScalarProperty Name="DocumentLabel" ColumnName="DocumentLabel" />
+          <ScalarProperty Name="DocumentLink" ColumnName="DocumentLink" />
+          <ScalarProperty Name="DocumentExtension" ColumnName="DocumentExtension" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ParcelServiceEnabledUsers">
+      <EntityTypeMapping TypeName="ProxyEntities.ParcelServiceEnabledUser">
+        <MappingFragment StoreEntitySet="ParcelServiceEnabledUser">
+          <ScalarProperty Name="ParcelServiceEnabledUserId" ColumnName="ParcelServiceEnabledUserId" />
+          <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RatingApiExceptionUsers">
+      <EntityTypeMapping TypeName="ProxyEntities.RatingApiExceptionUser">
+        <MappingFragment StoreEntitySet="RatingApiExceptionUser">
+          <ScalarProperty Name="RatingApiExceptionUserId" ColumnName="RatingApiExceptionUserId" />
+          <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShipmentServices">
+      <EntityTypeMapping TypeName="ProxyEntities.ShipmentService">
+        <MappingFragment StoreEntitySet="ShipmentServices">
+          <ScalarProperty Name="ServiceId" ColumnName="ServiceId" />
+          <ScalarProperty Name="ShipmentService1" ColumnName="ShipmentService" />
+          <ScalarProperty Name="TMSType" ColumnName="TMSType" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShipmentStatus">
+      <EntityTypeMapping TypeName="ProxyEntities.ShipmentStatu">
+        <MappingFragment StoreEntitySet="ShipmentStatus">
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+          <ScalarProperty Name="TMSType" ColumnName="TMSType" />
+          <ScalarProperty Name="IsVisibleOnFilter" ColumnName="IsVisibleOnFilter" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ActivityLogs">
+      <EntityTypeMapping TypeName="ProxyEntities.ActivityLog">
+        <MappingFragment StoreEntitySet="ActivityLogs">
+          <ScalarProperty Name="ActivityLogsId" ColumnName="ActivityLogsId" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="Activity" ColumnName="Activity" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ApprovalTeamDefaultEmails">
+      <EntityTypeMapping TypeName="ProxyEntities.ApprovalTeamDefaultEmail">
+        <MappingFragment StoreEntitySet="ApprovalTeamDefaultEmail">
+          <ScalarProperty Name="ApprovalTeamDefaultEmailId" ColumnName="ApprovalTeamDefaultEmailId" />
+          <ScalarProperty Name="TeamName" ColumnName="TeamName" />
+          <ScalarProperty Name="TeamDefaultEmail" ColumnName="TeamDefaultEmail" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CarrierDetails">
+      <EntityTypeMapping TypeName="ProxyEntities.CarrierDetail">
+        <MappingFragment StoreEntitySet="CarrierDetails">
+          <ScalarProperty Name="CarrierDetailsId" ColumnName="CarrierDetailsId" />
+          <ScalarProperty Name="Carrier" ColumnName="Carrier" />
+          <ScalarProperty Name="SCAC" ColumnName="SCAC" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contacts">
+      <EntityTypeMapping TypeName="ProxyEntities.Contact">
+        <MappingFragment StoreEntitySet="Contact">
+          <ScalarProperty Name="ContactId" ColumnName="ContactId" />
+          <ScalarProperty Name="LocationAndContactTypeId" ColumnName="LocationAndContactTypeId" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Extension" ColumnName="Extension" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="FaxNumber" ColumnName="FaxNumber" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CorporateBillingReferenceNumbers">
+      <EntityTypeMapping TypeName="ProxyEntities.CorporateBillingReferenceNumber">
+        <MappingFragment StoreEntitySet="CorporateBillingReferenceNumbers">
+          <ScalarProperty Name="SAPAccountNumber" ColumnName="SAPAccountNumber" />
+          <ScalarProperty Name="ReferenceId" ColumnName="ReferenceId" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="CustomerType" ColumnName="CustomerType" />
+          <ScalarProperty Name="ProfitCenter" ColumnName="ProfitCenter" />
+          <ScalarProperty Name="OneRRDBillToNumber" ColumnName="OneRRDBillToNumber" />
+          <ScalarProperty Name="OneRRDCorpNumber" ColumnName="OneRRDCorpNumber" />
+          <ScalarProperty Name="OneRRDECPNumber" ColumnName="OneRRDECPNumber" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CostCenter" ColumnName="CostCenter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerAccounts">
+      <EntityTypeMapping TypeName="ProxyEntities.CustomerAccount">
+        <MappingFragment StoreEntitySet="CustomerAccount">
+          <ScalarProperty Name="AvailableLoadEmail" ColumnName="AvailableLoadEmail" />
+          <ScalarProperty Name="AvailableLoadPhone" ColumnName="AvailableLoadPhone" />
+          <ScalarProperty Name="AvailableLoadScac" ColumnName="AvailableLoadScac" />
+          <ScalarProperty Name="NotifyOriginContact" ColumnName="NotifyOriginContact" />
+          <ScalarProperty Name="NotifySubmitter" ColumnName="NotifySubmitter" />
+          <ScalarProperty Name="CustomerSpecificShippingLabel" ColumnName="CustomerSpecificShippingLabel" />
+          <ScalarProperty Name="ShippingCloseTime" ColumnName="ShippingCloseTime" />
+          <ScalarProperty Name="ShippingOpenTime" ColumnName="ShippingOpenTime" />
+          <ScalarProperty Name="IsCreditHold" ColumnName="IsCreditHold" />
+          <ScalarProperty Name="AdditionalAccountSetupNotes" ColumnName="AdditionalAccountSetupNotes" />
+          <ScalarProperty Name="SalesRepUserName" ColumnName="SalesRepUserName" />
+          <ScalarProperty Name="SalesCode" ColumnName="SalesCode" />
+          <ScalarProperty Name="DefaultInsuredType" ColumnName="DefaultInsuredType" />
+          <ScalarProperty Name="PppAssignedDate" ColumnName="PppAssignedDate" />
+          <ScalarProperty Name="MaximumInsCost" ColumnName="MaximumInsCost" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="CustomerSetUpId" ColumnName="CustomerSetUpId" />
+          <ScalarProperty Name="TmsSystem" ColumnName="TmsSystem" />
+          <ScalarProperty Name="CustomerStationEmail" ColumnName="CustomerStationEmail" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CsaCustomerNumber" ColumnName="CsaCustomerNumber" />
+          <ScalarProperty Name="ShipmentDocumentType" ColumnName="ShipmentDocumentType" />
+          <ScalarProperty Name="IsStation" ColumnName="IsStation" />
+          <ScalarProperty Name="StationId" ColumnName="StationId" />
+          <ScalarProperty Name="StationName" ColumnName="StationName" />
+          <ScalarProperty Name="SalesRep" ColumnName="SalesRep" />
+          <ScalarProperty Name="CmsSalesManagerUserEmail" ColumnName="CmsSalesManagerUserEmail" />
+          <ScalarProperty Name="SpecialInstructions" ColumnName="SpecialInstructions" />
+          <ScalarProperty Name="IsDefaultInsAll" ColumnName="IsDefaultInsAll" />
+          <ScalarProperty Name="EnterpriseType" ColumnName="EnterpriseType" />
+          <ScalarProperty Name="BolContactPhone" ColumnName="BolContactPhone" />
+          <ScalarProperty Name="CostPerHundred" ColumnName="CostPerHundred" />
+          <ScalarProperty Name="MinimumInsCost" ColumnName="MinimumInsCost" />
+          <ScalarProperty Name="IsTemplateUploaded" ColumnName="IsTemplateUploaded" />
+          <ScalarProperty Name="TemplateUploadedBy" ColumnName="TemplateUploadedBy" />
+          <ScalarProperty Name="HasRevisedTemplates" ColumnName="HasRevisedTemplates" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerAccountMappings">
+      <EntityTypeMapping TypeName="ProxyEntities.CustomerAccountMapping">
+        <MappingFragment StoreEntitySet="CustomerAccountMapping">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PrimaryAccountId" ColumnName="PrimaryAccountId" />
+          <ScalarProperty Name="SubAccountId" ColumnName="SubAccountId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerServiceSpecificEmails">
+      <EntityTypeMapping TypeName="ProxyEntities.CustomerServiceSpecificEmail">
+        <MappingFragment StoreEntitySet="CustomerServiceSpecificEmails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ServiceType" ColumnName="ServiceType" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerSpecificReferences">
+      <EntityTypeMapping TypeName="ProxyEntities.CustomerSpecificReference">
+        <MappingFragment StoreEntitySet="CustomerSpecificReference">
+          <ScalarProperty Name="CustomerSpecificReferenceId" ColumnName="CustomerSpecificReferenceId" />
+          <ScalarProperty Name="ReferenceTypeName" ColumnName="ReferenceTypeName" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="HasValues" ColumnName="HasValues" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerSpecificReferenceValues">
+      <EntityTypeMapping TypeName="ProxyEntities.CustomerSpecificReferenceValue">
+        <MappingFragment StoreEntitySet="CustomerSpecificReferenceValue">
+          <ScalarProperty Name="CustomerSpecificReferenceValueId" ColumnName="CustomerSpecificReferenceValueId" />
+          <ScalarProperty Name="CustomerSpecificReferenceId" ColumnName="CustomerSpecificReferenceId" />
+          <ScalarProperty Name="ReferenceValue" ColumnName="ReferenceValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Faks">
+      <EntityTypeMapping TypeName="ProxyEntities.Fak">
+        <MappingFragment StoreEntitySet="Fak">
+          <ScalarProperty Name="FakId" ColumnName="FakId" />
+          <ScalarProperty Name="TariffPricingModelId" ColumnName="TariffPricingModelId" />
+          <ScalarProperty Name="FakNo" ColumnName="FakNo" />
+          <ScalarProperty Name="MinRange" ColumnName="MinRange" />
+          <ScalarProperty Name="MaxRange" ColumnName="MaxRange" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GainsharePricingModels">
+      <EntityTypeMapping TypeName="ProxyEntities.GainsharePricingModel">
+        <MappingFragment StoreEntitySet="GainsharePricingModel">
+          <ScalarProperty Name="IsCrmRatingLogic" ColumnName="IsCrmRatingLogic" />
+          <ScalarProperty Name="Minimum" ColumnName="Minimum" />
+          <ScalarProperty Name="MasterAccessorialCharge" ColumnName="MasterAccessorialCharge" />
+          <ScalarProperty Name="GainsharePricingModelId" ColumnName="GainsharePricingModelId" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+          <ScalarProperty Name="MinThresholdCharge" ColumnName="MinThresholdCharge" />
+          <ScalarProperty Name="MinAmountAdded" ColumnName="MinAmountAdded" />
+          <ScalarProperty Name="RatingInstructions" ColumnName="RatingInstructions" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="IsCarrierExcluded" ColumnName="IsCarrierExcluded" />
+          <ScalarProperty Name="ExcludedCarriers" ColumnName="ExcludedCarriers" />
+          <ScalarProperty Name="IsHouseholdGoodsRequired" ColumnName="IsHouseholdGoodsRequired" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GainShareScacCodes">
+      <EntityTypeMapping TypeName="ProxyEntities.GainShareScacCode">
+        <MappingFragment StoreEntitySet="GainShareScacCode">
+          <ScalarProperty Name="Minimum" ColumnName="Minimum" />
+          <ScalarProperty Name="MasterAccessorialCharge" ColumnName="MasterAccessorialCharge" />
+          <ScalarProperty Name="GainShareScacCodeId" ColumnName="GainShareScacCodeId" />
+          <ScalarProperty Name="ScacCode" ColumnName="ScacCode" />
+          <ScalarProperty Name="GainsharePercentage" ColumnName="GainsharePercentage" />
+          <ScalarProperty Name="GainsharePricingModelId" ColumnName="GainsharePricingModelId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CarrierSpecificMinimumThreshold" ColumnName="CarrierSpecificMinimumThreshold" />
+          <ScalarProperty Name="CarrierSpecificMinimumAmount" ColumnName="CarrierSpecificMinimumAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvoicePreferences">
+      <EntityTypeMapping TypeName="ProxyEntities.InvoicePreference">
+        <MappingFragment StoreEntitySet="InvoicePreference">
+          <ScalarProperty Name="InvoicePreferenceId" ColumnName="InvoicePreferenceId" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CustomerInvoiceBackup" ColumnName="CustomerInvoiceBackup" />
+          <ScalarProperty Name="CustomerInvoiceMethod" ColumnName="CustomerInvoiceMethod" />
+          <ScalarProperty Name="CustomerInvoiceEmail" ColumnName="CustomerInvoiceEmail" />
+          <ScalarProperty Name="IsCreditCard" ColumnName="IsCreditCard" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Locations">
+      <EntityTypeMapping TypeName="ProxyEntities.Location">
+        <MappingFragment StoreEntitySet="Location">
+          <ScalarProperty Name="LocationId" ColumnName="LocationId" />
+          <ScalarProperty Name="LocationAndContactTypeId" ColumnName="LocationAndContactTypeId" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="FaxNumber" ColumnName="FaxNumber" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="IsResidentialLocation" ColumnName="IsResidentialLocation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LocationAndContactTypes">
+      <EntityTypeMapping TypeName="ProxyEntities.LocationAndContactType">
+        <MappingFragment StoreEntitySet="LocationAndContactType">
+          <ScalarProperty Name="LocationAndContactTypeId" ColumnName="LocationAndContactTypeId" />
+          <ScalarProperty Name="LocationAndContactTypeName" ColumnName="LocationAndContactTypeName" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PoManagements">
+      <EntityTypeMapping TypeName="ProxyEntities.PoManagement">
+        <MappingFragment StoreEntitySet="PoManagement">
+          <ScalarProperty Name="PoManagementId" ColumnName="PoManagementId" />
+          <ScalarProperty Name="UserEmailId" ColumnName="UserEmailId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PricingModels">
+      <EntityTypeMapping TypeName="ProxyEntities.PricingModel">
+        <MappingFragment StoreEntitySet="PricingModel">
+          <ScalarProperty Name="PricingModelId" ColumnName="PricingModelId" />
+          <ScalarProperty Name="PricingTypeId" ColumnName="PricingTypeId" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PricingTypes">
+      <EntityTypeMapping TypeName="ProxyEntities.PricingType">
+        <MappingFragment StoreEntitySet="PricingTypes">
+          <ScalarProperty Name="PricingTypeId" ColumnName="PricingTypeId" />
+          <ScalarProperty Name="PricingModelName" ColumnName="PricingModelName" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReferenceTypes">
+      <EntityTypeMapping TypeName="ProxyEntities.ReferenceType">
+        <MappingFragment StoreEntitySet="ReferenceType">
+          <ScalarProperty Name="ReferenceTypeId" ColumnName="ReferenceTypeId" />
+          <ScalarProperty Name="ReferenceTypeName" ColumnName="ReferenceTypeName" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReferenceTypeValues">
+      <EntityTypeMapping TypeName="ProxyEntities.ReferenceTypeValue">
+        <MappingFragment StoreEntitySet="ReferenceTypeValue">
+          <ScalarProperty Name="ReferenceTypeValueId" ColumnName="ReferenceTypeValueId" />
+          <ScalarProperty Name="ReferenceTypeId" ColumnName="ReferenceTypeId" />
+          <ScalarProperty Name="ReferenceValue" ColumnName="ReferenceValue" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TariffPricingModels">
+      <EntityTypeMapping TypeName="ProxyEntities.TariffPricingModel">
+        <MappingFragment StoreEntitySet="TariffPricingModel">
+          <ScalarProperty Name="TariffPricingModelId" ColumnName="TariffPricingModelId" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="TariffName" ColumnName="TariffName" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="Minimum" ColumnName="Minimum" />
+          <ScalarProperty Name="SpecialRatingProvisions" ColumnName="SpecialRatingProvisions" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="IsCarrierExcluded" ColumnName="IsCarrierExcluded" />
+          <ScalarProperty Name="ExcludedCarriers" ColumnName="ExcludedCarriers" />
+          <ScalarProperty Name="IsHouseholdGoodsRequired" ColumnName="IsHouseholdGoodsRequired" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserCustomerAccountMappings">
+      <EntityTypeMapping TypeName="ProxyEntities.UserCustomerAccountMapping">
+        <MappingFragment StoreEntitySet="UserCustomerAccountMapping">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserEmailId" ColumnName="UserEmailId" />
+          <ScalarProperty Name="CustomerSetupId" ColumnName="CustomerSetupId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ShowInsuredRateModal" ColumnName="ShowInsuredRateModal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CsrActivityLogs">
+      <EntityTypeMapping TypeName="ProxyEntities.CsrActivityLog">
+        <MappingFragment StoreEntitySet="CsrActivityLogs">
+          <ScalarProperty Name="ActivityLogsId" ColumnName="ActivityLogsId" />
+          <ScalarProperty Name="CustomerSetUpId" ColumnName="CustomerSetUpId" />
+          <ScalarProperty Name="Activity" ColumnName="Activity" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CsrAddresses">
+      <EntityTypeMapping TypeName="ProxyEntities.CsrAddress">
+        <MappingFragment StoreEntitySet="CsrAddress">
+          <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="FaxNumber" ColumnName="FaxNumber" />
+          <ScalarProperty Name="SpecialInstructions" ColumnName="SpecialInstructions" />
+          <ScalarProperty Name="AddressTypeId" ColumnName="AddressTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CsrContacts">
+      <EntityTypeMapping TypeName="ProxyEntities.CsrContact">
+        <MappingFragment StoreEntitySet="CsrContact">
+          <ScalarProperty Name="ContactId" ColumnName="ContactId" />
+          <ScalarProperty Name="LocationAndContactTypeId" ColumnName="LocationAndContactTypeId" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Extension" ColumnName="Extension" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="FaxNumber" ColumnName="FaxNumber" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CsrCorporateBillingReferenceNumbers">
+      <EntityTypeMapping TypeName="ProxyEntities.CsrCorporateBillingReferenceNumber">
+        <MappingFragment StoreEntitySet="CsrCorporateBillingReferenceNumbers">
+          <ScalarProperty Name="SAPAccountNumber" ColumnName="SAPAccountNumber" />
+          <ScalarProperty Name="OneRRDECPNumber" ColumnName="OneRRDECPNumber" />
+          <ScalarProperty Name="OneRRDCorpNumber" ColumnName="OneRRDCorpNumber" />
+          <ScalarProperty Name="OneRRDBillToNumber" ColumnName="OneRRDBillToNumber" />
+          <ScalarProperty Name="ReferenceId" ColumnName="ReferenceId" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="CustomerType" ColumnName="CustomerType" />
+          <ScalarProperty Name="ProfitCenter" ColumnName="ProfitCenter" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CostCenter" ColumnName="CostCenter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CsrCustomerAccountMappings">
+      <EntityTypeMapping TypeName="ProxyEntities.CsrCustomerAccountMapping">
+        <MappingFragment StoreEntitySet="CsrCustomerAccountMapping">
+          <ScalarProperty Name="CsrCustomerAccountMappingId" ColumnName="CsrCustomerAccountMappingId" />
+          <ScalarProperty Name="PrimaryAccountId" ColumnName="PrimaryAccountId" />
+          <ScalarProperty Name="SubAccountId" ColumnName="SubAccountId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CsrCustomerServiceSpecificEmails">
+      <EntityTypeMapping TypeName="ProxyEntities.CsrCustomerServiceSpecificEmail">
+        <MappingFragment StoreEntitySet="CsrCustomerServiceSpecificEmails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ServiceType" ColumnName="ServiceType" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CsrFaks">
+      <EntityTypeMapping TypeName="ProxyEntities.CsrFak">
+        <MappingFragment StoreEntitySet="CsrFak">
+          <ScalarProperty Name="FakId" ColumnName="FakId" />
+          <ScalarProperty Name="TariffPricingModelId" ColumnName="TariffPricingModelId" />
+          <ScalarProperty Name="FakNo" ColumnName="FakNo" />
+          <ScalarProperty Name="MinRange" ColumnName="MinRange" />
+          <ScalarProperty Name="MaxRange" ColumnName="MaxRange" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CsrGainsharePricingModels">
+      <EntityTypeMapping TypeName="ProxyEntities.CsrGainsharePricingModel">
+        <MappingFragment StoreEntitySet="CsrGainsharePricingModel">
+          <ScalarProperty Name="IsCrmNewLogic" ColumnName="IsCrmNewLogic" />
+          <ScalarProperty Name="Minimum" ColumnName="Minimum" />
+          <ScalarProperty Name="MasterAccessorialCharge" ColumnName="MasterAccessorialCharge" />
+          <ScalarProperty Name="GainsharePricingModelId" ColumnName="GainsharePricingModelId" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+          <ScalarProperty Name="MinThresholdCharge" ColumnName="MinThresholdCharge" />
+          <ScalarProperty Name="MinAmountAdded" ColumnName="MinAmountAdded" />
+          <ScalarProperty Name="RatingInstructions" ColumnName="RatingInstructions" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="IsCarrierExcluded" ColumnName="IsCarrierExcluded" />
+          <ScalarProperty Name="ExcludedCarriers" ColumnName="ExcludedCarriers" />
+          <ScalarProperty Name="IsHouseholdGoodsRequired" ColumnName="IsHouseholdGoodsRequired" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CsrGainShareScacCodes">
+      <EntityTypeMapping TypeName="ProxyEntities.CsrGainShareScacCode">
+        <MappingFragment StoreEntitySet="CsrGainShareScacCode">
+          <ScalarProperty Name="Minimum" ColumnName="Minimum" />
+          <ScalarProperty Name="MasterAccessorialCharge" ColumnName="MasterAccessorialCharge" />
+          <ScalarProperty Name="CsrGainShareScacCodeId" ColumnName="CsrGainShareScacCodeId" />
+          <ScalarProperty Name="ScacCode" ColumnName="ScacCode" />
+          <ScalarProperty Name="GainsharePercentage" ColumnName="GainsharePercentage" />
+          <ScalarProperty Name="GainsharePricingModelId" ColumnName="GainsharePricingModelId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CarrierSpecificMinimumAmount" ColumnName="CarrierSpecificMinimumAmount" />
+          <ScalarProperty Name="CarrierSpecificMinimumThreshold" ColumnName="CarrierSpecificMinimumThreshold" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CsrInvoicePreferences">
+      <EntityTypeMapping TypeName="ProxyEntities.CsrInvoicePreference">
+        <MappingFragment StoreEntitySet="CsrInvoicePreference">
+          <ScalarProperty Name="InvoicePreferenceId" ColumnName="InvoicePreferenceId" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="IsCreditCard" ColumnName="IsCreditCard" />
+          <ScalarProperty Name="CustomerInvoiceBackup" ColumnName="CustomerInvoiceBackup" />
+          <ScalarProperty Name="CustomerInvoiceMethod" ColumnName="CustomerInvoiceMethod" />
+          <ScalarProperty Name="CustomerInvoiceEmail" ColumnName="CustomerInvoiceEmail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CsrItems">
+      <EntityTypeMapping TypeName="ProxyEntities.CsrItem">
+        <MappingFragment StoreEntitySet="CsrItem">
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="Classification" ColumnName="Classification" />
+          <ScalarProperty Name="NmfcCode" ColumnName="NmfcCode" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="QuantityUnit" ColumnName="QuantityUnit" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="WeightUnit" ColumnName="WeightUnit" />
+          <ScalarProperty Name="DollarValue" ColumnName="DollarValue" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="DimensionUnit" ColumnName="DimensionUnit" />
+          <ScalarProperty Name="ItemDescription" ColumnName="ItemDescription" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="IsHazardous" ColumnName="IsHazardous" />
+          <ScalarProperty Name="UnNumber" ColumnName="UnNumber" />
+          <ScalarProperty Name="CcnNumber" ColumnName="CcnNumber" />
+          <ScalarProperty Name="HazMatPackagingGroup" ColumnName="HazMatPackagingGroup" />
+          <ScalarProperty Name="HazMatClass" ColumnName="HazMatClass" />
+          <ScalarProperty Name="EmergencyContactName" ColumnName="EmergencyContactName" />
+          <ScalarProperty Name="EmergencyPhoneNumber" ColumnName="EmergencyPhoneNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CsrLocations">
+      <EntityTypeMapping TypeName="ProxyEntities.CsrLocation">
+        <MappingFragment StoreEntitySet="CsrLocation">
+          <ScalarProperty Name="LocationId" ColumnName="LocationId" />
+          <ScalarProperty Name="LocationAndContactTypeId" ColumnName="LocationAndContactTypeId" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="FaxNumber" ColumnName="FaxNumber" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="IsResidentialLocation" ColumnName="IsResidentialLocation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CsrLocationAndContactTypes">
+      <EntityTypeMapping TypeName="ProxyEntities.CsrLocationAndContactType">
+        <MappingFragment StoreEntitySet="CsrLocationAndContactType">
+          <ScalarProperty Name="LocationAndContactTypeId" ColumnName="LocationAndContactTypeId" />
+          <ScalarProperty Name="LocationAndContactTypeName" ColumnName="LocationAndContactTypeName" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CsrPricingModels">
+      <EntityTypeMapping TypeName="ProxyEntities.CsrPricingModel">
+        <MappingFragment StoreEntitySet="CsrPricingModel">
+          <ScalarProperty Name="PricingModelId" ColumnName="PricingModelId" />
+          <ScalarProperty Name="PricingTypeId" ColumnName="PricingTypeId" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CsrPricingTypes">
+      <EntityTypeMapping TypeName="ProxyEntities.CsrPricingType">
+        <MappingFragment StoreEntitySet="CsrPricingTypes">
+          <ScalarProperty Name="PricingTypeId" ColumnName="PricingTypeId" />
+          <ScalarProperty Name="PricingModelName" ColumnName="PricingModelName" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CsrSetups">
+      <EntityTypeMapping TypeName="ProxyEntities.CsrSetup">
+        <MappingFragment StoreEntitySet="CsrSetup">
+          <ScalarProperty Name="HideFromDashboard" ColumnName="HideFromDashboard" />
+          <ScalarProperty Name="CustomerSetupId" ColumnName="CustomerSetupId" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="MgUserName" ColumnName="MgUserName" />
+          <ScalarProperty Name="MgPassword" ColumnName="MgPassword" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="MgAccountNumber" ColumnName="MgAccountNumber" />
+          <ScalarProperty Name="BillToCode" ColumnName="BillToCode" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="DenialReason" ColumnName="DenialReason" />
+          <ScalarProperty Name="SubmittedBy" ColumnName="SubmittedBy" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="IsLocked" ColumnName="IsLocked" />
+          <ScalarProperty Name="LockedTime" ColumnName="LockedTime" />
+          <ScalarProperty Name="LockedBy" ColumnName="LockedBy" />
+          <ScalarProperty Name="LockedByUserName" ColumnName="LockedByUserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CsrStationCustomerAccountMappings">
+      <EntityTypeMapping TypeName="ProxyEntities.CsrStationCustomerAccountMapping">
+        <MappingFragment StoreEntitySet="CsrStationCustomerAccountMapping">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StationAccountId" ColumnName="StationAccountId" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CsrStatus">
+      <EntityTypeMapping TypeName="ProxyEntities.CsrStatu">
+        <MappingFragment StoreEntitySet="CsrStatus">
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CsrTariffPricingModels">
+      <EntityTypeMapping TypeName="ProxyEntities.CsrTariffPricingModel">
+        <MappingFragment StoreEntitySet="CsrTariffPricingModel">
+          <ScalarProperty Name="TariffPricingModelId" ColumnName="TariffPricingModelId" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="TariffName" ColumnName="TariffName" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="Minimum" ColumnName="Minimum" />
+          <ScalarProperty Name="SpecialRatingProvisions" ColumnName="SpecialRatingProvisions" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="IsCarrierExcluded" ColumnName="IsCarrierExcluded" />
+          <ScalarProperty Name="ExcludedCarriers" ColumnName="ExcludedCarriers" />
+          <ScalarProperty Name="IsHouseholdGoodsRequired" ColumnName="IsHouseholdGoodsRequired" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ProxyEntities.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="IsViewInvoicesEnabled" ColumnName="IsViewInvoicesEnabled" />
+          <ScalarProperty Name="IsViewPayInvoicesEnabled" ColumnName="IsViewPayInvoicesEnabled" />
+          <ScalarProperty Name="UsersId" ColumnName="UsersId" />
+          <ScalarProperty Name="CustomerSetUpId" ColumnName="CustomerSetUpId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="PrimaryContactPhone" ColumnName="PrimaryContactPhone" />
+          <ScalarProperty Name="OfficeNumber" ColumnName="OfficeNumber" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="FaxNumber" ColumnName="FaxNumber" />
+          <ScalarProperty Name="IsSendEmail" ColumnName="IsSendEmail" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="Branding" ColumnName="Branding" />
+          <ScalarProperty Name="TmsSystem" ColumnName="TmsSystem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ApiEndPoints">
+      <EntityTypeMapping TypeName="ProxyEntities.ApiEndPoint">
+        <MappingFragment StoreEntitySet="ApiEndPoint">
+          <ScalarProperty Name="ApiEndPointId" ColumnName="ApiEndPointId" />
+          <ScalarProperty Name="EndPointName" ColumnName="EndPointName" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerApiKeys">
+      <EntityTypeMapping TypeName="ProxyEntities.CustomerApiKey">
+        <MappingFragment StoreEntitySet="CustomerApiKey">
+          <ScalarProperty Name="CustomerApiKeyId" ColumnName="CustomerApiKeyId" />
+          <ScalarProperty Name="CustomerSetupId" ColumnName="CustomerSetupId" />
+          <ScalarProperty Name="ApiKey" ColumnName="ApiKey" />
+          <ScalarProperty Name="ApiKeySalt" ColumnName="ApiKeySalt" />
+          <ScalarProperty Name="CustomerGuid" ColumnName="CustomerGuid" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerEmails">
+      <EntityTypeMapping TypeName="ProxyEntities.CustomerEmail">
+        <MappingFragment StoreEntitySet="CustomerEmail">
+          <ScalarProperty Name="CustomerEmailId" ColumnName="CustomerEmailId" />
+          <ScalarProperty Name="CustomerSetupId" ColumnName="CustomerSetupId" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerEndPointMappings">
+      <EntityTypeMapping TypeName="ProxyEntities.CustomerEndPointMapping">
+        <MappingFragment StoreEntitySet="CustomerEndPointMapping">
+          <ScalarProperty Name="CustomerEndPointMappingId" ColumnName="CustomerEndPointMappingId" />
+          <ScalarProperty Name="CustomerSetupId" ColumnName="CustomerSetupId" />
+          <ScalarProperty Name="ApiEndPointId" ColumnName="ApiEndPointId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerRateOptionsMappings">
+      <EntityTypeMapping TypeName="ProxyEntities.CustomerRateOptionsMapping">
+        <MappingFragment StoreEntitySet="CustomerRateOptionsMapping">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RateOptionsId" ColumnName="RateOptionsId" />
+          <ScalarProperty Name="CustomerSetupId" ColumnName="CustomerSetupId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerSetups">
+      <EntityTypeMapping TypeName="ProxyEntities.CustomerSetup">
+        <MappingFragment StoreEntitySet="CustomerSetup">
+          <ScalarProperty Name="CustomerSetupId" ColumnName="CustomerSetupId" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="MgUserName" ColumnName="MgUserName" />
+          <ScalarProperty Name="MgPassword" ColumnName="MgPassword" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="MgAccountNumber" ColumnName="MgAccountNumber" />
+          <ScalarProperty Name="BillToCode" ColumnName="BillToCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RateOptions">
+      <EntityTypeMapping TypeName="ProxyEntities.RateOption">
+        <MappingFragment StoreEntitySet="RateOptions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RatesOption" ColumnName="RatesOption" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrackingDetails">
+      <EntityTypeMapping TypeName="ProxyEntities.TrackingDetail">
+        <MappingFragment StoreEntitySet="TrackingDetail">
+          <ScalarProperty Name="TrackingDetailId" ColumnName="TrackingDetailId" />
+          <ScalarProperty Name="TrackingDetailCode" ColumnName="TrackingDetailCode" />
+          <ScalarProperty Name="TrackingDetailInformation" ColumnName="TrackingDetailInformation" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomReports">
+      <EntityTypeMapping TypeName="ProxyEntities.CustomReport">
+        <MappingFragment StoreEntitySet="CustomReports">
+          <ScalarProperty Name="IsSharedReport" ColumnName="IsSharedReport" />
+          <ScalarProperty Name="CustomReportId" ColumnName="CustomReportId" />
+          <ScalarProperty Name="CustomReportName" ColumnName="CustomReportName" />
+          <ScalarProperty Name="OriginCity" ColumnName="OriginCity" />
+          <ScalarProperty Name="DestinationCity" ColumnName="DestinationCity" />
+          <ScalarProperty Name="PickUpDateStart" ColumnName="PickUpDateStart" />
+          <ScalarProperty Name="PickUpDateEnd" ColumnName="PickUpDateEnd" />
+          <ScalarProperty Name="ReferenceNumbers" ColumnName="ReferenceNumbers" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomReportServicesMappings">
+      <EntityTypeMapping TypeName="ProxyEntities.CustomReportServicesMapping">
+        <MappingFragment StoreEntitySet="CustomReportServicesMapping">
+          <ScalarProperty Name="CustomReportServicesMappingId" ColumnName="CustomReportServicesMappingId" />
+          <ScalarProperty Name="CustomReportId" ColumnName="CustomReportId" />
+          <ScalarProperty Name="ServiceId" ColumnName="ServiceId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomReportStatusMappings">
+      <EntityTypeMapping TypeName="ProxyEntities.CustomReportStatusMapping">
+        <MappingFragment StoreEntitySet="CustomReportStatusMapping">
+          <ScalarProperty Name="CustomReportStatusMappingId" ColumnName="CustomReportStatusMappingId" />
+          <ScalarProperty Name="CustomReportId" ColumnName="CustomReportId" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserCustomReportsMappings">
+      <EntityTypeMapping TypeName="ProxyEntities.UserCustomReportsMapping">
+        <MappingFragment StoreEntitySet="UserCustomReportsMapping">
+          <ScalarProperty Name="UserCustomReportsMappingId" ColumnName="UserCustomReportsMappingId" />
+          <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+          <ScalarProperty Name="CustomReportId" ColumnName="CustomReportId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Addresses">
+      <EntityTypeMapping TypeName="ProxyEntities.Address">
+        <MappingFragment StoreEntitySet="Address">
+          <ScalarProperty Name="FaxExt" ColumnName="FaxExt" />
+          <ScalarProperty Name="PhoneExt" ColumnName="PhoneExt" />
+          <ScalarProperty Name="ShippingCloseTime" ColumnName="ShippingCloseTime" />
+          <ScalarProperty Name="ShippingOpenTime" ColumnName="ShippingOpenTime" />
+          <ScalarProperty Name="AddressId" ColumnName="AddressId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="FaxNumber" ColumnName="FaxNumber" />
+          <ScalarProperty Name="AddressTypeId" ColumnName="AddressTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Items">
+      <EntityTypeMapping TypeName="ProxyEntities.Item">
+        <MappingFragment StoreEntitySet="Item">
+          <ScalarProperty Name="IsDefaultItem" ColumnName="IsDefaultItem" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="Classification" ColumnName="Classification" />
+          <ScalarProperty Name="NmfcCode" ColumnName="NmfcCode" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="QuantityUnit" ColumnName="QuantityUnit" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="WeightUnit" ColumnName="WeightUnit" />
+          <ScalarProperty Name="DollarValue" ColumnName="DollarValue" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="DimensionUnit" ColumnName="DimensionUnit" />
+          <ScalarProperty Name="ItemDescription" ColumnName="ItemDescription" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="IsHazardous" ColumnName="IsHazardous" />
+          <ScalarProperty Name="UnNumber" ColumnName="UnNumber" />
+          <ScalarProperty Name="CcnNumber" ColumnName="CcnNumber" />
+          <ScalarProperty Name="HazMatPackagingGroup" ColumnName="HazMatPackagingGroup" />
+          <ScalarProperty Name="HazMatClass" ColumnName="HazMatClass" />
+          <ScalarProperty Name="EmergencyContactName" ColumnName="EmergencyContactName" />
+          <ScalarProperty Name="EmergencyPhoneNumber" ColumnName="EmergencyPhoneNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuoteReferenceNumbers">
+      <EntityTypeMapping TypeName="ProxyEntities.QuoteReferenceNumber">
+        <MappingFragment StoreEntitySet="QuoteReferenceNumber">
+          <ScalarProperty Name="QuoteId" ColumnName="QuoteId" />
+          <ScalarProperty Name="QuoteNumber" ColumnName="QuoteNumber" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Documents">
+      <EntityTypeMapping TypeName="ProxyEntities.Document">
+        <MappingFragment StoreEntitySet="Document">
+          <ScalarProperty Name="DocumentId" ColumnName="DocumentId" />
+          <ScalarProperty Name="DocumentName" ColumnName="DocumentName" />
+          <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+          <ScalarProperty Name="RefId" ColumnName="RefId" />
+          <ScalarProperty Name="DocumentData" ColumnName="DocumentData" />
+          <ScalarProperty Name="DocumentSize" ColumnName="DocumentSize" />
+          <ScalarProperty Name="Extension" ColumnName="Extension" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DocumentRolesMappings">
+      <EntityTypeMapping TypeName="ProxyEntities.DocumentRolesMapping">
+        <MappingFragment StoreEntitySet="DocumentRolesMapping">
+          <ScalarProperty Name="DocRolesMappingId" ColumnName="DocRolesMappingId" />
+          <ScalarProperty Name="DocumentId" ColumnName="DocumentId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Folders">
+      <EntityTypeMapping TypeName="ProxyEntities.Folder">
+        <MappingFragment StoreEntitySet="Folder">
+          <ScalarProperty Name="FolderId" ColumnName="FolderId" />
+          <ScalarProperty Name="FolderName" ColumnName="FolderName" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReferenceMappings">
+      <EntityTypeMapping TypeName="ProxyEntities.ReferenceMapping">
+        <MappingFragment StoreEntitySet="ReferenceMapping">
+          <ScalarProperty Name="ReferenceMappingId" ColumnName="ReferenceMappingId" />
+          <ScalarProperty Name="ReferenceName" ColumnName="ReferenceName" />
+          <ScalarProperty Name="FolderId" ColumnName="FolderId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Privileges">
+      <EntityTypeMapping TypeName="ProxyEntities.Privilege">
+        <MappingFragment StoreEntitySet="Privilege">
+          <ScalarProperty Name="PrivilegeId" ColumnName="PrivilegeId" />
+          <ScalarProperty Name="PrivilegeName" ColumnName="PrivilegeName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SecurityGroups">
+      <EntityTypeMapping TypeName="ProxyEntities.SecurityGroup">
+        <MappingFragment StoreEntitySet="SecurityGroup">
+          <ScalarProperty Name="SecurityGroupId" ColumnName="SecurityGroupId" />
+          <ScalarProperty Name="SecurityGroupName" ColumnName="SecurityGroupName" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SecurityGroupPrivilegeRelationships">
+      <EntityTypeMapping TypeName="ProxyEntities.SecurityGroupPrivilegeRelationship">
+        <MappingFragment StoreEntitySet="SecurityGroupPrivilegeRelationship">
+          <ScalarProperty Name="SecurityGroupPrivilegeRelationshipId" ColumnName="SecurityGroupPrivilegeRelationshipId" />
+          <ScalarProperty Name="SecurityGroupId" ColumnName="SecurityGroupId" />
+          <ScalarProperty Name="PrivilegeId" ColumnName="PrivilegeId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerSpecificBrandings">
+      <EntityTypeMapping TypeName="ProxyEntities.CustomerSpecificBranding">
+        <MappingFragment StoreEntitySet="CustomerSpecificBranding">
+          <ScalarProperty Name="IsLogoCentreAligned" ColumnName="IsLogoCentreAligned" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="CustomerSpecificBrandingId" ColumnName="CustomerSpecificBrandingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AccessorialSetUps">
+      <EntityTypeMapping TypeName="ProxyEntities.AccessorialSetUp">
+        <MappingFragment StoreEntitySet="AccessorialSetUp">
+          <ScalarProperty Name="AccessorialDirectionId" ColumnName="AccessorialDirectionId" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="MGEdiCode" ColumnName="MGEdiCode" />
+          <ScalarProperty Name="AccessorialCode" ColumnName="AccessorialCode" />
+          <ScalarProperty Name="AccessorialName" ColumnName="AccessorialName" />
+          <ScalarProperty Name="AccessorialSetupId" ColumnName="AccessorialSetupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BumpSurgeCustomerSetUps">
+      <EntityTypeMapping TypeName="ProxyEntities.BumpSurgeCustomerSetUp">
+        <MappingFragment StoreEntitySet="BumpSurgeCustomerSetUp">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Surge" ColumnName="Surge" />
+          <ScalarProperty Name="Bump" ColumnName="Bump" />
+          <ScalarProperty Name="CarrierSCAC" ColumnName="CarrierSCAC" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="BSCustomerSetupId" ColumnName="BSCustomerSetupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BumpSurgeStationSetUps">
+      <EntityTypeMapping TypeName="ProxyEntities.BumpSurgeStationSetUp">
+        <MappingFragment StoreEntitySet="BumpSurgeStationSetUp">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Surge" ColumnName="Surge" />
+          <ScalarProperty Name="Bump" ColumnName="Bump" />
+          <ScalarProperty Name="CarrierSCAC" ColumnName="CarrierSCAC" />
+          <ScalarProperty Name="StationId" ColumnName="StationId" />
+          <ScalarProperty Name="BSStationSetupId" ColumnName="BSStationSetupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CarrierWebsites">
+      <EntityTypeMapping TypeName="ProxyEntities.CarrierWebsite">
+        <MappingFragment StoreEntitySet="CarrierWebsite">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="CarrierName" ColumnName="CarrierName" />
+          <ScalarProperty Name="Scac" ColumnName="Scac" />
+          <ScalarProperty Name="CarrierWebsiteId" ColumnName="CarrierWebsiteId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExternalServiceErrorDetails">
+      <EntityTypeMapping TypeName="ProxyEntities.ExternalServiceErrorDetail">
+        <MappingFragment StoreEntitySet="ExternalServiceErrorDetails">
+          <ScalarProperty Name="ErrorMessage" ColumnName="ErrorMessage" />
+          <ScalarProperty Name="IsEmailSent" ColumnName="IsEmailSent" />
+          <ScalarProperty Name="ErrorDateTime" ColumnName="ErrorDateTime" />
+          <ScalarProperty Name="RequestPageTypeId" ColumnName="RequestPageTypeId" />
+          <ScalarProperty Name="ExternalServicesId" ColumnName="ExternalServicesId" />
+          <ScalarProperty Name="ErrorDetailId" ColumnName="ErrorDetailId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExternalServices">
+      <EntityTypeMapping TypeName="ProxyEntities.ExternalService">
+        <MappingFragment StoreEntitySet="ExternalServices">
+          <ScalarProperty Name="ServiceName" ColumnName="ServiceName" />
+          <ScalarProperty Name="ExternalServicesId" ColumnName="ExternalServicesId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RequestTypes">
+      <EntityTypeMapping TypeName="ProxyEntities.RequestType">
+        <MappingFragment StoreEntitySet="RequestType">
+          <ScalarProperty Name="RequestPage" ColumnName="RequestPage" />
+          <ScalarProperty Name="RequestPageTypeId" ColumnName="RequestPageTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StationSalesCodes">
+      <EntityTypeMapping TypeName="ProxyEntities.StationSalesCode">
+        <MappingFragment StoreEntitySet="StationSalesCode">
+          <ScalarProperty Name="SalesCode" ColumnName="SalesCode" />
+          <ScalarProperty Name="StationId" ColumnName="StationId" />
+          <ScalarProperty Name="StationSalesCodeId" ColumnName="StationSalesCodeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserAutoLogins">
+      <EntityTypeMapping TypeName="ProxyEntities.UserAutoLogin">
+        <MappingFragment StoreEntitySet="UserAutoLogin">
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="SubmittedOn" ColumnName="SubmittedOn" />
+          <ScalarProperty Name="SubmittedBy" ColumnName="SubmittedBy" />
+          <ScalarProperty Name="RealmValue" ColumnName="RealmValue" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="UserAutoLoginId" ColumnName="UserAutoLoginId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AccessorialCarrierSetUps">
+      <EntityTypeMapping TypeName="ProxyEntities.AccessorialCarrierSetUp">
+        <MappingFragment StoreEntitySet="AccessorialCarrierSetUp">
+          <ScalarProperty Name="GainShareType" ColumnName="GainShareType" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="AccessorialValue" ColumnName="AccessorialValue" />
+          <ScalarProperty Name="AccessorialCode" ColumnName="AccessorialCode" />
+          <ScalarProperty Name="CarrierSCAC" ColumnName="CarrierSCAC" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="AccessorialCustomerCarrierSetupId" ColumnName="AccessorialCustomerCarrierSetupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AccessorialCustomerSetUps">
+      <EntityTypeMapping TypeName="ProxyEntities.AccessorialCustomerSetUp">
+        <MappingFragment StoreEntitySet="AccessorialCustomerSetUp">
+          <ScalarProperty Name="GainShareType" ColumnName="GainShareType" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="AccessorialValue" ColumnName="AccessorialValue" />
+          <ScalarProperty Name="AccessorialCode" ColumnName="AccessorialCode" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="AccessorialCustomerSetupId" ColumnName="AccessorialCustomerSetupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CsrAccessorialCarrierSetUps">
+      <EntityTypeMapping TypeName="ProxyEntities.CsrAccessorialCarrierSetUp">
+        <MappingFragment StoreEntitySet="CsrAccessorialCarrierSetUp">
+          <ScalarProperty Name="GainShareType" ColumnName="GainShareType" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="AccessorialValue" ColumnName="AccessorialValue" />
+          <ScalarProperty Name="AccessorialCode" ColumnName="AccessorialCode" />
+          <ScalarProperty Name="CarrierSCAC" ColumnName="CarrierSCAC" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="AccessorialCustomerCarrierSetupId" ColumnName="AccessorialCustomerCarrierSetupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CsrAccessorialCustomerSetUps">
+      <EntityTypeMapping TypeName="ProxyEntities.CsrAccessorialCustomerSetUp">
+        <MappingFragment StoreEntitySet="CsrAccessorialCustomerSetUp">
+          <ScalarProperty Name="GainShareType" ColumnName="GainShareType" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="AccessorialValue" ColumnName="AccessorialValue" />
+          <ScalarProperty Name="AccessorialCode" ColumnName="AccessorialCode" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="AccessorialCustomerSetupId" ColumnName="AccessorialCustomerSetupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RmApprovalStatus">
+      <EntityTypeMapping TypeName="ProxyEntities.RmApprovalStatu">
+        <MappingFragment StoreEntitySet="RmApprovalStatus">
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="SubmittedOn" ColumnName="SubmittedOn" />
+          <ScalarProperty Name="SubmittedBy" ColumnName="SubmittedBy" />
+          <ScalarProperty Name="UniqueId" ColumnName="UniqueId" />
+          <ScalarProperty Name="IsLinkActive" ColumnName="IsLinkActive" />
+          <ScalarProperty Name="CustomerSetupId" ColumnName="CustomerSetupId" />
+          <ScalarProperty Name="RmApprovalStatusId" ColumnName="RmApprovalStatusId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ImageNowSetUps">
+      <EntityTypeMapping TypeName="ProxyEntities.ImageNowSetUp">
+        <MappingFragment StoreEntitySet="ImageNowSetUp">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ViewId" ColumnName="ViewId" />
+          <ScalarProperty Name="InViewName" ColumnName="InViewName" />
+          <ScalarProperty Name="FilterId" ColumnName="FilterId" />
+          <ScalarProperty Name="InViewFilterName" ColumnName="InViewFilterName" />
+          <ScalarProperty Name="InvoiceDateConstraint" ColumnName="InvoiceDateConstraint" />
+          <ScalarProperty Name="CustomerNumberConstraint" ColumnName="CustomerNumberConstraint" />
+          <ScalarProperty Name="InvoiceNumberConstraint" ColumnName="InvoiceNumberConstraint" />
+          <ScalarProperty Name="AppContext" ColumnName="AppContext" />
+          <ScalarProperty Name="ImageNowSetUpId" ColumnName="ImageNowSetUpId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="captured_columns">
+      <EntityTypeMapping TypeName="ProxyEntities.captured_columns">
+        <MappingFragment StoreEntitySet="captured_columns">
+          <ScalarProperty Name="masking_function" ColumnName="masking_function" />
+          <ScalarProperty Name="is_computed" ColumnName="is_computed" />
+          <ScalarProperty Name="column_ordinal" ColumnName="column_ordinal" />
+          <ScalarProperty Name="column_type" ColumnName="column_type" />
+          <ScalarProperty Name="column_id" ColumnName="column_id" />
+          <ScalarProperty Name="column_name" ColumnName="column_name" />
+          <ScalarProperty Name="object_id" ColumnName="object_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="change_tables">
+      <EntityTypeMapping TypeName="ProxyEntities.change_tables">
+        <MappingFragment StoreEntitySet="change_tables">
+          <ScalarProperty Name="partition_switch" ColumnName="partition_switch" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="filegroup_name" ColumnName="filegroup_name" />
+          <ScalarProperty Name="index_name" ColumnName="index_name" />
+          <ScalarProperty Name="role_name" ColumnName="role_name" />
+          <ScalarProperty Name="has_drop_pending" ColumnName="has_drop_pending" />
+          <ScalarProperty Name="supports_net_changes" ColumnName="supports_net_changes" />
+          <ScalarProperty Name="end_lsn" ColumnName="end_lsn" />
+          <ScalarProperty Name="start_lsn" ColumnName="start_lsn" />
+          <ScalarProperty Name="capture_instance" ColumnName="capture_instance" />
+          <ScalarProperty Name="source_object_id" ColumnName="source_object_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="object_id" ColumnName="object_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ddl_history">
+      <EntityTypeMapping TypeName="ProxyEntities.ddl_history">
+        <MappingFragment StoreEntitySet="ddl_history">
+          <ScalarProperty Name="ddl_time" ColumnName="ddl_time" />
+          <ScalarProperty Name="ddl_lsn" ColumnName="ddl_lsn" />
+          <ScalarProperty Name="ddl_command" ColumnName="ddl_command" />
+          <ScalarProperty Name="required_column_update" ColumnName="required_column_update" />
+          <ScalarProperty Name="object_id" ColumnName="object_id" />
+          <ScalarProperty Name="source_object_id" ColumnName="source_object_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="index_columns">
+      <EntityTypeMapping TypeName="ProxyEntities.index_columns">
+        <MappingFragment StoreEntitySet="index_columns">
+          <ScalarProperty Name="column_id" ColumnName="column_id" />
+          <ScalarProperty Name="index_ordinal" ColumnName="index_ordinal" />
+          <ScalarProperty Name="column_name" ColumnName="column_name" />
+          <ScalarProperty Name="object_id" ColumnName="object_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lsn_time_mapping">
+      <EntityTypeMapping TypeName="ProxyEntities.lsn_time_mapping">
+        <MappingFragment StoreEntitySet="lsn_time_mapping">
+          <ScalarProperty Name="tran_begin_lsn" ColumnName="tran_begin_lsn" />
+          <ScalarProperty Name="tran_id" ColumnName="tran_id" />
+          <ScalarProperty Name="tran_end_time" ColumnName="tran_end_time" />
+          <ScalarProperty Name="tran_begin_time" ColumnName="tran_begin_time" />
+          <ScalarProperty Name="start_lsn" ColumnName="start_lsn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Common_BumpSurgeCustomerSetUp_CT">
+      <EntityTypeMapping TypeName="ProxyEntities.Common_BumpSurgeCustomerSetUp_CT">
+        <MappingFragment StoreEntitySet="Common_BumpSurgeCustomerSetUp_CT">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Surge" ColumnName="Surge" />
+          <ScalarProperty Name="Bump" ColumnName="Bump" />
+          <ScalarProperty Name="CarrierSCAC" ColumnName="CarrierSCAC" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="BSCustomerSetupId" ColumnName="BSCustomerSetupId" />
+          <ScalarProperty Name="C___update_mask" ColumnName="__$update_mask" />
+          <ScalarProperty Name="C___operation" ColumnName="__$operation" />
+          <ScalarProperty Name="C___seqval" ColumnName="__$seqval" />
+          <ScalarProperty Name="C___end_lsn" ColumnName="__$end_lsn" />
+          <ScalarProperty Name="C___start_lsn" ColumnName="__$start_lsn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Common_BumpSurgeStationSetUp_CT">
+      <EntityTypeMapping TypeName="ProxyEntities.Common_BumpSurgeStationSetUp_CT">
+        <MappingFragment StoreEntitySet="Common_BumpSurgeStationSetUp_CT">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Surge" ColumnName="Surge" />
+          <ScalarProperty Name="Bump" ColumnName="Bump" />
+          <ScalarProperty Name="CarrierSCAC" ColumnName="CarrierSCAC" />
+          <ScalarProperty Name="StationId" ColumnName="StationId" />
+          <ScalarProperty Name="BSStationSetupId" ColumnName="BSStationSetupId" />
+          <ScalarProperty Name="C___update_mask" ColumnName="__$update_mask" />
+          <ScalarProperty Name="C___operation" ColumnName="__$operation" />
+          <ScalarProperty Name="C___seqval" ColumnName="__$seqval" />
+          <ScalarProperty Name="C___end_lsn" ColumnName="__$end_lsn" />
+          <ScalarProperty Name="C___start_lsn" ColumnName="__$start_lsn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Csr_AccessorialCarrierSetUp_CT">
+      <EntityTypeMapping TypeName="ProxyEntities.Csr_AccessorialCarrierSetUp_CT">
+        <MappingFragment StoreEntitySet="Csr_AccessorialCarrierSetUp_CT">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="AccessorialValue" ColumnName="AccessorialValue" />
+          <ScalarProperty Name="AccessorialCode" ColumnName="AccessorialCode" />
+          <ScalarProperty Name="CarrierSCAC" ColumnName="CarrierSCAC" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="AccessorialCustomerCarrierSetupId" ColumnName="AccessorialCustomerCarrierSetupId" />
+          <ScalarProperty Name="C___update_mask" ColumnName="__$update_mask" />
+          <ScalarProperty Name="C___operation" ColumnName="__$operation" />
+          <ScalarProperty Name="C___seqval" ColumnName="__$seqval" />
+          <ScalarProperty Name="C___end_lsn" ColumnName="__$end_lsn" />
+          <ScalarProperty Name="C___start_lsn" ColumnName="__$start_lsn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Csr_AccessorialCustomerSetUp_CT">
+      <EntityTypeMapping TypeName="ProxyEntities.Csr_AccessorialCustomerSetUp_CT">
+        <MappingFragment StoreEntitySet="Csr_AccessorialCustomerSetUp_CT">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="AccessorialValue" ColumnName="AccessorialValue" />
+          <ScalarProperty Name="AccessorialCode" ColumnName="AccessorialCode" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="AccessorialCustomerSetupId" ColumnName="AccessorialCustomerSetupId" />
+          <ScalarProperty Name="C___update_mask" ColumnName="__$update_mask" />
+          <ScalarProperty Name="C___operation" ColumnName="__$operation" />
+          <ScalarProperty Name="C___seqval" ColumnName="__$seqval" />
+          <ScalarProperty Name="C___end_lsn" ColumnName="__$end_lsn" />
+          <ScalarProperty Name="C___start_lsn" ColumnName="__$start_lsn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Csr_Fak_CT">
+      <EntityTypeMapping TypeName="ProxyEntities.Csr_Fak_CT">
+        <MappingFragment StoreEntitySet="Csr_Fak_CT">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="MaxRange" ColumnName="MaxRange" />
+          <ScalarProperty Name="MinRange" ColumnName="MinRange" />
+          <ScalarProperty Name="FakNo" ColumnName="FakNo" />
+          <ScalarProperty Name="TariffPricingModelId" ColumnName="TariffPricingModelId" />
+          <ScalarProperty Name="FakId" ColumnName="FakId" />
+          <ScalarProperty Name="C___update_mask" ColumnName="__$update_mask" />
+          <ScalarProperty Name="C___operation" ColumnName="__$operation" />
+          <ScalarProperty Name="C___seqval" ColumnName="__$seqval" />
+          <ScalarProperty Name="C___end_lsn" ColumnName="__$end_lsn" />
+          <ScalarProperty Name="C___start_lsn" ColumnName="__$start_lsn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Csr_GainsharePricingModel_CT">
+      <EntityTypeMapping TypeName="ProxyEntities.Csr_GainsharePricingModel_CT">
+        <MappingFragment StoreEntitySet="Csr_GainsharePricingModel_CT">
+          <ScalarProperty Name="IsCrmRatingLogic" ColumnName="IsCrmRatingLogic" />
+          <ScalarProperty Name="Minimum" ColumnName="Minimum" />
+          <ScalarProperty Name="MasterAccessorialCharge" ColumnName="MasterAccessorialCharge" />
+          <ScalarProperty Name="IsHouseholdGoodsRequired" ColumnName="IsHouseholdGoodsRequired" />
+          <ScalarProperty Name="ExcludedCarriers" ColumnName="ExcludedCarriers" />
+          <ScalarProperty Name="IsCarrierExcluded" ColumnName="IsCarrierExcluded" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="RatingInstructions" ColumnName="RatingInstructions" />
+          <ScalarProperty Name="MinAmountAdded" ColumnName="MinAmountAdded" />
+          <ScalarProperty Name="MinThresholdCharge" ColumnName="MinThresholdCharge" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="GainsharePricingModelId" ColumnName="GainsharePricingModelId" />
+          <ScalarProperty Name="C___update_mask" ColumnName="__$update_mask" />
+          <ScalarProperty Name="C___operation" ColumnName="__$operation" />
+          <ScalarProperty Name="C___seqval" ColumnName="__$seqval" />
+          <ScalarProperty Name="C___end_lsn" ColumnName="__$end_lsn" />
+          <ScalarProperty Name="C___start_lsn" ColumnName="__$start_lsn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Csr_GainShareScacCode_CT">
+      <EntityTypeMapping TypeName="ProxyEntities.Csr_GainShareScacCode_CT">
+        <MappingFragment StoreEntitySet="Csr_GainShareScacCode_CT">
+          <ScalarProperty Name="Minimum" ColumnName="Minimum" />
+          <ScalarProperty Name="MasterAccessorialCharge" ColumnName="MasterAccessorialCharge" />
+          <ScalarProperty Name="CarrierSpecificMinimumAmount" ColumnName="CarrierSpecificMinimumAmount" />
+          <ScalarProperty Name="CarrierSpecificMinimumThreshold" ColumnName="CarrierSpecificMinimumThreshold" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="GainsharePricingModelId" ColumnName="GainsharePricingModelId" />
+          <ScalarProperty Name="GainsharePercentage" ColumnName="GainsharePercentage" />
+          <ScalarProperty Name="ScacCode" ColumnName="ScacCode" />
+          <ScalarProperty Name="GainShareScacCodeId" ColumnName="GainShareScacCodeId" />
+          <ScalarProperty Name="C___update_mask" ColumnName="__$update_mask" />
+          <ScalarProperty Name="C___operation" ColumnName="__$operation" />
+          <ScalarProperty Name="C___seqval" ColumnName="__$seqval" />
+          <ScalarProperty Name="C___end_lsn" ColumnName="__$end_lsn" />
+          <ScalarProperty Name="C___start_lsn" ColumnName="__$start_lsn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Csr_PricingModel_CT">
+      <EntityTypeMapping TypeName="ProxyEntities.Csr_PricingModel_CT">
+        <MappingFragment StoreEntitySet="Csr_PricingModel_CT">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="PricingTypeId" ColumnName="PricingTypeId" />
+          <ScalarProperty Name="PricingModelId" ColumnName="PricingModelId" />
+          <ScalarProperty Name="C___update_mask" ColumnName="__$update_mask" />
+          <ScalarProperty Name="C___operation" ColumnName="__$operation" />
+          <ScalarProperty Name="C___seqval" ColumnName="__$seqval" />
+          <ScalarProperty Name="C___end_lsn" ColumnName="__$end_lsn" />
+          <ScalarProperty Name="C___start_lsn" ColumnName="__$start_lsn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Csr_TariffPricingModel_CT">
+      <EntityTypeMapping TypeName="ProxyEntities.Csr_TariffPricingModel_CT">
+        <MappingFragment StoreEntitySet="Csr_TariffPricingModel_CT">
+          <ScalarProperty Name="IsHouseholdGoodsRequired" ColumnName="IsHouseholdGoodsRequired" />
+          <ScalarProperty Name="ExcludedCarriers" ColumnName="ExcludedCarriers" />
+          <ScalarProperty Name="IsCarrierExcluded" ColumnName="IsCarrierExcluded" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="SpecialRatingProvisions" ColumnName="SpecialRatingProvisions" />
+          <ScalarProperty Name="Minimum" ColumnName="Minimum" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="TariffName" ColumnName="TariffName" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="TariffPricingModelId" ColumnName="TariffPricingModelId" />
+          <ScalarProperty Name="C___update_mask" ColumnName="__$update_mask" />
+          <ScalarProperty Name="C___operation" ColumnName="__$operation" />
+          <ScalarProperty Name="C___seqval" ColumnName="__$seqval" />
+          <ScalarProperty Name="C___end_lsn" ColumnName="__$end_lsn" />
+          <ScalarProperty Name="C___start_lsn" ColumnName="__$start_lsn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IntegrationRequestComments">
+      <EntityTypeMapping TypeName="ProxyEntities.IntegrationRequestComment">
+        <MappingFragment StoreEntitySet="IntegrationRequestComment">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsPrivate" ColumnName="IsPrivate" />
+          <ScalarProperty Name="Commenter" ColumnName="Commenter" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="IntegrationRequestId" ColumnName="IntegrationRequestId" />
+          <ScalarProperty Name="IntegrationRequestCommentId" ColumnName="IntegrationRequestCommentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IntegrationRequestTypeMappings">
+      <EntityTypeMapping TypeName="ProxyEntities.IntegrationRequestTypeMapping">
+        <MappingFragment StoreEntitySet="IntegrationRequestTypeMapping">
+          <ScalarProperty Name="IntegrationTypeId" ColumnName="IntegrationTypeId" />
+          <ScalarProperty Name="IntegrationRequestId" ColumnName="IntegrationRequestId" />
+          <ScalarProperty Name="IntegrationMappingId" ColumnName="IntegrationMappingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IntegrationStages">
+      <EntityTypeMapping TypeName="ProxyEntities.IntegrationStage">
+        <MappingFragment StoreEntitySet="IntegrationStage">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IntegrationStatusId" ColumnName="IntegrationStatusId" />
+          <ScalarProperty Name="IntegrationStageUd" ColumnName="IntegrationStageUd" />
+          <ScalarProperty Name="IntegrationStageId" ColumnName="IntegrationStageId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IntegrationStatus">
+      <EntityTypeMapping TypeName="ProxyEntities.IntegrationStatu">
+        <MappingFragment StoreEntitySet="IntegrationStatus">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IntegrationStatusUd" ColumnName="IntegrationStatusUd" />
+          <ScalarProperty Name="IntegrationStatusId" ColumnName="IntegrationStatusId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IntegrationTypes">
+      <EntityTypeMapping TypeName="ProxyEntities.IntegrationType">
+        <MappingFragment StoreEntitySet="IntegrationType">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IntegrationTypeUd" ColumnName="IntegrationTypeUd" />
+          <ScalarProperty Name="IntegrationTypeId" ColumnName="IntegrationTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AllStationsBumpSurgeSetups">
+      <EntityTypeMapping TypeName="ProxyEntities.AllStationsBumpSurgeSetup">
+        <MappingFragment StoreEntitySet="AllStationsBumpSurgeSetup">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Surge" ColumnName="Surge" />
+          <ScalarProperty Name="Bump" ColumnName="Bump" />
+          <ScalarProperty Name="CarrierSCAC" ColumnName="CarrierSCAC" />
+          <ScalarProperty Name="AllStationsBSSetupId" ColumnName="AllStationsBSSetupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DefaultAccessorialSetups">
+      <EntityTypeMapping TypeName="ProxyEntities.DefaultAccessorialSetup">
+        <MappingFragment StoreEntitySet="DefaultAccessorialSetup">
+          <ScalarProperty Name="StationId" ColumnName="StationId" />
+          <ScalarProperty Name="GainshareCostingTypeId" ColumnName="GainshareCostingTypeId" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="AccessorialValue" ColumnName="AccessorialValue" />
+          <ScalarProperty Name="AccessorialName" ColumnName="AccessorialName" />
+          <ScalarProperty Name="AccessorialCode" ColumnName="AccessorialCode" />
+          <ScalarProperty Name="CarrierSCAC" ColumnName="CarrierSCAC" />
+          <ScalarProperty Name="DefaultAccessorialSetupId" ColumnName="DefaultAccessorialSetupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerCredits">
+      <EntityTypeMapping TypeName="ProxyEntities.CustomerCredit">
+        <MappingFragment StoreEntitySet="CustomerCredit">
+          <ScalarProperty Name="DAGRT" ColumnName="DAGRT" />
+          <ScalarProperty Name="DunningArea" ColumnName="DunningArea" />
+          <ScalarProperty Name="LastDunned" ColumnName="LastDunned" />
+          <ScalarProperty Name="ReasonCode" ColumnName="ReasonCode" />
+          <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+          <ScalarProperty Name="HeaderReference" ColumnName="HeaderReference" />
+          <ScalarProperty Name="PoNumber" ColumnName="PoNumber" />
+          <ScalarProperty Name="RefKey3" ColumnName="RefKey3" />
+          <ScalarProperty Name="CreditMemo" ColumnName="CreditMemo" />
+          <ScalarProperty Name="SalesRepCode" ColumnName="SalesRepCode" />
+          <ScalarProperty Name="SalesRepName" ColumnName="SalesRepName" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="InvoiceDescription" ColumnName="InvoiceDescription" />
+          <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+          <ScalarProperty Name="LastPaymentDate" ColumnName="LastPaymentDate" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="CurrencyType" ColumnName="CurrencyType" />
+          <ScalarProperty Name="OpenBalance" ColumnName="OpenBalance" />
+          <ScalarProperty Name="LineItem" ColumnName="LineItem" />
+          <ScalarProperty Name="FiscalYear" ColumnName="FiscalYear" />
+          <ScalarProperty Name="SapRefNumber" ColumnName="SapRefNumber" />
+          <ScalarProperty Name="InvoiceAmount" ColumnName="InvoiceAmount" />
+          <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+          <ScalarProperty Name="InvoiceStatus" ColumnName="InvoiceStatus" />
+          <ScalarProperty Name="InvoiceNumber" ColumnName="InvoiceNumber" />
+          <ScalarProperty Name="SapCustomerNumber" ColumnName="SapCustomerNumber" />
+          <ScalarProperty Name="CustomerNumber" ColumnName="CustomerNumber" />
+          <ScalarProperty Name="SourceIndicator" ColumnName="SourceIndicator" />
+          <ScalarProperty Name="CompanyCode" ColumnName="CompanyCode" />
+          <ScalarProperty Name="BatchId" ColumnName="BatchId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerInvoices">
+      <EntityTypeMapping TypeName="ProxyEntities.CustomerInvoice">
+        <MappingFragment StoreEntitySet="CustomerInvoice">
+          <ScalarProperty Name="DAGRT" ColumnName="DAGRT" />
+          <ScalarProperty Name="DunningArea" ColumnName="DunningArea" />
+          <ScalarProperty Name="LastDunned" ColumnName="LastDunned" />
+          <ScalarProperty Name="ReasonCode" ColumnName="ReasonCode" />
+          <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+          <ScalarProperty Name="HeaderReference" ColumnName="HeaderReference" />
+          <ScalarProperty Name="PoNumber" ColumnName="PoNumber" />
+          <ScalarProperty Name="RefKey3" ColumnName="RefKey3" />
+          <ScalarProperty Name="CreditMemo" ColumnName="CreditMemo" />
+          <ScalarProperty Name="SalesRepCode" ColumnName="SalesRepCode" />
+          <ScalarProperty Name="SalesRepName" ColumnName="SalesRepName" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="InvoiceDescription" ColumnName="InvoiceDescription" />
+          <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+          <ScalarProperty Name="LastPaymentDate" ColumnName="LastPaymentDate" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="CurrencyType" ColumnName="CurrencyType" />
+          <ScalarProperty Name="OpenBalance" ColumnName="OpenBalance" />
+          <ScalarProperty Name="LineItem" ColumnName="LineItem" />
+          <ScalarProperty Name="FiscalYear" ColumnName="FiscalYear" />
+          <ScalarProperty Name="SapRefNumber" ColumnName="SapRefNumber" />
+          <ScalarProperty Name="InvoiceAmount" ColumnName="InvoiceAmount" />
+          <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+          <ScalarProperty Name="InvoiceStatus" ColumnName="InvoiceStatus" />
+          <ScalarProperty Name="InvoiceNumber" ColumnName="InvoiceNumber" />
+          <ScalarProperty Name="SapCustomerNumber" ColumnName="SapCustomerNumber" />
+          <ScalarProperty Name="CustomerNumber" ColumnName="CustomerNumber" />
+          <ScalarProperty Name="SourceIndicator" ColumnName="SourceIndicator" />
+          <ScalarProperty Name="CompanyCode" ColumnName="CompanyCode" />
+          <ScalarProperty Name="BatchId" ColumnName="BatchId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="systranschemas">
+      <EntityTypeMapping TypeName="ProxyEntities.systranschema">
+        <MappingFragment StoreEntitySet="systranschemas">
+          <ScalarProperty Name="typeid" ColumnName="typeid" />
+          <ScalarProperty Name="endlsn" ColumnName="endlsn" />
+          <ScalarProperty Name="startlsn" ColumnName="startlsn" />
+          <ScalarProperty Name="tabid" ColumnName="tabid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceClaimArticleTypes">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceClaimArticleType">
+        <MappingFragment StoreEntitySet="InsuranceClaimArticleType">
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ArticleType" ColumnName="ArticleType" />
+          <ScalarProperty Name="InsuranceClaimArticleTypeId" ColumnName="InsuranceClaimArticleTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceClaimCarriers">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceClaimCarrier">
+        <MappingFragment StoreEntitySet="InsuranceClaimCarrier">
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CarrierProDate" ColumnName="CarrierProDate" />
+          <ScalarProperty Name="CarrierProNumber" ColumnName="CarrierProNumber" />
+          <ScalarProperty Name="CarrierName" ColumnName="CarrierName" />
+          <ScalarProperty Name="DlswShipDate" ColumnName="DlswShipDate" />
+          <ScalarProperty Name="DlswRefNumber" ColumnName="DlswRefNumber" />
+          <ScalarProperty Name="ClaimNumber" ColumnName="ClaimNumber" />
+          <ScalarProperty Name="InsuranceClaimCarrierId" ColumnName="InsuranceClaimCarrierId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceClaimFreights">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceClaimFreight">
+        <MappingFragment StoreEntitySet="InsuranceClaimFreight">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="ReplacementDlswChargesToCustomerValue" ColumnName="ReplacementDlswChargesToCustomerValue" />
+          <ScalarProperty Name="ReplacementCarrierChargesToDlswValue" ColumnName="ReplacementCarrierChargesToDlswValue" />
+          <ScalarProperty Name="ReturnDlswChargesToCustomerValue" ColumnName="ReturnDlswChargesToCustomerValue" />
+          <ScalarProperty Name="ReturnCarrierChargesToDlswValue" ColumnName="ReturnCarrierChargesToDlswValue" />
+          <ScalarProperty Name="OriginalFreightChargesDlswRefNumber" ColumnName="OriginalFreightChargesDlswRefNumber" />
+          <ScalarProperty Name="OriginalDlswChargesToCustomerValue" ColumnName="OriginalDlswChargesToCustomerValue" />
+          <ScalarProperty Name="OriginalCarrierChargesToDlswValue" ColumnName="OriginalCarrierChargesToDlswValue" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="SubTotalClaimValue" ColumnName="SubTotalClaimValue" />
+          <ScalarProperty Name="ReplacementFreightDlswRefNumber" ColumnName="ReplacementFreightDlswRefNumber" />
+          <ScalarProperty Name="ReplacementFreightChargesValue" ColumnName="ReplacementFreightChargesValue" />
+          <ScalarProperty Name="IsReplacementFreightCharges" ColumnName="IsReplacementFreightCharges" />
+          <ScalarProperty Name="ReturnFreightChargesDlswRefNumber" ColumnName="ReturnFreightChargesDlswRefNumber" />
+          <ScalarProperty Name="ReturnFreightChargesValue" ColumnName="ReturnFreightChargesValue" />
+          <ScalarProperty Name="IsReturnFreightCharges" ColumnName="IsReturnFreightCharges" />
+          <ScalarProperty Name="OriginalFreightChargesValue" ColumnName="OriginalFreightChargesValue" />
+          <ScalarProperty Name="IsOriginalFreightCharges" ColumnName="IsOriginalFreightCharges" />
+          <ScalarProperty Name="ClaimNumber" ColumnName="ClaimNumber" />
+          <ScalarProperty Name="InsuranceClaimFreightId" ColumnName="InsuranceClaimFreightId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceClaimItems">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceClaimItem">
+        <MappingFragment StoreEntitySet="InsuranceClaimItems">
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="UnitValue" ColumnName="UnitValue" />
+          <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+          <ScalarProperty Name="InsuranceClaimArticleTypeId" ColumnName="InsuranceClaimArticleTypeId" />
+          <ScalarProperty Name="InsuranceClaimTypeId" ColumnName="InsuranceClaimTypeId" />
+          <ScalarProperty Name="ClaimNumber" ColumnName="ClaimNumber" />
+          <ScalarProperty Name="InsuranceClaimItemsId" ColumnName="InsuranceClaimItemsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceClaimStatus">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceClaimStatu">
+        <MappingFragment StoreEntitySet="InsuranceClaimStatus">
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="StatusType" ColumnName="StatusType" />
+          <ScalarProperty Name="InsuranceClaimStatusId" ColumnName="InsuranceClaimStatusId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceClaimTypes">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceClaimType">
+        <MappingFragment StoreEntitySet="InsuranceClaimType">
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Claimtype" ColumnName="Claimtype" />
+          <ScalarProperty Name="InsuranceClaimTypeId" ColumnName="InsuranceClaimTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="ProxyEntities.Country">
+        <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DocumentTypes">
+      <EntityTypeMapping TypeName="ProxyEntities.DocumentType">
+        <MappingFragment StoreEntitySet="DocumentType">
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DocumentType1" ColumnName="DocumentType" />
+          <ScalarProperty Name="DocumentId" ColumnName="DocumentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceClaimConsigneeAddresses">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceClaimConsigneeAddress">
+        <MappingFragment StoreEntitySet="InsuranceClaimConsigneeAddress">
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ClaimNumber" ColumnName="ClaimNumber" />
+          <ScalarProperty Name="InsuranceClaimConsigneeAddressId" ColumnName="InsuranceClaimConsigneeAddressId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceClaimPayableToes">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceClaimPayableTo">
+        <MappingFragment StoreEntitySet="InsuranceClaimPayableTo">
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CompanyWebsite" ColumnName="CompanyWebsite" />
+          <ScalarProperty Name="ContactEmail" ColumnName="ContactEmail" />
+          <ScalarProperty Name="ContactPhone" ColumnName="ContactPhone" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="ClaimNumber" ColumnName="ClaimNumber" />
+          <ScalarProperty Name="InsuranceClaimPayableToId" ColumnName="InsuranceClaimPayableToId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceClaimShipperAddresses">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceClaimShipperAddress">
+        <MappingFragment StoreEntitySet="InsuranceClaimShipperAddress">
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ClaimNumber" ColumnName="ClaimNumber" />
+          <ScalarProperty Name="InsuranceClaimShipperAddressId" ColumnName="InsuranceClaimShipperAddressId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Batches">
+      <EntityTypeMapping TypeName="ProxyEntities.Batch">
+        <MappingFragment StoreEntitySet="Batch">
+          <ScalarProperty Name="Exceptions" ColumnName="Exceptions" />
+          <ScalarProperty Name="CreatedOnUtc" ColumnName="CreatedOnUtc" />
+          <ScalarProperty Name="TotalRows" ColumnName="TotalRows" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ApplicationConfigurations">
+      <EntityTypeMapping TypeName="ProxyEntities.ApplicationConfiguration">
+        <MappingFragment StoreEntitySet="ApplicationConfiguration">
+          <ScalarProperty Name="FieldValue" ColumnName="FieldValue" />
+          <ScalarProperty Name="FieldKey" ColumnName="FieldKey" />
+          <ScalarProperty Name="ApplicationConfigurationId" ColumnName="ApplicationConfigurationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomReportCustomerMappings">
+      <EntityTypeMapping TypeName="ProxyEntities.CustomReportCustomerMapping">
+        <MappingFragment StoreEntitySet="CustomReportCustomerMapping">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CustomerSetupId" ColumnName="CustomerSetupId" />
+          <ScalarProperty Name="InvoiceCustomReportId" ColumnName="InvoiceCustomReportId" />
+          <ScalarProperty Name="CustomReportCustomerMappingId" ColumnName="CustomReportCustomerMappingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomReportStationMappings">
+      <EntityTypeMapping TypeName="ProxyEntities.CustomReportStationMapping">
+        <MappingFragment StoreEntitySet="CustomReportStationMapping">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="StationId" ColumnName="StationId" />
+          <ScalarProperty Name="InvoiceCustomReportId" ColumnName="InvoiceCustomReportId" />
+          <ScalarProperty Name="CustomReportStationMappingId" ColumnName="CustomReportStationMappingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvoiceCustomReports">
+      <EntityTypeMapping TypeName="ProxyEntities.InvoiceCustomReport">
+        <MappingFragment StoreEntitySet="InvoiceCustomReport">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsScheduled" ColumnName="IsScheduled" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="InvoiceRangeTypeId" ColumnName="InvoiceRangeTypeId" />
+          <ScalarProperty Name="InvoiceValue" ColumnName="InvoiceValue" />
+          <ScalarProperty Name="DaysPastDue" ColumnName="DaysPastDue" />
+          <ScalarProperty Name="InvoiceTypeId" ColumnName="InvoiceTypeId" />
+          <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+          <ScalarProperty Name="CustomReportName" ColumnName="CustomReportName" />
+          <ScalarProperty Name="InvoiceCustomReportId" ColumnName="InvoiceCustomReportId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvoiceRangeTypes">
+      <EntityTypeMapping TypeName="ProxyEntities.InvoiceRangeType">
+        <MappingFragment StoreEntitySet="InvoiceRangeType">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="InvoiceRangeTypeName" ColumnName="InvoiceRangeTypeName" />
+          <ScalarProperty Name="InvoiceRangeTypeId" ColumnName="InvoiceRangeTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvoiceTypes">
+      <EntityTypeMapping TypeName="ProxyEntities.InvoiceType">
+        <MappingFragment StoreEntitySet="InvoiceType">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="InvoiceTypeName" ColumnName="InvoiceTypeName" />
+          <ScalarProperty Name="InvoiceTypeId" ColumnName="InvoiceTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MonthlyScheduledReports">
+      <EntityTypeMapping TypeName="ProxyEntities.MonthlyScheduledReport">
+        <MappingFragment StoreEntitySet="MonthlyScheduledReport">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="MonthlyReportTime" ColumnName="MonthlyReportTime" />
+          <ScalarProperty Name="DayOfMonth" ColumnName="DayOfMonth" />
+          <ScalarProperty Name="WeekDay" ColumnName="WeekDay" />
+          <ScalarProperty Name="Week" ColumnName="Week" />
+          <ScalarProperty Name="Months" ColumnName="Months" />
+          <ScalarProperty Name="ScheduledReportId" ColumnName="ScheduledReportId" />
+          <ScalarProperty Name="MonthlyScheduledReportId" ColumnName="MonthlyScheduledReportId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReportFrequencies">
+      <EntityTypeMapping TypeName="ProxyEntities.ReportFrequency">
+        <MappingFragment StoreEntitySet="ReportFrequency">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ReportFrequencyValue" ColumnName="ReportFrequencyValue" />
+          <ScalarProperty Name="ReportFrequencyId" ColumnName="ReportFrequencyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScheduledReports">
+      <EntityTypeMapping TypeName="ProxyEntities.ScheduledReport">
+        <MappingFragment StoreEntitySet="ScheduledReport">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="EmailBody" ColumnName="EmailBody" />
+          <ScalarProperty Name="EmailSubject" ColumnName="EmailSubject" />
+          <ScalarProperty Name="ReportFormat" ColumnName="ReportFormat" />
+          <ScalarProperty Name="EmailReplyTo" ColumnName="EmailReplyTo" />
+          <ScalarProperty Name="EmailCC" ColumnName="EmailCC" />
+          <ScalarProperty Name="EmailTo" ColumnName="EmailTo" />
+          <ScalarProperty Name="NextRunDate" ColumnName="NextRunDate" />
+          <ScalarProperty Name="ReportFrequencyId" ColumnName="ReportFrequencyId" />
+          <ScalarProperty Name="InvoiceCustomReportId" ColumnName="InvoiceCustomReportId" />
+          <ScalarProperty Name="ScheduledReportId" ColumnName="ScheduledReportId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WeeklyScheduledReports">
+      <EntityTypeMapping TypeName="ProxyEntities.WeeklyScheduledReport">
+        <MappingFragment StoreEntitySet="WeeklyScheduledReport">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="WeeklyReportTime" ColumnName="WeeklyReportTime" />
+          <ScalarProperty Name="WeekDay" ColumnName="WeekDay" />
+          <ScalarProperty Name="ScheduledReportId" ColumnName="ScheduledReportId" />
+          <ScalarProperty Name="WeeklyScheduledReportId" ColumnName="WeeklyScheduledReportId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceClaimReasonCodes">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceClaimReasonCode">
+        <MappingFragment StoreEntitySet="InsuranceClaimReasonCodes">
+          <ScalarProperty Name="InsuranceClaimReasonCode1" ColumnName="InsuranceClaimReasonCode" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="InsuranceClaimReasonCodeId" ColumnName="InsuranceClaimReasonCodeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceClaimReps">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceClaimRep">
+        <MappingFragment StoreEntitySet="InsuranceClaimRep">
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="InsuranceClaimRepName" ColumnName="InsuranceClaimRepName" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="InsuranceClaimRepId" ColumnName="InsuranceClaimRepId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AccessTypes">
+      <EntityTypeMapping TypeName="ProxyEntities.AccessType">
+        <MappingFragment StoreEntitySet="AccessType">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="AccessTypeName" ColumnName="AccessTypeName" />
+          <ScalarProperty Name="AccessTypeId" ColumnName="AccessTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IntegrationUsers">
+      <EntityTypeMapping TypeName="ProxyEntities.IntegrationUser">
+        <MappingFragment StoreEntitySet="IntegrationUser">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IntegrationApiKey" ColumnName="IntegrationApiKey" />
+          <ScalarProperty Name="IntegrationUserName" ColumnName="IntegrationUserName" />
+          <ScalarProperty Name="IntegrationUserId" ColumnName="IntegrationUserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IntegrationUserAccessMappings">
+      <EntityTypeMapping TypeName="ProxyEntities.IntegrationUserAccessMapping">
+        <MappingFragment StoreEntitySet="IntegrationUserAccessMapping">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="AccessTypeId" ColumnName="AccessTypeId" />
+          <ScalarProperty Name="IntegrationUserId" ColumnName="IntegrationUserId" />
+          <ScalarProperty Name="IntegrationUserAccessMappingId" ColumnName="IntegrationUserAccessMappingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceCarrierOsdActions">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceCarrierOsdAction">
+        <MappingFragment StoreEntitySet="InsuranceCarrierOsdActions">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CarrierClaimNumber" ColumnName="CarrierClaimNumber" />
+          <ScalarProperty Name="CarrierAckDate" ColumnName="CarrierAckDate" />
+          <ScalarProperty Name="CarrierAck" ColumnName="CarrierAck" />
+          <ScalarProperty Name="ClaimNumber" ColumnName="ClaimNumber" />
+          <ScalarProperty Name="InsuranceCarrierOsdActionsId" ColumnName="InsuranceCarrierOsdActionsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceClaimCompanies">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceClaimCompany">
+        <MappingFragment StoreEntitySet="InsuranceClaimCompany">
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="InsuranceClaimCompanyName" ColumnName="InsuranceClaimCompanyName" />
+          <ScalarProperty Name="InsuranceClaimCompanyId" ColumnName="InsuranceClaimCompanyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceClaimPrograms">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceClaimProgram">
+        <MappingFragment StoreEntitySet="InsuranceClaimProgram">
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="InsuranceClaimProgramName" ColumnName="InsuranceClaimProgramName" />
+          <ScalarProperty Name="InsuranceClaimProgramId" ColumnName="InsuranceClaimProgramId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceDlswOsdActions">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceDlswOsdAction">
+        <MappingFragment StoreEntitySet="InsuranceDlswOsdActions">
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CycleTime" ColumnName="CycleTime" />
+          <ScalarProperty Name="DateFiledWithCarrier" ColumnName="DateFiledWithCarrier" />
+          <ScalarProperty Name="DateAckToClaimant" ColumnName="DateAckToClaimant" />
+          <ScalarProperty Name="ClaimNumber" ColumnName="ClaimNumber" />
+          <ScalarProperty Name="InsuranceDlswOsdActionsId" ColumnName="InsuranceDlswOsdActionsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InusranceFtlModes">
+      <EntityTypeMapping TypeName="ProxyEntities.InusranceFtlMode">
+        <MappingFragment StoreEntitySet="InusranceFtlMode">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Vehicle" ColumnName="Vehicle" />
+          <ScalarProperty Name="SealIntact" ColumnName="SealIntact" />
+          <ScalarProperty Name="Seal" ColumnName="Seal" />
+          <ScalarProperty Name="CarrierMcNumber" ColumnName="CarrierMcNumber" />
+          <ScalarProperty Name="ClaimNumber" ColumnName="ClaimNumber" />
+          <ScalarProperty Name="InusranceFtlModeId" ColumnName="InusranceFtlModeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceCarrierLists">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceCarrierList">
+        <MappingFragment StoreEntitySet="InsuranceCarrierList">
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="InsuranceCarrierName" ColumnName="InsuranceCarrierName" />
+          <ScalarProperty Name="InsuranceCarrierId" ColumnName="InsuranceCarrierId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceForwardingModes">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceForwardingMode">
+        <MappingFragment StoreEntitySet="InsuranceForwardingMode">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="WhiteGloveAgent" ColumnName="WhiteGloveAgent" />
+          <ScalarProperty Name="FreightForwarder" ColumnName="FreightForwarder" />
+          <ScalarProperty Name="DeliveryCarrier" ColumnName="DeliveryCarrier" />
+          <ScalarProperty Name="PickupCarrier" ColumnName="PickupCarrier" />
+          <ScalarProperty Name="SteamshipLine" ColumnName="SteamshipLine" />
+          <ScalarProperty Name="Airline" ColumnName="Airline" />
+          <ScalarProperty Name="ClaimNumber" ColumnName="ClaimNumber" />
+          <ScalarProperty Name="InsuranceForwardingModeId" ColumnName="InsuranceForwardingModeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cookies">
+      <EntityTypeMapping TypeName="ProxyEntities.Cookie">
+        <MappingFragment StoreEntitySet="Cookie">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Purpose" ColumnName="Purpose" />
+          <ScalarProperty Name="Lifespan" ColumnName="Lifespan" />
+          <ScalarProperty Name="PartTypeId" ColumnName="PartTypeId" />
+          <ScalarProperty Name="CookieCategoryId" ColumnName="CookieCategoryId" />
+          <ScalarProperty Name="CookieName" ColumnName="CookieName" />
+          <ScalarProperty Name="CookieId" ColumnName="CookieId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CookieCategories">
+      <EntityTypeMapping TypeName="ProxyEntities.CookieCategory">
+        <MappingFragment StoreEntitySet="CookieCategory">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CookieCategoryName" ColumnName="CookieCategoryName" />
+          <ScalarProperty Name="CookieCategoryId" ColumnName="CookieCategoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PartTypes">
+      <EntityTypeMapping TypeName="ProxyEntities.PartType">
+        <MappingFragment StoreEntitySet="PartType">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PartTypeName" ColumnName="PartTypeName" />
+          <ScalarProperty Name="PartTypeId" ColumnName="PartTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CsrCustomerAccounts">
+      <EntityTypeMapping TypeName="ProxyEntities.CsrCustomerAccount">
+        <MappingFragment StoreEntitySet="CsrCustomerAccount">
+          <ScalarProperty Name="AdditionalAccountSetupNotes" ColumnName="AdditionalAccountSetupNotes" />
+          <ScalarProperty Name="SalesRepUserName" ColumnName="SalesRepUserName" />
+          <ScalarProperty Name="IsSalesCodeNew" ColumnName="IsSalesCodeNew" />
+          <ScalarProperty Name="SalesCode" ColumnName="SalesCode" />
+          <ScalarProperty Name="BolContactPhone" ColumnName="BolContactPhone" />
+          <ScalarProperty Name="EnterpriseType" ColumnName="EnterpriseType" />
+          <ScalarProperty Name="SpecialInstructions" ColumnName="SpecialInstructions" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="SalesRep" ColumnName="SalesRep" />
+          <ScalarProperty Name="StationName" ColumnName="StationName" />
+          <ScalarProperty Name="StationId" ColumnName="StationId" />
+          <ScalarProperty Name="IsStation" ColumnName="IsStation" />
+          <ScalarProperty Name="ShipmentDocumentType" ColumnName="ShipmentDocumentType" />
+          <ScalarProperty Name="CsaCustomerNumber" ColumnName="CsaCustomerNumber" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CustomerStationEmail" ColumnName="CustomerStationEmail" />
+          <ScalarProperty Name="TmsSystem" ColumnName="TmsSystem" />
+          <ScalarProperty Name="CustomerSetUpId" ColumnName="CustomerSetUpId" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IntegrationRequests">
+      <EntityTypeMapping TypeName="ProxyEntities.IntegrationRequest">
+        <MappingFragment StoreEntitySet="IntegrationRequest">
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IntegrationTeamTotalHours" ColumnName="IntegrationTeamTotalHours" />
+          <ScalarProperty Name="MgOrCsaTotalHours" ColumnName="MgOrCsaTotalHours" />
+          <ScalarProperty Name="PotentialRevenue" ColumnName="PotentialRevenue" />
+          <ScalarProperty Name="YearToDateRevenue" ColumnName="YearToDateRevenue" />
+          <ScalarProperty Name="YearToDateShipments" ColumnName="YearToDateShipments" />
+          <ScalarProperty Name="AdditionalComments" ColumnName="AdditionalComments" />
+          <ScalarProperty Name="ITOrDevContactEmail" ColumnName="ITOrDevContactEmail" />
+          <ScalarProperty Name="ITOrDevContactPhone" ColumnName="ITOrDevContactPhone" />
+          <ScalarProperty Name="ITOrDevContactName" ColumnName="ITOrDevContactName" />
+          <ScalarProperty Name="CompanyContactEmail" ColumnName="CompanyContactEmail" />
+          <ScalarProperty Name="CompanyContactPhone" ColumnName="CompanyContactPhone" />
+          <ScalarProperty Name="CompanyContactName" ColumnName="CompanyContactName" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="StationName" ColumnName="StationName" />
+          <ScalarProperty Name="StationId" ColumnName="StationId" />
+          <ScalarProperty Name="IntegrationStageId" ColumnName="IntegrationStageId" />
+          <ScalarProperty Name="IntegrationStatusId" ColumnName="IntegrationStatusId" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="IntegrationRequestId" ColumnName="IntegrationRequestId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerDocumentDirectoryUrlMappings">
+      <EntityTypeMapping TypeName="ProxyEntities.CustomerDocumentDirectoryUrlMapping">
+        <MappingFragment StoreEntitySet="CustomerDocumentDirectoryUrlMapping">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DocumentDirectoryUrl" ColumnName="DocumentDirectoryUrl" />
+          <ScalarProperty Name="CustomerSetupId" ColumnName="CustomerSetupId" />
+          <ScalarProperty Name="CustomerDocumentDirectoryUrlMappingId" ColumnName="CustomerDocumentDirectoryUrlMappingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="ProxyEntities.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsConfigurable" ColumnName="IsConfigurable" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceClaimCarrierCopies">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceClaimCarrierCopy">
+        <MappingFragment StoreEntitySet="InsuranceClaimCarrierCopy">
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CarrierProDate" ColumnName="CarrierProDate" />
+          <ScalarProperty Name="CarrierProNumber" ColumnName="CarrierProNumber" />
+          <ScalarProperty Name="CarrierName" ColumnName="CarrierName" />
+          <ScalarProperty Name="DlswShipDate" ColumnName="DlswShipDate" />
+          <ScalarProperty Name="DlswRefNumber" ColumnName="DlswRefNumber" />
+          <ScalarProperty Name="ClaimNumber" ColumnName="ClaimNumber" />
+          <ScalarProperty Name="InsuranceClaimCarrierId" ColumnName="InsuranceClaimCarrierId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceClaimConsigneeAddressCopies">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceClaimConsigneeAddressCopy">
+        <MappingFragment StoreEntitySet="InsuranceClaimConsigneeAddressCopy">
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ClaimNumber" ColumnName="ClaimNumber" />
+          <ScalarProperty Name="InsuranceClaimConsigneeAddressId" ColumnName="InsuranceClaimConsigneeAddressId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceClaimFreightCopies">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceClaimFreightCopy">
+        <MappingFragment StoreEntitySet="InsuranceClaimFreightCopy">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="ReplacementDlswChargesToCustomerValue" ColumnName="ReplacementDlswChargesToCustomerValue" />
+          <ScalarProperty Name="ReplacementCarrierChargesToDlswValue" ColumnName="ReplacementCarrierChargesToDlswValue" />
+          <ScalarProperty Name="ReturnDlswChargesToCustomerValue" ColumnName="ReturnDlswChargesToCustomerValue" />
+          <ScalarProperty Name="ReturnCarrierChargesToDlswValue" ColumnName="ReturnCarrierChargesToDlswValue" />
+          <ScalarProperty Name="OriginalFreightChargesDlswRefNumber" ColumnName="OriginalFreightChargesDlswRefNumber" />
+          <ScalarProperty Name="OriginalDlswChargesToCustomerValue" ColumnName="OriginalDlswChargesToCustomerValue" />
+          <ScalarProperty Name="OriginalCarrierChargesToDlswValue" ColumnName="OriginalCarrierChargesToDlswValue" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="SubTotalClaimValue" ColumnName="SubTotalClaimValue" />
+          <ScalarProperty Name="ReplacementFreightDlswRefNumber" ColumnName="ReplacementFreightDlswRefNumber" />
+          <ScalarProperty Name="ReplacementFreightChargesValue" ColumnName="ReplacementFreightChargesValue" />
+          <ScalarProperty Name="IsReplacementFreightCharges" ColumnName="IsReplacementFreightCharges" />
+          <ScalarProperty Name="ReturnFreightChargesDlswRefNumber" ColumnName="ReturnFreightChargesDlswRefNumber" />
+          <ScalarProperty Name="ReturnFreightChargesValue" ColumnName="ReturnFreightChargesValue" />
+          <ScalarProperty Name="IsReturnFreightCharges" ColumnName="IsReturnFreightCharges" />
+          <ScalarProperty Name="OriginalFreightChargesValue" ColumnName="OriginalFreightChargesValue" />
+          <ScalarProperty Name="IsOriginalFreightCharges" ColumnName="IsOriginalFreightCharges" />
+          <ScalarProperty Name="ClaimNumber" ColumnName="ClaimNumber" />
+          <ScalarProperty Name="InsuranceClaimFreightId" ColumnName="InsuranceClaimFreightId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceClaimHistories">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceClaimHistory">
+        <MappingFragment StoreEntitySet="InsuranceClaimHistory">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UserFullName" ColumnName="UserFullName" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="ClaimNumber" ColumnName="ClaimNumber" />
+          <ScalarProperty Name="InsuranceClaimHistoryId" ColumnName="InsuranceClaimHistoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceClaimItemsCopies">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceClaimItemsCopy">
+        <MappingFragment StoreEntitySet="InsuranceClaimItemsCopy">
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="UnitValue" ColumnName="UnitValue" />
+          <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+          <ScalarProperty Name="InsuranceClaimArticleTypeId" ColumnName="InsuranceClaimArticleTypeId" />
+          <ScalarProperty Name="InsuranceClaimTypeId" ColumnName="InsuranceClaimTypeId" />
+          <ScalarProperty Name="ClaimNumber" ColumnName="ClaimNumber" />
+          <ScalarProperty Name="InsuranceClaimItemsId" ColumnName="InsuranceClaimItemsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceClaimPayableToCopies">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceClaimPayableToCopy">
+        <MappingFragment StoreEntitySet="InsuranceClaimPayableToCopy">
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CompanyWebsite" ColumnName="CompanyWebsite" />
+          <ScalarProperty Name="ContactEmail" ColumnName="ContactEmail" />
+          <ScalarProperty Name="ContactPhone" ColumnName="ContactPhone" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="ClaimNumber" ColumnName="ClaimNumber" />
+          <ScalarProperty Name="InsuranceClaimPayableToId" ColumnName="InsuranceClaimPayableToId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceClaimPayments">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceClaimPayment">
+        <MappingFragment StoreEntitySet="InsuranceClaimPayment">
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="CheckDate" ColumnName="CheckDate" />
+          <ScalarProperty Name="CheckNumber" ColumnName="CheckNumber" />
+          <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+          <ScalarProperty Name="PaymentAmount" ColumnName="PaymentAmount" />
+          <ScalarProperty Name="InsuranceClaimPaymentTypeId" ColumnName="InsuranceClaimPaymentTypeId" />
+          <ScalarProperty Name="ClaimNumber" ColumnName="ClaimNumber" />
+          <ScalarProperty Name="InsuranceClaimPaymentId" ColumnName="InsuranceClaimPaymentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceClaimPaymentTypes">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceClaimPaymentType">
+        <MappingFragment StoreEntitySet="InsuranceClaimPaymentType">
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+          <ScalarProperty Name="InsuranceClaimPaymentTypeId" ColumnName="InsuranceClaimPaymentTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceClaimShipperAddressCopies">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceClaimShipperAddressCopy">
+        <MappingFragment StoreEntitySet="InsuranceClaimShipperAddressCopy">
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ClaimNumber" ColumnName="ClaimNumber" />
+          <ScalarProperty Name="InsuranceClaimShipperAddressId" ColumnName="InsuranceClaimShipperAddressId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AccessorialDirections">
+      <EntityTypeMapping TypeName="ProxyEntities.AccessorialDirection">
+        <MappingFragment StoreEntitySet="AccessorialDirection">
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Direction" ColumnName="Direction" />
+          <ScalarProperty Name="AccessorialDirectionId" ColumnName="AccessorialDirectionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AccessorialMGDescriptions">
+      <EntityTypeMapping TypeName="ProxyEntities.AccessorialMGDescription">
+        <MappingFragment StoreEntitySet="AccessorialMGDescription">
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="MGDescription" ColumnName="MGDescription" />
+          <ScalarProperty Name="AccessorialSetupId" ColumnName="AccessorialSetupId" />
+          <ScalarProperty Name="AccessorialMGDescriptionId" ColumnName="AccessorialMGDescriptionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AccessorialServiceTypeMappings">
+      <EntityTypeMapping TypeName="ProxyEntities.AccessorialServiceTypeMapping">
+        <MappingFragment StoreEntitySet="AccessorialServiceTypeMapping">
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ServiceId" ColumnName="ServiceId" />
+          <ScalarProperty Name="AccessorialSetupId" ColumnName="AccessorialSetupId" />
+          <ScalarProperty Name="AccessorialServiceTypeMappingId" ColumnName="AccessorialServiceTypeMappingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CarrierAndAccessorialThresholdMappings">
+      <EntityTypeMapping TypeName="ProxyEntities.CarrierAndAccessorialThresholdMapping">
+        <MappingFragment StoreEntitySet="CarrierAndAccessorialThresholdMapping">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ThresholdValue" ColumnName="ThresholdValue" />
+          <ScalarProperty Name="AccessorialSetupId" ColumnName="AccessorialSetupId" />
+          <ScalarProperty Name="CarrierDetailsId" ColumnName="CarrierDetailsId" />
+          <ScalarProperty Name="CarrierAndAccessorialThresholdId" ColumnName="CarrierAndAccessorialThresholdId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerShippingReferences">
+      <EntityTypeMapping TypeName="ProxyEntities.CustomerShippingReference">
+        <MappingFragment StoreEntitySet="CustomerShippingReferences">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ReferenceTypeValueId" ColumnName="ReferenceTypeValueId" />
+          <ScalarProperty Name="CustomerSetUpId" ColumnName="CustomerSetUpId" />
+          <ScalarProperty Name="CustomerShippingReferencesId" ColumnName="CustomerShippingReferencesId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DagrtNumberLookups">
+      <EntityTypeMapping TypeName="ProxyEntities.DagrtNumberLookup">
+        <MappingFragment StoreEntitySet="DagrtNumberLookup">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DagrtNumber" ColumnName="DagrtNumber" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="DagrtNumberLookupId" ColumnName="DagrtNumberLookupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GainshareCostingTypes">
+      <EntityTypeMapping TypeName="ProxyEntities.GainshareCostingType">
+        <MappingFragment StoreEntitySet="GainshareCostingTypes">
+          <ScalarProperty Name="GainshareType" ColumnName="GainshareType" />
+          <ScalarProperty Name="GainshareCostingTypeId" ColumnName="GainshareCostingTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CreditHoldHistories">
+      <EntityTypeMapping TypeName="ProxyEntities.CreditHoldHistory">
+        <MappingFragment StoreEntitySet="CreditHoldHistory">
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="CustomerSetupId" ColumnName="CustomerSetupId" />
+          <ScalarProperty Name="CreditHoldHistoryId" ColumnName="CreditHoldHistoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerRatingLogicAudits">
+      <EntityTypeMapping TypeName="ProxyEntities.CustomerRatingLogicAudit">
+        <MappingFragment StoreEntitySet="CustomerRatingLogicAudit">
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="NewRatingLogicValue" ColumnName="NewRatingLogicValue" />
+          <ScalarProperty Name="OldRatingLogicValue" ColumnName="OldRatingLogicValue" />
+          <ScalarProperty Name="CustomerAccountId" ColumnName="CustomerAccountId" />
+          <ScalarProperty Name="CustomerRatingLogicAuditID" ColumnName="CustomerRatingLogicAuditID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceClaims">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceClaim">
+        <MappingFragment StoreEntitySet="InsuranceClaim">
+          <ScalarProperty Name="CustomerClaimReferenceNumber" ColumnName="CustomerClaimReferenceNumber" />
+          <ScalarProperty Name="OutstandingAmount" ColumnName="OutstandingAmount" />
+          <ScalarProperty Name="TotalShipmentWeight" ColumnName="TotalShipmentWeight" />
+          <ScalarProperty Name="InsuranceClaimCompanyId" ColumnName="InsuranceClaimCompanyId" />
+          <ScalarProperty Name="InsuranceClaimProgramId" ColumnName="InsuranceClaimProgramId" />
+          <ScalarProperty Name="InsuranceClaimRepId" ColumnName="InsuranceClaimRepId" />
+          <ScalarProperty Name="InsuranceClaimReasonCodeId" ColumnName="InsuranceClaimReasonCodeId" />
+          <ScalarProperty Name="ShipmentMode" ColumnName="ShipmentMode" />
+          <ScalarProperty Name="CustomerSetUpId" ColumnName="CustomerSetUpId" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="InsuredValueAmount" ColumnName="InsuredValueAmount" />
+          <ScalarProperty Name="IsArticlesInsured" ColumnName="IsArticlesInsured" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="InsuranceClaimStatusId" ColumnName="InsuranceClaimStatusId" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="ClaimNumber" ColumnName="ClaimNumber" />
+          <ScalarProperty Name="InsuranceClaimId" ColumnName="InsuranceClaimId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsuranceClaimCopies">
+      <EntityTypeMapping TypeName="ProxyEntities.InsuranceClaimCopy">
+        <MappingFragment StoreEntitySet="InsuranceClaimCopy">
+          <ScalarProperty Name="CustomerClaimReferenceNumber" ColumnName="CustomerClaimReferenceNumber" />
+          <ScalarProperty Name="InsuranceClaimCompanyId" ColumnName="InsuranceClaimCompanyId" />
+          <ScalarProperty Name="InsuranceClaimProgramId" ColumnName="InsuranceClaimProgramId" />
+          <ScalarProperty Name="TotalShipmentWeight" ColumnName="TotalShipmentWeight" />
+          <ScalarProperty Name="InsuranceClaimRepId" ColumnName="InsuranceClaimRepId" />
+          <ScalarProperty Name="InsuranceClaimReasonCodeId" ColumnName="InsuranceClaimReasonCodeId" />
+          <ScalarProperty Name="ShipmentMode" ColumnName="ShipmentMode" />
+          <ScalarProperty Name="CustomerSetUpId" ColumnName="CustomerSetUpId" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="InsuredValueAmount" ColumnName="InsuredValueAmount" />
+          <ScalarProperty Name="IsArticlesInsured" ColumnName="IsArticlesInsured" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="InsuranceClaimStatusId" ColumnName="InsuranceClaimStatusId" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="ClaimNumber" ColumnName="ClaimNumber" />
+          <ScalarProperty Name="InsuranceClaimId" ColumnName="InsuranceClaimId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

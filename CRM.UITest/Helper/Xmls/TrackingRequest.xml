@@ -1,0 +1,8 @@
+<service-request>
+	<service-id>ExtractTr</service-id>
+	<request-id>123456789</request-id>
+	<timing>true</timing>    
+	<data>
+		<oid>194806075071</oid>
+	</data>
+</service-request>

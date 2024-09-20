@@ -1,0 +1,10 @@
+<service-request>
+  <service-id>OidLookup</service-id>
+  <request-id>123456789</request-id>
+  <timing>true</timing>    
+  <data>
+    <objectType>shipment</objectType>
+    <searchBy>reference</searchBy>
+    <searchValue>ZZX002015845</searchValue>
+  </data>
+</service-request>

@@ -1,0 +1,9 @@
+<service-request>
+	<service-id>ExtractDocuments</service-id>
+	<request-id>123456789</request-id>
+	<timing>true</timing>    
+	<data>
+		<oid>194806075071</oid>
+		<documentType>Printable Document</documentType>
+	</data>
+</service-request>

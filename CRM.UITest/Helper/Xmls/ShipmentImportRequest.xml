@@ -1,0 +1,189 @@
+<service-request>
+  <service-id>ImportWeb</service-id>
+  <request-id>123456789</request-id>
+  <timing>true</timing>
+  <data>
+    <WebImport>
+      <WebImportHeader>
+        <FileName>QuoteImport</FileName>
+        <Type>WebShXML4</Type>
+        <UserName>ZZSANDWSID</UserName>
+      </WebImportHeader>
+      <WebImportFile>
+        <MercuryGate>
+          <Header>
+            <SenderID />
+            <ReceiverID />
+            <Action>Add</Action>
+            <DocCount>1</DocCount>
+            <DocTypeID>Shipment</DocTypeID>
+            <Date type="generation">12/21/2015 10:10</Date>
+          </Header>
+          <Shipment type="LTL" action="UpdateOrAdd">
+            <Status>Pending</Status>
+            <Enterprise name="ZZZ Sandbox DLS Worldwide" />
+            <ReferenceNumbers>
+              <ReferenceNumber type="SCAC" isPrimary="false">MTUS</ReferenceNumber>
+              <ReferenceNumber type="QuoteNumber" isPrimary="true">QTWBT5691234</ReferenceNumber>
+              <ReferenceNumber type="SubmittedBy" isPrimary="false">Thaneer</ReferenceNumber>
+            </ReferenceNumbers>
+            <ServiceList>
+              <ServiceCode>GLTL</ServiceCode>
+            </ServiceList>
+            <EquipmentList />
+            <Comments>
+              <Comment type="SpecialInstructions"></Comment>
+            </Comments>
+            <Dates>
+              <Pickup>
+                <Date type="earliest">09/25/2016 00:00</Date>
+              </Pickup>
+              <Drop>
+                <Date type="earliest">09/30/2016 00:00</Date>
+              </Drop>
+            </Dates>
+				<PriceSheets>
+				  <PriceSheet type="Customer" chargeModel="NORMALIZED_NON_SMC" isSelected="true" isAllocated="false" currencyCode="USD" createDate="05/09/2016 14:26" internalId="">
+					 <AccessorialTotal>424.93</AccessorialTotal>
+					 <SubTotal>4690.71</SubTotal>
+					 <Total>5115.64</Total>
+					 <NormalizedTotal currencyCode="USD">5115.64</NormalizedTotal>
+					 <SCAC>MTUS</SCAC>
+					 <Mode>TL</Mode>
+					 <Service>Standard</Service>
+					 <ServiceDays>0.0</ServiceDays>
+					 <Distance>2360.7</Distance>
+					 <Id>1236181</Id>
+					 <InsuranceTypes>
+						<Insurance type="Cargo" amount="250000.00" company="TRAVELERS" expirationDate="06/15/2016 00:00" contactName="AON RISK" contactPhone="920-437-7123"/>
+						<Insurance type="General" amount="1000000.00" company="WEST AMERICAN INS CO" expirationDate="06/15/2016 00:00" contactName="AON RISK" contactPhone="920-437-7123"/>
+						<Insurance type="Liability" amount="1000000.00" company="OHIO SECURITY INS CO" expirationDate="06/15/2016 00:00" contactName="AON RISK" contactPhone="920-437-7123"/>
+					 </InsuranceTypes>
+					 <Address type="" isResidential="false" isPrimary="false">
+						<LocationCode>MC405692</LocationCode>
+						<Alias>MC405692</Alias>
+						<Name>M2 LOGISTICS INC</Name>
+						<AddrLine1>2413 HAZELWOOD LN</AddrLine1>
+						<AddrLine2/>
+						<City>GREEN BAY</City>
+						<StateProvince>WI</StateProvince>
+						<PostalCode>54304</PostalCode>
+						<CountryCode>USA</CountryCode>
+						<GeoLoc latDegrees="0" latDirection="E" longDegrees="0" longDirection="W"/>
+						<Contacts>
+						   <Contact type="" oid="192014081234">
+							  <Name>DISPATCH</Name>
+							  <ContactMethods>
+								 <ContactMethod sequenceNum="1" type="Phone">920-569-8800</ContactMethod>
+								 <ContactMethod sequenceNum="2" type="Fax">920-569-8801</ContactMethod>
+							  </ContactMethods>
+						   </Contact>
+						</Contacts>
+						<Comments/>
+					 </Address>
+					 <ReasonCode/>
+					 <Status/>
+					 <LaneID/>
+					 <Zone/>
+					 <RouteGuidePriority/>
+					 <CarrierLocationOid/>
+					 <OriginService/>
+					 <DestinationService/>
+					 <Charges>
+						<Charge sequenceNum="1" type="ITEM" itemGroupId="1">
+						   <Description>total weight and volume based</Description>
+						   <EdiCode/>
+						   <Amount>4690.71</Amount>
+						   <Rate>1.99</Rate>
+						   <RateQualifier>PM</RateQualifier>
+						   <Quantity>2360.7</Quantity>
+						   <Weight>34.0</Weight>
+						   <DimWeight>0.0</DimWeight>
+						   <FreightClass>70.0</FreightClass>
+						   <FakFreightClass>0.0</FakFreightClass>
+						   <IsMin>false</IsMin>
+						   <IsMax>false</IsMax>
+						   <IsNontaxable>false</IsNontaxable>
+						</Charge>
+						<Charge sequenceNum="2" type="ACCESSORIAL_FUEL" itemGroupId="">
+						   <Description>Fuel Surcharge (Mileage)</Description>
+						   <EdiCode>FSC</EdiCode>
+						   <Amount>424.93</Amount>
+						   <Rate>0.18</Rate>
+						   <RateQualifier>PM</RateQualifier>
+						   <Quantity>2360.7</Quantity>
+						   <Weight>0.0</Weight>
+						   <DimWeight>0.0</DimWeight>
+						   <FreightClass>0.0</FreightClass>
+						   <FakFreightClass>0.0</FakFreightClass>
+						   <IsMin>false</IsMin>
+						   <IsMax>false</IsMax>
+						   <IsNontaxable>false</IsNontaxable>
+						</Charge>
+					 </Charges>
+					 <AdjustedBenchmark>0.0</AdjustedBenchmark>
+					 <Comments/>
+				  </PriceSheet>
+				</PriceSheets>
+            <Shipper>
+              <Address isResidential="false">
+                <LocationCode />
+                <Name></Name>
+                <AddrLine1></AddrLine1>
+                <AddrLine2></AddrLine2>
+                <City></City>
+                <StateProvince></StateProvince>
+                <PostalCode>60606</PostalCode>
+                <CountryCode>USA</CountryCode>
+                <Comments></Comments>
+                <Contacts />
+              </Address>
+            </Shipper>
+            <Consignee>
+              <Address isResidential="false">
+                <LocationCode />
+                <Name></Name>
+                <AddrLine1></AddrLine1>
+                <AddrLine2></AddrLine2>
+                <City></City>
+                <StateProvince></StateProvince>
+                <PostalCode>07029</PostalCode>
+                <CountryCode>USA</CountryCode>
+                <Comments></Comments>
+                <Contacts />
+              </Address>
+            </Consignee>
+            <ItemGroups>
+              <ItemGroup id="CRM" isShipUnit="false" isHandlingUnit="false" sequence="1">
+                <Dimensions>
+                  <Dimension type="Length" uom="" />
+                  <Dimension type="Width" uom="" />
+                  <Dimension type="Height" uom="" />
+                </Dimensions>
+                <Description></Description>
+                <FreightClasses>
+                  <FreightClass type="">65</FreightClass>
+                </FreightClasses>
+                <HazardousMaterial>false</HazardousMaterial>
+                <Weights>
+                  <Weight type="actual" uom="kg">2</Weight>
+                </Weights>
+                <Quantities>
+                  <Quantity type="actual" uom="SKD" />
+                </Quantities>
+              </ItemGroup>
+            </ItemGroups>
+            <Payment>
+              <Method></Method>
+              <BillTo thirdParty="false">
+                <Address type="" isResidential="false">
+                  <LocationCode></LocationCode>
+                </Address>
+              </BillTo>
+            </Payment>
+          </Shipment>
+        </MercuryGate>
+      </WebImportFile>
+    </WebImport>
+  </data>
+</service-request>

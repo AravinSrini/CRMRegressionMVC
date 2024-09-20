@@ -1,0 +1,1222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ns10="http://availablecarriers.responses.objects.webservice.carrierconnect.smc.com" xmlns:tns="http://webservices.smc.com" xmlns:ns2="http://enums.webservice.carrierconnect.smc.com" xmlns:ns4="http://responses.objects.webservice.carrierconnect.smc.com" xmlns:ns8="http://simpletransit.responses.objects.webservice.carrierconnect.smc.com" xmlns:ns6="http://enums.objects.webservice.carrierconnect.smc.com" xmlns:ns1="http://requests.objects.webservice.carrierconnect.smc.com" xmlns:ns14="http://datagroups.responses.objects.webservice.carrierconnect.smc.com" xmlns:ns16="http://availablecarrierservices.responses.objects.webservice.carrierconnect.smc.com" xmlns:ns3="http://objects.webservice.carrierconnect.smc.com" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns15="http://availablecarrierservices.requests.objects.webservice.carrierconnect.smc.com" xmlns:ns9="http://location.objects.webservice.carrierconnect.smc.com" xmlns:ns11="http://transit.responses.objects.webservice.carrierconnect.smc.com" xmlns:ns7="http://simpletransit.requests.objects.webservice.carrierconnect.smc.com" xmlns:ns13="http://terminalsbypostalcode.responses.objects.webservice.carrierconnect.smc.com" xmlns:soap11="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope" xmlns:ns12="http://terminalsbypostalcode.requests.objects.webservice.carrierconnect.smc.com" xmlns:soapenc12="http://www.w3.org/2003/05/soap-encoding" xmlns:soapenc11="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns5="http://exception.webservices.carrierconnect.smc.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://webservices.smc.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://requests.objects.webservice.carrierconnect.smc.com">
+      <xsd:complexType name="DataGroupRequest">
+        <xsd:sequence>
+          <xsd:element name="carrierServiceRequest" nillable="true" type="ns1:CarrierServiceRequest" />
+          <xsd:element name="dataGroupStatus" nillable="true" type="ns2:DataGroupStatus" />
+          <xsd:element name="effectiveDate" nillable="true" type="ns3:TransitTimeWindow" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="CarrierServiceRequest">
+        <xsd:sequence>
+          <xsd:element name="carrierMethodService" nillable="true" type="ns3:CarrierMethodService" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TransitBatchBmxlRequest">
+        <xsd:sequence>
+          <xsd:element name="transitRequestInfo" type="ns3:ArrayOfTransitRequestInfo" />
+          <xsd:element name="transitRequestsFile" type="xsd:base64Binary" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="GetTerminalsRequest">
+        <xsd:sequence>
+          <xsd:element name="scacList" nillable="true" type="tns:ArrayOfString" />
+          <xsd:element name="shipmentDate" nillable="true" type="xsd:dateTime" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TransitWithShipmentDateWindowRequest">
+        <xsd:sequence>
+          <xsd:element name="carriers" nillable="true" type="ns3:ArrayOfCarrierMethodService" />
+          <xsd:element name="deliveryWindow" nillable="true" type="ns3:TransitTimeWindow" />
+          <xsd:element name="destination" nillable="true" type="ns9:Locale" />
+          <xsd:element name="origin" nillable="true" type="ns9:Locale" />
+          <xsd:element name="pickUpWindow" nillable="true" type="ns3:TransitTimeWindow" />
+          <xsd:element name="shipmentId" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TerminalRequest">
+        <xsd:sequence>
+          <xsd:element name="code" nillable="true" type="tns:ArrayOfString" />
+          <xsd:element name="scac" nillable="true" type="xsd:string" />
+          <xsd:element name="shipmentDate" nillable="true" type="xsd:dateTime" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TransitWithDataGroupIdRequest">
+        <xsd:sequence>
+          <xsd:element name="carriers" nillable="true" type="ns3:ArrayOfCarrierMethodService" />
+          <xsd:element name="deliveryWindow" nillable="true" type="ns3:TransitTimeWindow" />
+          <xsd:element name="destination" nillable="true" type="ns9:Locale" />
+          <xsd:element name="origin" nillable="true" type="ns9:Locale" />
+          <xsd:element name="pickUpWindow" nillable="true" type="ns3:TransitTimeWindow" />
+          <xsd:element name="shipmentId" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TransitWithShipmentDateRequest">
+        <xsd:sequence>
+          <xsd:element name="carriers" nillable="true" type="ns3:ArrayOfCarrierMethodService" />
+          <xsd:element name="destination" nillable="true" type="ns9:Locale" />
+          <xsd:element name="origin" nillable="true" type="ns9:Locale" />
+          <xsd:element name="shipmentDate" nillable="true" type="xsd:dateTime" />
+          <xsd:element name="shipmentId" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DataGroupTransitRequest">
+        <xsd:sequence>
+          <xsd:element name="carriers" nillable="true" type="ns3:ArrayOfCarrierMethodService" />
+          <xsd:element name="dataGroupStatus" nillable="true" type="ns2:DataGroupStatus" />
+          <xsd:element name="deliveryWindow" nillable="true" type="ns3:TransitTimeWindow" />
+          <xsd:element name="destination" nillable="true" type="ns9:Locale" />
+          <xsd:element name="origin" nillable="true" type="ns9:Locale" />
+          <xsd:element name="pickUpWindow" nillable="true" type="ns3:TransitTimeWindow" />
+          <xsd:element name="shipmentId" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://objects.webservice.carrierconnect.smc.com">
+      <xsd:complexType name="TransitTimeWindow">
+        <xsd:sequence>
+          <xsd:element name="lowerBounds" nillable="true" type="xsd:dateTime" />
+          <xsd:element name="upperBounds" nillable="true" type="xsd:dateTime" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="CarrierMethodService">
+        <xsd:sequence>
+          <xsd:element name="SCAC" nillable="true" type="xsd:string" />
+          <xsd:element name="code" nillable="true" type="xsd:string" />
+          <xsd:element name="method" nillable="true" type="ns2:Method" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="StatusCode">
+        <xsd:sequence>
+          <xsd:element name="message" nillable="true" type="xsd:string" />
+          <xsd:element name="referenceNumber" nillable="true" type="xsd:string" />
+          <xsd:element name="resolution" nillable="true" type="xsd:string" />
+          <xsd:element name="status" nillable="true" type="ns2:Status" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DataGroupPlus">
+        <xsd:sequence>
+          <xsd:element name="expirationDate" nillable="true" type="xsd:dateTime" />
+          <xsd:element name="name" nillable="true" type="xsd:string" />
+          <xsd:element name="releaseDate" nillable="true" type="xsd:dateTime" />
+          <xsd:element name="supportId" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Carrier">
+        <xsd:sequence>
+          <xsd:element name="SCAC" nillable="true" type="xsd:string" />
+          <xsd:element name="carrierName" nillable="true" type="xsd:string" />
+          <xsd:element name="code" nillable="true" type="xsd:string" />
+          <xsd:element name="method" nillable="true" type="ns2:Method" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfTransitRequestInfo">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="TransitRequestInfo" nillable="true" type="ns3:TransitRequestInfo" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TransitRequestInfo">
+        <xsd:sequence>
+          <xsd:element name="carriers" nillable="true" type="ns3:ArrayOfCarrierMethodService" />
+          <xsd:element name="shipmentDate" nillable="true" type="xsd:string" />
+          <xsd:element name="supportIds" nillable="true" type="tns:ArrayOfString" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfCarrierMethodService">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="CarrierMethodService" nillable="true" type="ns3:CarrierMethodService" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Service">
+        <xsd:sequence>
+          <xsd:element name="code" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Contact">
+        <xsd:sequence>
+          <xsd:element name="email" nillable="true" type="xsd:string" />
+          <xsd:element name="fax" nillable="true" type="xsd:string" />
+          <xsd:element name="name" nillable="true" type="xsd:string" />
+          <xsd:element name="phone" nillable="true" type="xsd:string" />
+          <xsd:element name="title" nillable="true" type="xsd:string" />
+          <xsd:element name="tollFree" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DataGroup">
+        <xsd:sequence>
+          <xsd:element name="expirationDate" nillable="true" type="xsd:dateTime" />
+          <xsd:element name="name" nillable="true" type="xsd:string" />
+          <xsd:element name="releaseDate" nillable="true" type="xsd:dateTime" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Locality">
+        <xsd:sequence>
+          <xsd:element name="address1" nillable="true" type="xsd:string" />
+          <xsd:element name="address2" nillable="true" type="xsd:string" />
+          <xsd:element name="city" nillable="true" type="xsd:string" />
+          <xsd:element name="countryCode" nillable="true" type="ns2:Country" />
+          <xsd:element name="postalCode" nillable="true" type="xsd:string" />
+          <xsd:element name="stateProvince" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfCarrierMethodServiceWithType">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="CarrierMethodServiceWithType" nillable="true" type="ns3:CarrierMethodServiceWithType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="CarrierMethodServiceWithType">
+        <xsd:sequence>
+          <xsd:element name="SCAC" nillable="true" type="xsd:string" />
+          <xsd:element name="serviceCode" nillable="true" type="xsd:string" />
+          <xsd:element name="serviceMethod" nillable="true" type="ns2:Method" />
+          <xsd:element name="serviceType" nillable="true" type="ns6:ServiceTypes" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ServiceDetailType">
+        <xsd:sequence>
+          <xsd:element name="code" nillable="true" type="xsd:string" />
+          <xsd:element name="destination" nillable="true" type="ns2:Movement" />
+          <xsd:element name="origin" nillable="true" type="ns2:Movement" />
+          <xsd:element name="service" nillable="true" type="ns2:Movement" />
+          <xsd:element name="type" nillable="true" type="ns6:ServiceTypes" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TransitCalendarWithoutTime">
+        <xsd:sequence>
+          <xsd:element name="calendarDays" type="xsd:int" />
+          <xsd:element name="estimatedDeliveryDate" nillable="true" type="xsd:string" />
+          <xsd:element name="pickupDate" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TerminalCodes">
+        <xsd:sequence>
+          <xsd:element name="destination" nillable="true" type="xsd:string" />
+          <xsd:element name="origin" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfTransitWindow">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="TransitWindow" nillable="true" type="ns3:TransitWindow" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TransitWindow">
+        <xsd:sequence>
+          <xsd:element name="SCAC" nillable="true" type="xsd:string" />
+          <xsd:element name="carrierName" nillable="true" type="xsd:string" />
+          <xsd:element name="dataGroup" nillable="true" type="ns3:DataGroup" />
+          <xsd:element name="maximumCalendarDays" nillable="true" type="ns4:CalendarResponse" />
+          <xsd:element name="maxiumDays" type="xsd:int" />
+          <xsd:element name="method" nillable="true" type="ns2:Method" />
+          <xsd:element name="minimumCalendarDays" nillable="true" type="ns4:CalendarResponse" />
+          <xsd:element name="minimumDays" type="xsd:int" />
+          <xsd:element name="serviceDetail" nillable="true" type="ns3:ServiceDetail" />
+          <xsd:element name="statusCode" nillable="true" type="ns3:StatusCode" />
+          <xsd:element name="terminalCodes" nillable="true" type="ns3:TerminalCodes" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ServiceDetail">
+        <xsd:sequence>
+          <xsd:element name="code" nillable="true" type="xsd:string" />
+          <xsd:element name="destination" nillable="true" type="ns2:Movement" />
+          <xsd:element name="origin" nillable="true" type="ns2:Movement" />
+          <xsd:element name="service" nillable="true" type="ns2:Movement" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TransitWithShipmentDateResponse">
+        <xsd:sequence>
+          <xsd:element name="carriers" nillable="true" type="ns11:ArrayOfTransitResponse" />
+          <xsd:element name="destination" nillable="true" type="ns9:Locale" />
+          <xsd:element name="origin" nillable="true" type="ns9:Locale" />
+          <xsd:element name="shipmentDate" nillable="true" type="xsd:dateTime" />
+          <xsd:element name="shipmentId" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://enums.webservice.carrierconnect.smc.com">
+      <xsd:simpleType name="DataGroupStatus">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="PENDING" />
+          <xsd:enumeration value="EXPIRED" />
+          <xsd:enumeration value="ACTIVE" />
+          <xsd:enumeration value="ALL" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Method">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="LTL" />
+          <xsd:enumeration value="TL" />
+          <xsd:enumeration value="ALL_AVAILABLE" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Status">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="PASS" />
+          <xsd:enumeration value="FAIL" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Country">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="USA" />
+          <xsd:enumeration value="MEX" />
+          <xsd:enumeration value="CAN" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Movement">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="DIRECT" />
+          <xsd:enumeration value="INDIRECT" />
+          <xsd:enumeration value="PARTNER" />
+          <xsd:enumeration value="CUSTOM" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="TerminalType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="DELIVERY" />
+          <xsd:enumeration value="PICKUP" />
+          <xsd:enumeration value="BOTH" />
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://webservices.smc.com">
+      <xsd:element name="DataGroups">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="DataGroupRequest" nillable="true" type="ns1:DataGroupRequest" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DataGroupsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="DataGroupResponse" nillable="true" type="ns4:ArrayOfDataGroupResponse" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CarrierConnectWebServiceException" type="ns5:CarrierConnectWebServiceException" />
+      <xsd:element name="isReady">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="isReadyResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="ArrayOfString">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="TransitBatchBmxl">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="TransitBatchBmxlRequest" nillable="true" type="ns1:TransitBatchBmxlRequest" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="TransitBatchBmxlResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="TransitBatchBmxlResponse" nillable="true" type="xsd:base64Binary" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="TerminalsByCarrier">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="TerminalsByCarrierRequest" nillable="true" type="ns1:GetTerminalsRequest" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="TerminalsByCarrierResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="TerminalsByCarrierResponses" nillable="true" type="ns4:ArrayOfCarrierTerminalResponse" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="SimpleTransit">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="SimpleTransitRequest" nillable="true" type="ns7:SimpleTransitRequest" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="SimpleTransitResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="SimpleTransitResponse" nillable="true" type="ns8:SimpleTransitResponse" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="TransitWithShipmentDateWindow">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="TransitWithShipmentDateWindowRequest" nillable="true" type="ns1:TransitWithShipmentDateWindowRequest" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="TransitWithShipmentDateWindowResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="TransitWithShipmentDateWindowResponse" nillable="true" type="ns4:TransitWithShipmentDateWindowResponse" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="TerminalByTerminalCode">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="TerminalByTerminalCodeRequest" nillable="true" type="ns1:TerminalRequest" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="TerminalByTerminalCodeResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="TerminalByTerminalCodeResponses" nillable="true" type="ns4:ArrayOfCarrierTerminalResponse" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="AvailableCarriers">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="AvailableCarriersRequest" nillable="true" type="ns10:AvailableCarriersRequest" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="AvailableCarriersResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="AvailableCarriersResponse" nillable="true" type="ns4:CarrierResponse" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="TransitMethod">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="TransitRequest" nillable="true" type="ns1:TransitWithDataGroupIdRequest" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="TransitMethodResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="TransitResult" nillable="true" type="ns4:TransitWithDataGroupIdResponse" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="TransitWithShipmentDate">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="TransitWithShipmentDateRequest" nillable="true" type="ns1:TransitWithShipmentDateRequest" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="TransitWithShipmentDateResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="TransitWithShipmentDateResponse" nillable="true" type="ns3:TransitWithShipmentDateResponse" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="TerminalsByPostalCode">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="TerminalsByPostalCodeRequest" nillable="true" type="ns12:TerminalsByPostalCodeRequest" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="TerminalsByPostalCodeResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="TerminalsByPostalCodeResponses" nillable="true" type="ns13:ArrayOfCarrierTerminalByPostalCodeResponse" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DataGroupTransit">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="DataGroupTransitRequest" nillable="true" type="ns1:DataGroupTransitRequest" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DataGroupTransitResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="DataGroupTransitResponse" nillable="true" type="ns14:DataGroupTransitResponse" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="AvailableCarrierServices">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="AvailableCarrierServicesRequest" nillable="true" type="ns15:AvailableCarrierServicesRequest" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="AvailableCarrierServicesResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="AvailableCarrierServicesResponse" nillable="true" type="ns16:CarrierServicesResponse" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="AuthenticationToken">
+        <xsd:sequence>
+          <xsd:element name="licenseKey" nillable="true" type="xsd:string" />
+          <xsd:element name="password" nillable="true" type="xsd:string" />
+          <xsd:element name="username" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="AuthenticationToken" type="tns:AuthenticationToken" />
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://responses.objects.webservice.carrierconnect.smc.com">
+      <xsd:complexType name="ArrayOfDataGroupResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="DataGroupResponse" nillable="true" type="ns4:DataGroupResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DataGroupResponse">
+        <xsd:sequence>
+          <xsd:element name="carrier" nillable="true" type="ns3:Carrier" />
+          <xsd:element name="dataGroup" nillable="true" type="ns3:DataGroupPlus" />
+          <xsd:element name="dataGroupStatus" nillable="true" type="ns2:DataGroupStatus" />
+          <xsd:element name="statusCode" nillable="true" type="ns3:StatusCode" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfCarrierTerminalResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="CarrierTerminalResponse" nillable="true" type="ns4:CarrierTerminalResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="CarrierTerminalResponse">
+        <xsd:sequence>
+          <xsd:element name="SCAC" nillable="true" type="xsd:string" />
+          <xsd:element name="carrierName" nillable="true" type="xsd:string" />
+          <xsd:element name="method" nillable="true" type="ns2:Method" />
+          <xsd:element name="statusCode" nillable="true" type="ns3:StatusCode" />
+          <xsd:element name="terminalDetails" nillable="true" type="ns4:ArrayOfTerminalDetail" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfTerminalDetail">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="TerminalDetail" nillable="true" type="ns4:TerminalDetail" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TerminalDetail">
+        <xsd:sequence>
+          <xsd:element name="address1" nillable="true" type="xsd:string" />
+          <xsd:element name="address2" nillable="true" type="xsd:string" />
+          <xsd:element name="city" nillable="true" type="xsd:string" />
+          <xsd:element name="code" nillable="true" type="xsd:string" />
+          <xsd:element name="contact" nillable="true" type="ns3:Contact" />
+          <xsd:element name="countryCode" nillable="true" type="ns2:Country" />
+          <xsd:element name="dataGroup" nillable="true" type="ns3:DataGroup" />
+          <xsd:element name="latitude" nillable="true" type="xsd:decimal" />
+          <xsd:element name="localeID" nillable="true" type="xsd:string" />
+          <xsd:element name="longitude" nillable="true" type="xsd:decimal" />
+          <xsd:element name="postalCode" nillable="true" type="xsd:string" />
+          <xsd:element name="postalCodePlus4" nillable="true" type="xsd:string" />
+          <xsd:element name="service" nillable="true" type="ns3:Service" />
+          <xsd:element name="stateProvince" nillable="true" type="xsd:string" />
+          <xsd:element name="terminalName" nillable="true" type="xsd:string" />
+          <xsd:element name="timeZone" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TransitWithShipmentDateWindowResponse">
+        <xsd:sequence>
+          <xsd:element name="carriers" nillable="true" type="ns3:ArrayOfTransitWindow" />
+          <xsd:element name="deliveryWindow" nillable="true" type="ns3:TransitTimeWindow" />
+          <xsd:element name="destination" nillable="true" type="ns9:Locale" />
+          <xsd:element name="origin" nillable="true" type="ns9:Locale" />
+          <xsd:element name="pickUpWindow" nillable="true" type="ns3:TransitTimeWindow" />
+          <xsd:element name="shipmentId" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="CalendarResponse">
+        <xsd:sequence>
+          <xsd:element name="calendarDays" type="xsd:int" />
+          <xsd:element name="deliveryDate" nillable="true" type="xsd:dateTime" />
+          <xsd:element name="pickupDate" nillable="true" type="xsd:dateTime" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="CarrierResponse">
+        <xsd:sequence>
+          <xsd:element name="carriers" nillable="true" type="ns10:ArrayOfAvailableCarrier" />
+          <xsd:element name="statusCode" nillable="true" type="ns3:StatusCode" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TransitWithDataGroupIdResponse">
+        <xsd:sequence>
+          <xsd:element name="carriers" nillable="true" type="ns11:ArrayOfTransitWindowResult" />
+          <xsd:element name="deliveryWindow" nillable="true" type="ns3:TransitTimeWindow" />
+          <xsd:element name="destination" nillable="true" type="ns9:Locale" />
+          <xsd:element name="origin" nillable="true" type="ns9:Locale" />
+          <xsd:element name="pickUpWindow" nillable="true" type="ns3:TransitTimeWindow" />
+          <xsd:element name="shipmentId" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://exception.webservices.carrierconnect.smc.com">
+      <xsd:complexType name="CarrierConnectWebServiceException" />
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://simpletransit.requests.objects.webservice.carrierconnect.smc.com">
+      <xsd:complexType name="SimpleTransitRequest">
+        <xsd:sequence>
+          <xsd:element name="carriers" nillable="true" type="ns3:ArrayOfCarrierMethodServiceWithType" />
+          <xsd:element name="destination" nillable="true" type="ns3:Locality" />
+          <xsd:element name="origin" nillable="true" type="ns3:Locality" />
+          <xsd:element name="pickupDate" nillable="true" type="xsd:string" />
+          <xsd:element name="shipmentId" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://enums.objects.webservice.carrierconnect.smc.com">
+      <xsd:simpleType name="ServiceTypes">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="ALL_AVAILABLE" />
+          <xsd:enumeration value="STANDARD" />
+          <xsd:enumeration value="EXPEDITED" />
+          <xsd:enumeration value="GUARANTEED" />
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://simpletransit.responses.objects.webservice.carrierconnect.smc.com">
+      <xsd:complexType name="SimpleTransitResponse">
+        <xsd:sequence>
+          <xsd:element name="carriers" nillable="true" type="ns8:ArrayOfSimpleTransitResult" />
+          <xsd:element name="destination" nillable="true" type="ns3:Locality" />
+          <xsd:element name="origin" nillable="true" type="ns3:Locality" />
+          <xsd:element name="pickupDate" nillable="true" type="xsd:string" />
+          <xsd:element name="shipmentId" nillable="true" type="xsd:string" />
+          <xsd:element name="statusCode" nillable="true" type="ns3:StatusCode" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfSimpleTransitResult">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="SimpleTransitResult" nillable="true" type="ns8:SimpleTransitResult" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="SimpleTransitResult">
+        <xsd:sequence>
+          <xsd:element name="statusCode" nillable="true" type="ns3:StatusCode" />
+          <xsd:element name="transitDetails" nillable="true" type="ns8:ArrayOfSimpleTransitDetail" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfSimpleTransitDetail">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="SimpleTransitDetail" nillable="true" type="ns8:SimpleTransitDetail" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="SimpleTransitDetail">
+        <xsd:sequence>
+          <xsd:element name="SCAC" nillable="true" type="xsd:string" />
+          <xsd:element name="carrierName" nillable="true" type="xsd:string" />
+          <xsd:element name="dataGroup" nillable="true" type="ns3:DataGroupPlus" />
+          <xsd:element name="serviceDetail" nillable="true" type="ns3:ServiceDetailType" />
+          <xsd:element name="serviceMethod" nillable="true" type="ns2:Method" />
+          <xsd:element name="terminalCodes" nillable="true" type="ns3:TerminalCodes" />
+          <xsd:element name="transitCalendar" nillable="true" type="ns3:TransitCalendarWithoutTime" />
+          <xsd:element name="transitDays" type="xsd:int" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://location.objects.webservice.carrierconnect.smc.com">
+      <xsd:complexType name="Locale">
+        <xsd:sequence>
+          <xsd:element name="address1" nillable="true" type="xsd:string" />
+          <xsd:element name="address2" nillable="true" type="xsd:string" />
+          <xsd:element name="city" nillable="true" type="xsd:string" />
+          <xsd:element name="countryCode" nillable="true" type="ns2:Country" />
+          <xsd:element name="latitude" nillable="true" type="xsd:decimal" />
+          <xsd:element name="localeID" nillable="true" type="xsd:string" />
+          <xsd:element name="longitude" nillable="true" type="xsd:decimal" />
+          <xsd:element name="postalCode" nillable="true" type="xsd:string" />
+          <xsd:element name="postalCodePlus4" nillable="true" type="xsd:string" />
+          <xsd:element name="stateProvince" nillable="true" type="xsd:string" />
+          <xsd:element name="timeZone" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://availablecarriers.responses.objects.webservice.carrierconnect.smc.com">
+      <xsd:complexType name="AvailableCarriersRequest">
+        <xsd:sequence>
+          <xsd:element name="serviceMethod" nillable="true" type="ns2:Method" />
+          <xsd:element name="shipmentDate" nillable="true" type="xsd:dateTime" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfAvailableCarrier">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="AvailableCarrier" nillable="true" type="ns10:AvailableCarrier" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="AvailableCarrier">
+        <xsd:sequence>
+          <xsd:element name="name" nillable="true" type="xsd:string" />
+          <xsd:element name="scac" nillable="true" type="xsd:string" />
+          <xsd:element name="services" nillable="true" type="ns10:ArrayOfAvailableCarrierService" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfAvailableCarrierService">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="AvailableCarrierService" nillable="true" type="ns10:AvailableCarrierService" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="AvailableCarrierService">
+        <xsd:sequence>
+          <xsd:element name="serviceCode" nillable="true" type="xsd:string" />
+          <xsd:element name="serviceMethod" nillable="true" type="ns2:Method" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://transit.responses.objects.webservice.carrierconnect.smc.com">
+      <xsd:complexType name="ArrayOfTransitWindowResult">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="TransitWindowResult" nillable="true" type="ns11:TransitWindowResult" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TransitWindowResult">
+        <xsd:sequence>
+          <xsd:element name="SCAC" nillable="true" type="xsd:string" />
+          <xsd:element name="carrierName" nillable="true" type="xsd:string" />
+          <xsd:element name="dataGroup" nillable="true" type="ns3:DataGroupPlus" />
+          <xsd:element name="method" nillable="true" type="ns2:Method" />
+          <xsd:element name="serviceDetail" nillable="true" type="ns3:ServiceDetail" />
+          <xsd:element name="statusCode" nillable="true" type="ns3:StatusCode" />
+          <xsd:element name="terminalCodes" nillable="true" type="ns3:TerminalCodes" />
+          <xsd:element name="transitCalendar" nillable="true" type="ns11:CalendarResult" />
+          <xsd:element name="transitDays" type="xsd:int" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="CalendarResult">
+        <xsd:sequence>
+          <xsd:element name="calendarDays" type="xsd:int" />
+          <xsd:element name="estimatedDeliveryDate" nillable="true" type="xsd:dateTime" />
+          <xsd:element name="pickupDate" nillable="true" type="xsd:dateTime" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfTransitResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="TransitResponse" nillable="true" type="ns11:TransitResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TransitResponse">
+        <xsd:sequence>
+          <xsd:element name="SCAC" nillable="true" type="xsd:string" />
+          <xsd:element name="carrierName" nillable="true" type="xsd:string" />
+          <xsd:element name="dataGroup" nillable="true" type="ns3:DataGroup" />
+          <xsd:element name="maxiumDays" type="xsd:int" />
+          <xsd:element name="method" nillable="true" type="ns2:Method" />
+          <xsd:element name="minimumDays" type="xsd:int" />
+          <xsd:element name="serviceDetail" nillable="true" type="ns3:ServiceDetail" />
+          <xsd:element name="statusCode" nillable="true" type="ns3:StatusCode" />
+          <xsd:element name="terminalCodes" nillable="true" type="ns3:TerminalCodes" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://terminalsbypostalcode.requests.objects.webservice.carrierconnect.smc.com">
+      <xsd:complexType name="TerminalsByPostalCodeRequest">
+        <xsd:sequence>
+          <xsd:element name="arrayTerminalByPostalCode" nillable="true" type="ns12:ArrayOfTerminalByPostalCode" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfTerminalByPostalCode">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="TerminalByPostalCode" nillable="true" type="ns12:TerminalByPostalCode" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TerminalByPostalCode">
+        <xsd:sequence>
+          <xsd:element name="SCAC" nillable="true" type="xsd:string" />
+          <xsd:element name="city" nillable="true" type="xsd:string" />
+          <xsd:element name="countryCode" nillable="true" type="ns2:Country" />
+          <xsd:element name="postalCode" nillable="true" type="xsd:string" />
+          <xsd:element name="serviceCode" nillable="true" type="xsd:string" />
+          <xsd:element name="serviceMethod" nillable="true" type="ns2:Method" />
+          <xsd:element name="serviceType" nillable="true" type="ns6:ServiceTypes" />
+          <xsd:element name="shipmentDate" nillable="true" type="xsd:dateTime" />
+          <xsd:element name="stateProvince" nillable="true" type="xsd:string" />
+          <xsd:element name="terminalType" nillable="true" type="ns2:TerminalType" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://terminalsbypostalcode.responses.objects.webservice.carrierconnect.smc.com">
+      <xsd:complexType name="ArrayOfCarrierTerminalByPostalCodeResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="CarrierTerminalByPostalCodeResponse" nillable="true" type="ns13:CarrierTerminalByPostalCodeResponse" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="CarrierTerminalByPostalCodeResponse">
+        <xsd:sequence>
+          <xsd:element name="SCAC" nillable="true" type="xsd:string" />
+          <xsd:element name="statusCode" nillable="true" type="ns3:StatusCode" />
+          <xsd:element name="terminalDetails" nillable="true" type="ns13:ArrayOfTerminalDetailByPostalCode" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfTerminalDetailByPostalCode">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="TerminalDetailByPostalCode" nillable="true" type="ns13:TerminalDetailByPostalCode" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TerminalDetailByPostalCode">
+        <xsd:sequence>
+          <xsd:element name="address1" nillable="true" type="xsd:string" />
+          <xsd:element name="address2" nillable="true" type="xsd:string" />
+          <xsd:element name="carrierName" nillable="true" type="xsd:string" />
+          <xsd:element name="city" nillable="true" type="xsd:string" />
+          <xsd:element name="contact" nillable="true" type="ns3:Contact" />
+          <xsd:element name="country" nillable="true" type="ns2:Country" />
+          <xsd:element name="dataGroup" nillable="true" type="ns3:DataGroupPlus" />
+          <xsd:element name="postalCode" nillable="true" type="xsd:string" />
+          <xsd:element name="serviceCode" nillable="true" type="xsd:string" />
+          <xsd:element name="serviceMethod" nillable="true" type="ns2:Method" />
+          <xsd:element name="serviceType" nillable="true" type="ns6:ServiceTypes" />
+          <xsd:element name="stateProvince" nillable="true" type="xsd:string" />
+          <xsd:element name="terminalCode" nillable="true" type="xsd:string" />
+          <xsd:element name="terminalName" nillable="true" type="xsd:string" />
+          <xsd:element name="terminalType" nillable="true" type="ns2:TerminalType" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://datagroups.responses.objects.webservice.carrierconnect.smc.com">
+      <xsd:complexType name="DataGroupTransitResponse">
+        <xsd:sequence>
+          <xsd:element name="carriers" nillable="true" type="ns11:ArrayOfTransitWindowResult" />
+          <xsd:element name="deliveryWindow" nillable="true" type="ns3:TransitTimeWindow" />
+          <xsd:element name="destination" nillable="true" type="ns9:Locale" />
+          <xsd:element name="origin" nillable="true" type="ns9:Locale" />
+          <xsd:element name="pickUpWindow" nillable="true" type="ns3:TransitTimeWindow" />
+          <xsd:element name="shipmentId" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://availablecarrierservices.requests.objects.webservice.carrierconnect.smc.com">
+      <xsd:complexType name="AvailableCarrierServicesRequest">
+        <xsd:sequence>
+          <xsd:element name="availableCarrierServices" nillable="true" type="ns15:ArrayOfAvailableCarrierServiceWithType" />
+          <xsd:element name="shipmentDate" nillable="true" type="xsd:dateTime" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfAvailableCarrierServiceWithType">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="AvailableCarrierServiceWithType" nillable="true" type="ns15:AvailableCarrierServiceWithType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="AvailableCarrierServiceWithType">
+        <xsd:sequence>
+          <xsd:element name="code" nillable="true" type="xsd:string" />
+          <xsd:element name="method" nillable="true" type="ns2:Method" />
+          <xsd:element name="scac" nillable="true" type="xsd:string" />
+          <xsd:element name="type" nillable="true" type="ns6:ServiceTypes" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://availablecarrierservices.responses.objects.webservice.carrierconnect.smc.com">
+      <xsd:complexType name="CarrierServicesResponse">
+        <xsd:sequence>
+          <xsd:element name="carrierServices" nillable="true" type="ns16:ArrayOfCarrierService" />
+          <xsd:element name="statusCode" nillable="true" type="ns3:StatusCode" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfCarrierService">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="CarrierService" nillable="true" type="ns16:CarrierService" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="CarrierService">
+        <xsd:sequence>
+          <xsd:element name="carrierName" nillable="true" type="xsd:string" />
+          <xsd:element name="scac" nillable="true" type="xsd:string" />
+          <xsd:element name="services" nillable="true" type="ns16:ArrayOfServiceMethodData" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfServiceMethodData">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="ServiceMethodData" nillable="true" type="ns16:ServiceMethodData" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ServiceMethodData">
+        <xsd:sequence>
+          <xsd:element name="method" nillable="true" type="ns2:Method" />
+          <xsd:element name="serviceTypes" nillable="true" type="ns16:ArrayOfServiceData" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfServiceData">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="ServiceData" nillable="true" type="ns16:ServiceData" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ServiceData">
+        <xsd:sequence>
+          <xsd:element name="code" nillable="true" type="xsd:string" />
+          <xsd:element name="description" nillable="true" type="xsd:string" />
+          <xsd:element name="name" nillable="true" type="xsd:string" />
+          <xsd:element name="type" nillable="true" type="ns6:ServiceTypes" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="TerminalsByCarrierRequest">
+    <wsdl:part name="parameters" element="tns:TerminalsByCarrier" />
+  </wsdl:message>
+  <wsdl:message name="DataGroupsResponse">
+    <wsdl:part name="parameters" element="tns:DataGroupsResponse" />
+  </wsdl:message>
+  <wsdl:message name="AvailableCarrierServicesRequest">
+    <wsdl:part name="parameters" element="tns:AvailableCarrierServices" />
+  </wsdl:message>
+  <wsdl:message name="AvailableCarriersResponse">
+    <wsdl:part name="parameters" element="tns:AvailableCarriersResponse" />
+  </wsdl:message>
+  <wsdl:message name="DataGroupTransitRequest">
+    <wsdl:part name="parameters" element="tns:DataGroupTransit" />
+  </wsdl:message>
+  <wsdl:message name="TerminalByTerminalCodeRequest">
+    <wsdl:part name="parameters" element="tns:TerminalByTerminalCode" />
+  </wsdl:message>
+  <wsdl:message name="TransitWithShipmentDateRequest">
+    <wsdl:part name="parameters" element="tns:TransitWithShipmentDate" />
+  </wsdl:message>
+  <wsdl:message name="SimpleTransitResponse">
+    <wsdl:part name="parameters" element="tns:SimpleTransitResponse" />
+  </wsdl:message>
+  <wsdl:message name="TerminalByTerminalCodeResponse">
+    <wsdl:part name="parameters" element="tns:TerminalByTerminalCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="DataGroupTransitResponse">
+    <wsdl:part name="parameters" element="tns:DataGroupTransitResponse" />
+  </wsdl:message>
+  <wsdl:message name="TransitWithShipmentDateWindowRequestHeaders">
+    <wsdl:part name="AuthenticationToken" element="tns:AuthenticationToken" />
+  </wsdl:message>
+  <wsdl:message name="TransitBatchBmxlResponse">
+    <wsdl:part name="parameters" element="tns:TransitBatchBmxlResponse" />
+  </wsdl:message>
+  <wsdl:message name="AvailableCarrierServicesResponse">
+    <wsdl:part name="parameters" element="tns:AvailableCarrierServicesResponse" />
+  </wsdl:message>
+  <wsdl:message name="TransitWithShipmentDateRequestHeaders">
+    <wsdl:part name="AuthenticationToken" element="tns:AuthenticationToken" />
+  </wsdl:message>
+  <wsdl:message name="TerminalsByPostalCodeRequestHeaders">
+    <wsdl:part name="AuthenticationToken" element="tns:AuthenticationToken" />
+  </wsdl:message>
+  <wsdl:message name="TransitWithShipmentDateResponse">
+    <wsdl:part name="parameters" element="tns:TransitWithShipmentDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="isReadyResponse">
+    <wsdl:part name="parameters" element="tns:isReadyResponse" />
+  </wsdl:message>
+  <wsdl:message name="SimpleTransitRequestHeaders">
+    <wsdl:part name="AuthenticationToken" element="tns:AuthenticationToken" />
+  </wsdl:message>
+  <wsdl:message name="isReadyRequest">
+    <wsdl:part name="parameters" element="tns:isReady" />
+  </wsdl:message>
+  <wsdl:message name="DataGroupsRequestHeaders">
+    <wsdl:part name="AuthenticationToken" element="tns:AuthenticationToken" />
+  </wsdl:message>
+  <wsdl:message name="AvailableCarriersRequest">
+    <wsdl:part name="parameters" element="tns:AvailableCarriers" />
+  </wsdl:message>
+  <wsdl:message name="CarrierConnectWebServiceException">
+    <wsdl:part name="CarrierConnectWebServiceException" element="tns:CarrierConnectWebServiceException" />
+  </wsdl:message>
+  <wsdl:message name="TerminalsByPostalCodeRequest">
+    <wsdl:part name="parameters" element="tns:TerminalsByPostalCode" />
+  </wsdl:message>
+  <wsdl:message name="AvailableCarrierServicesRequestHeaders">
+    <wsdl:part name="AuthenticationToken" element="tns:AuthenticationToken" />
+  </wsdl:message>
+  <wsdl:message name="TerminalsByPostalCodeResponse">
+    <wsdl:part name="parameters" element="tns:TerminalsByPostalCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="TransitMethodRequestHeaders">
+    <wsdl:part name="AuthenticationToken" element="tns:AuthenticationToken" />
+  </wsdl:message>
+  <wsdl:message name="SimpleTransitRequest">
+    <wsdl:part name="parameters" element="tns:SimpleTransit" />
+  </wsdl:message>
+  <wsdl:message name="DataGroupTransitRequestHeaders">
+    <wsdl:part name="AuthenticationToken" element="tns:AuthenticationToken" />
+  </wsdl:message>
+  <wsdl:message name="isReadyRequestHeaders">
+    <wsdl:part name="AuthenticationToken" element="tns:AuthenticationToken" />
+  </wsdl:message>
+  <wsdl:message name="TerminalsByCarrierRequestHeaders">
+    <wsdl:part name="AuthenticationToken" element="tns:AuthenticationToken" />
+  </wsdl:message>
+  <wsdl:message name="TransitMethodRequest">
+    <wsdl:part name="parameters" element="tns:TransitMethod" />
+  </wsdl:message>
+  <wsdl:message name="TransitWithShipmentDateWindowRequest">
+    <wsdl:part name="parameters" element="tns:TransitWithShipmentDateWindow" />
+  </wsdl:message>
+  <wsdl:message name="TerminalByTerminalCodeRequestHeaders">
+    <wsdl:part name="AuthenticationToken" element="tns:AuthenticationToken" />
+  </wsdl:message>
+  <wsdl:message name="TerminalsByCarrierResponse">
+    <wsdl:part name="parameters" element="tns:TerminalsByCarrierResponse" />
+  </wsdl:message>
+  <wsdl:message name="TransitBatchBmxlRequest">
+    <wsdl:part name="parameters" element="tns:TransitBatchBmxl" />
+  </wsdl:message>
+  <wsdl:message name="AvailableCarriersRequestHeaders">
+    <wsdl:part name="AuthenticationToken" element="tns:AuthenticationToken" />
+  </wsdl:message>
+  <wsdl:message name="TransitWithShipmentDateWindowResponse">
+    <wsdl:part name="parameters" element="tns:TransitWithShipmentDateWindowResponse" />
+  </wsdl:message>
+  <wsdl:message name="TransitBatchBmxlRequestHeaders">
+    <wsdl:part name="AuthenticationToken" element="tns:AuthenticationToken" />
+  </wsdl:message>
+  <wsdl:message name="DataGroupsRequest">
+    <wsdl:part name="parameters" element="tns:DataGroups" />
+  </wsdl:message>
+  <wsdl:message name="TransitMethodResponse">
+    <wsdl:part name="parameters" element="tns:TransitMethodResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CarrierConnectXLPortType">
+    <wsdl:operation name="DataGroups">
+      <wsdl:input name="DataGroupsRequest" message="tns:DataGroupsRequest" />
+      <wsdl:output name="DataGroupsResponse" message="tns:DataGroupsResponse" />
+      <wsdl:fault name="CarrierConnectWebServiceException" message="tns:CarrierConnectWebServiceException" />
+    </wsdl:operation>
+    <wsdl:operation name="isReady">
+      <wsdl:input name="isReadyRequest" message="tns:isReadyRequest" />
+      <wsdl:output name="isReadyResponse" message="tns:isReadyResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="TransitBatchBmxl">
+      <wsdl:input name="TransitBatchBmxlRequest" message="tns:TransitBatchBmxlRequest" />
+      <wsdl:output name="TransitBatchBmxlResponse" message="tns:TransitBatchBmxlResponse" />
+      <wsdl:fault name="CarrierConnectWebServiceException" message="tns:CarrierConnectWebServiceException" />
+    </wsdl:operation>
+    <wsdl:operation name="TerminalsByCarrier">
+      <wsdl:input name="TerminalsByCarrierRequest" message="tns:TerminalsByCarrierRequest" />
+      <wsdl:output name="TerminalsByCarrierResponse" message="tns:TerminalsByCarrierResponse" />
+      <wsdl:fault name="CarrierConnectWebServiceException" message="tns:CarrierConnectWebServiceException" />
+    </wsdl:operation>
+    <wsdl:operation name="SimpleTransit">
+      <wsdl:input name="SimpleTransitRequest" message="tns:SimpleTransitRequest" />
+      <wsdl:output name="SimpleTransitResponse" message="tns:SimpleTransitResponse" />
+      <wsdl:fault name="CarrierConnectWebServiceException" message="tns:CarrierConnectWebServiceException" />
+    </wsdl:operation>
+    <wsdl:operation name="TransitWithShipmentDateWindow">
+      <wsdl:input name="TransitWithShipmentDateWindowRequest" message="tns:TransitWithShipmentDateWindowRequest" />
+      <wsdl:output name="TransitWithShipmentDateWindowResponse" message="tns:TransitWithShipmentDateWindowResponse" />
+      <wsdl:fault name="CarrierConnectWebServiceException" message="tns:CarrierConnectWebServiceException" />
+    </wsdl:operation>
+    <wsdl:operation name="TerminalByTerminalCode">
+      <wsdl:input name="TerminalByTerminalCodeRequest" message="tns:TerminalByTerminalCodeRequest" />
+      <wsdl:output name="TerminalByTerminalCodeResponse" message="tns:TerminalByTerminalCodeResponse" />
+      <wsdl:fault name="CarrierConnectWebServiceException" message="tns:CarrierConnectWebServiceException" />
+    </wsdl:operation>
+    <wsdl:operation name="AvailableCarriers">
+      <wsdl:input name="AvailableCarriersRequest" message="tns:AvailableCarriersRequest" />
+      <wsdl:output name="AvailableCarriersResponse" message="tns:AvailableCarriersResponse" />
+      <wsdl:fault name="CarrierConnectWebServiceException" message="tns:CarrierConnectWebServiceException" />
+    </wsdl:operation>
+    <wsdl:operation name="TransitMethod">
+      <wsdl:input name="TransitMethodRequest" message="tns:TransitMethodRequest" />
+      <wsdl:output name="TransitMethodResponse" message="tns:TransitMethodResponse" />
+      <wsdl:fault name="CarrierConnectWebServiceException" message="tns:CarrierConnectWebServiceException" />
+    </wsdl:operation>
+    <wsdl:operation name="TransitWithShipmentDate">
+      <wsdl:input name="TransitWithShipmentDateRequest" message="tns:TransitWithShipmentDateRequest" />
+      <wsdl:output name="TransitWithShipmentDateResponse" message="tns:TransitWithShipmentDateResponse" />
+      <wsdl:fault name="CarrierConnectWebServiceException" message="tns:CarrierConnectWebServiceException" />
+    </wsdl:operation>
+    <wsdl:operation name="TerminalsByPostalCode">
+      <wsdl:input name="TerminalsByPostalCodeRequest" message="tns:TerminalsByPostalCodeRequest" />
+      <wsdl:output name="TerminalsByPostalCodeResponse" message="tns:TerminalsByPostalCodeResponse" />
+      <wsdl:fault name="CarrierConnectWebServiceException" message="tns:CarrierConnectWebServiceException" />
+    </wsdl:operation>
+    <wsdl:operation name="DataGroupTransit">
+      <wsdl:input name="DataGroupTransitRequest" message="tns:DataGroupTransitRequest" />
+      <wsdl:output name="DataGroupTransitResponse" message="tns:DataGroupTransitResponse" />
+      <wsdl:fault name="CarrierConnectWebServiceException" message="tns:CarrierConnectWebServiceException" />
+    </wsdl:operation>
+    <wsdl:operation name="AvailableCarrierServices">
+      <wsdl:input name="AvailableCarrierServicesRequest" message="tns:AvailableCarrierServicesRequest" />
+      <wsdl:output name="AvailableCarrierServicesResponse" message="tns:AvailableCarrierServicesResponse" />
+      <wsdl:fault name="CarrierConnectWebServiceException" message="tns:CarrierConnectWebServiceException" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CarrierConnectXLHttpBinding" type="tns:CarrierConnectXLPortType">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DataGroups">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="DataGroupsRequest">
+        <wsdlsoap:body use="literal" />
+        <wsdlsoap:header message="tns:DataGroupsRequestHeaders" part="AuthenticationToken" use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DataGroupsResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CarrierConnectWebServiceException">
+        <wsdlsoap:fault use="literal" name="CarrierConnectWebServiceException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="isReady">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="isReadyRequest">
+        <wsdlsoap:body use="literal" />
+        <wsdlsoap:header message="tns:isReadyRequestHeaders" part="AuthenticationToken" use="literal" />
+      </wsdl:input>
+      <wsdl:output name="isReadyResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransitBatchBmxl">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="TransitBatchBmxlRequest">
+        <wsdlsoap:body use="literal" />
+        <wsdlsoap:header message="tns:TransitBatchBmxlRequestHeaders" part="AuthenticationToken" use="literal" />
+      </wsdl:input>
+      <wsdl:output name="TransitBatchBmxlResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CarrierConnectWebServiceException">
+        <wsdlsoap:fault use="literal" name="CarrierConnectWebServiceException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="TerminalsByCarrier">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="TerminalsByCarrierRequest">
+        <wsdlsoap:body use="literal" />
+        <wsdlsoap:header message="tns:TerminalsByCarrierRequestHeaders" part="AuthenticationToken" use="literal" />
+      </wsdl:input>
+      <wsdl:output name="TerminalsByCarrierResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CarrierConnectWebServiceException">
+        <wsdlsoap:fault use="literal" name="CarrierConnectWebServiceException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SimpleTransit">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="SimpleTransitRequest">
+        <wsdlsoap:body use="literal" />
+        <wsdlsoap:header message="tns:SimpleTransitRequestHeaders" part="AuthenticationToken" use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SimpleTransitResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CarrierConnectWebServiceException">
+        <wsdlsoap:fault use="literal" name="CarrierConnectWebServiceException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="TransitWithShipmentDateWindow">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="TransitWithShipmentDateWindowRequest">
+        <wsdlsoap:body use="literal" />
+        <wsdlsoap:header message="tns:TransitWithShipmentDateWindowRequestHeaders" part="AuthenticationToken" use="literal" />
+      </wsdl:input>
+      <wsdl:output name="TransitWithShipmentDateWindowResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CarrierConnectWebServiceException">
+        <wsdlsoap:fault use="literal" name="CarrierConnectWebServiceException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="TerminalByTerminalCode">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="TerminalByTerminalCodeRequest">
+        <wsdlsoap:body use="literal" />
+        <wsdlsoap:header message="tns:TerminalByTerminalCodeRequestHeaders" part="AuthenticationToken" use="literal" />
+      </wsdl:input>
+      <wsdl:output name="TerminalByTerminalCodeResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CarrierConnectWebServiceException">
+        <wsdlsoap:fault use="literal" name="CarrierConnectWebServiceException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AvailableCarriers">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="AvailableCarriersRequest">
+        <wsdlsoap:body use="literal" />
+        <wsdlsoap:header message="tns:AvailableCarriersRequestHeaders" part="AuthenticationToken" use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AvailableCarriersResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CarrierConnectWebServiceException">
+        <wsdlsoap:fault use="literal" name="CarrierConnectWebServiceException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="TransitMethod">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="TransitMethodRequest">
+        <wsdlsoap:body use="literal" />
+        <wsdlsoap:header message="tns:TransitMethodRequestHeaders" part="AuthenticationToken" use="literal" />
+      </wsdl:input>
+      <wsdl:output name="TransitMethodResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CarrierConnectWebServiceException">
+        <wsdlsoap:fault use="literal" name="CarrierConnectWebServiceException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="TransitWithShipmentDate">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="TransitWithShipmentDateRequest">
+        <wsdlsoap:body use="literal" />
+        <wsdlsoap:header message="tns:TransitWithShipmentDateRequestHeaders" part="AuthenticationToken" use="literal" />
+      </wsdl:input>
+      <wsdl:output name="TransitWithShipmentDateResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CarrierConnectWebServiceException">
+        <wsdlsoap:fault use="literal" name="CarrierConnectWebServiceException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="TerminalsByPostalCode">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="TerminalsByPostalCodeRequest">
+        <wsdlsoap:body use="literal" />
+        <wsdlsoap:header message="tns:TerminalsByPostalCodeRequestHeaders" part="AuthenticationToken" use="literal" />
+      </wsdl:input>
+      <wsdl:output name="TerminalsByPostalCodeResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CarrierConnectWebServiceException">
+        <wsdlsoap:fault use="literal" name="CarrierConnectWebServiceException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DataGroupTransit">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="DataGroupTransitRequest">
+        <wsdlsoap:body use="literal" />
+        <wsdlsoap:header message="tns:DataGroupTransitRequestHeaders" part="AuthenticationToken" use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DataGroupTransitResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CarrierConnectWebServiceException">
+        <wsdlsoap:fault use="literal" name="CarrierConnectWebServiceException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AvailableCarrierServices">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="AvailableCarrierServicesRequest">
+        <wsdlsoap:body use="literal" />
+        <wsdlsoap:header message="tns:AvailableCarrierServicesRequestHeaders" part="AuthenticationToken" use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AvailableCarrierServicesResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CarrierConnectWebServiceException">
+        <wsdlsoap:fault use="literal" name="CarrierConnectWebServiceException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CarrierConnectXL">
+    <wsdl:port name="CarrierConnectXLHttpPort" binding="tns:CarrierConnectXLHttpBinding">
+      <wsdlsoap:address location="https://ccxl.smc3.com/CarrierConnectXL/services/soap" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

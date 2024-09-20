@@ -1,0 +1,10 @@
+<service-request>
+<service-id>ListScreen</service-id>
+<request-id>123456789</request-id>
+<data>
+  <listScreenType>Activity</listScreenType>
+  <reportName>CRMLdDocumentLinks</reportName>
+  <PromptFieldCount>1</PromptFieldCount>
+  <PromptField1>CSA00622356</PromptField1>
+</data>
+</service-request>

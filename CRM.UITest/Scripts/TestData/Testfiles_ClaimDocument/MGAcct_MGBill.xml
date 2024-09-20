@@ -1,0 +1,34 @@
+<service-request>
+<service-id>ListScreen</service-id>
+<request-id>123456789</request-id>
+<data>
+    <listScreenType>Enterprise</listScreenType>
+    <reportName>MGCustAcctInfo</reportName>
+    <Enterprise name="Prestige Preservation" />    
+</data>
+</service-request>
+
+<Response>
+   <Data>Name,Customer Account Number,CustInvMethod
+Prestige Preservation,120757,No Invoice</Data>
+</Response>
+
+-------------------------------------------------------
+
+<service-request>
+<service-id>ListScreen</service-id>
+<request-id>123456789</request-id>
+<data>
+    <listScreenType>Location</listScreenType>
+    <reportName>BillingLocations</reportName>
+    <Enterprise name="Prestige Preservation" />    
+</data>
+</service-request>
+
+<Response>
+   <Data>Location Code,Type,Name,Address1,Address2,City,State,Postal Code,Country
+134743,Billing,Command Transportation LLC,7500 Frontage Road,,Skokie,IL,60077,USA
+120757,Billing,Prestige Preservation,3838 Troost Ave,,Kansas City,Mo,64119,USA</Data>
+</Response>
+
+

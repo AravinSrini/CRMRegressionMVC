@@ -1,0 +1,53 @@
+<service-request>
+  <service-id>XMLRating</service-id>
+  <request-id>123456789</request-id>
+  <data>
+    <RateRequest>
+      <Constraints>
+        <Mode />
+        <Contract />
+        <Carrier />
+        <ServiceFlags>
+        </ServiceFlags>
+        <Equipments />
+        <PaymentTerms />
+      </Constraints>
+      <ReferenceNumbers />
+      <Items>
+        <Item sequence="1" freightClass="60">
+          <Weight units="LBS">999</Weight>
+          <Quantity units="PLT">2</Quantity>
+          <HazardousMaterial>false</HazardousMaterial>
+        </Item>
+        <Item sequence="2" freightClass="60">
+          <Weight units="LBS">999</Weight>
+          <Quantity units="PLT">2</Quantity>
+          <HazardousMaterial>false</HazardousMaterial>
+        </Item>
+      </Items>
+      <Events>
+        <Event sequence="1" type="Pickup" date="11/16/2018 00:00">
+          <Location>
+            <LocationCode />
+            <City>AURORA</City>
+            <State>IL</State>
+            <Zip>60504</Zip>
+            <Country>USA</Country>
+          </Location>
+        </Event>
+        <Event sequence="2" type="Drop" date="11/28/2018 00:00">
+          <Location>
+            <LocationCode />
+            <City>PORTLAND</City>
+            <State>OR</State>
+            <Zip>97210</Zip>
+            <Country>USA</Country>
+          </Location>
+        </Event>
+      </Events>
+      <RatingLevel>ZZZ - Czar Customer Test</RatingLevel>
+
+      <ReturnAssociatedCarrierPricesheet>true</ReturnAssociatedCarrierPricesheet>
+    </RateRequest>
+  </data>
+</service-request>

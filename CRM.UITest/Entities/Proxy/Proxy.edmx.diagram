@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9917cf85073a4ba28b2cda0907461a1a" Name="Diagram1" ZoomLevel="83" ShowGrid="false">
+        <EntityTypeShape EntityType="ProxyEntities.CarrierAddtionalServiceDay" Width="1.5" PointX="16.75" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CodeTable" Width="1.5" PointX="0.75" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CommissionExtractUploadedFile" Width="1.5" PointX="18.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.DefaultInsSetting" Width="1.5" PointX="18.75" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.GuaranteedCarrier" Width="1.5" PointX="15.75" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceAllRiskUploadedFile" Width="1.5" PointX="17.75" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuredRateCarrier" Width="1.5" PointX="19.75" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.MetricsHistoryTable" Width="1.5" PointX="20.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.MetricsTransactionTable" Width="1.5" PointX="20.75" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.MgDocument" Width="1.5" PointX="21.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.ParcelServiceEnabledUser" Width="1.5" PointX="21.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.RatingApiExceptionUser" Width="1.5" PointX="21.75" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.ShipmentService" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.ShipmentStatu" Width="1.5" PointX="3.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.ActivityLog" Width="1.5" PointX="5.25" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.ApprovalTeamDefaultEmail" Width="1.5" PointX="0.75" PointY="24.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CarrierDetail" Width="1.5" PointX="22.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.Contact" Width="1.5" PointX="8.25" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CorporateBillingReferenceNumber" Width="1.5" PointX="5.25" PointY="31.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CustomerAccount" Width="1.5" PointX="3" PointY="37.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CustomerAccountMapping" Width="1.5" PointX="5.25" PointY="35.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CustomerServiceSpecificEmail" Width="1.5" PointX="5.25" PointY="39.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CustomerSpecificReference" Width="1.5" PointX="5.25" PointY="42.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CustomerSpecificReferenceValue" Width="1.5" PointX="7.5" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.Fak" Width="1.5" PointX="7.5" PointY="63.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.GainsharePricingModel" Width="1.5" PointX="5.25" PointY="45.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.GainShareScacCode" Width="1.5" PointX="7.5" PointY="45.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.InvoicePreference" Width="1.5" PointX="5.25" PointY="50.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.Location" Width="1.5" PointX="10.25" PointY="43.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.LocationAndContactType" Width="1.5" PointX="6" PointY="27.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.PoManagement" Width="1.5" PointX="12.75" PointY="24.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.PricingModel" Width="1.5" PointX="11.25" PointY="39.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.PricingType" Width="1.5" PointX="9" PointY="29.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.ReferenceType" Width="1.5" PointX="16.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.ReferenceTypeValue" Width="1.5" PointX="19" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.TariffPricingModel" Width="1.5" PointX="5.25" PointY="63.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.UserCustomerAccountMapping" Width="1.5" PointX="3" PointY="60.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CsrActivityLog" Width="1.5" PointX="6" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CsrAddress" Width="1.5" PointX="11" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CsrContact" Width="1.5" PointX="14" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CsrCorporateBillingReferenceNumber" Width="1.5" PointX="8.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CsrCustomerAccountMapping" Width="1.5" PointX="11.25" PointY="35.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CsrCustomerServiceSpecificEmail" Width="1.5" PointX="8.25" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CsrFak" Width="1.5" PointX="10.5" PointY="68" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CsrGainsharePricingModel" Width="1.5" PointX="8.25" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CsrGainShareScacCode" Width="1.5" PointX="10.5" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CsrInvoicePreference" Width="1.5" PointX="8.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CsrItem" Width="1.5" PointX="8.25" PointY="54.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CsrLocation" Width="1.5" PointX="11" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CsrLocationAndContactType" Width="1.5" PointX="8.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CsrPricingModel" Width="1.5" PointX="13.25" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CsrPricingType" Width="1.5" PointX="11" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CsrSetup" Width="1.5" PointX="3.75" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CsrStationCustomerAccountMapping" Width="1.5" PointX="8.25" PointY="33.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CsrStatu" Width="1.5" PointX="0.75" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CsrTariffPricingModel" Width="1.5" PointX="8.25" PointY="67.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.User" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.ApiEndPoint" Width="1.5" PointX="0.75" PointY="50.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CustomerApiKey" Width="1.5" PointX="3" PointY="64.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CustomerEmail" Width="1.5" PointX="3" PointY="68.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CustomerEndPointMapping" Width="1.5" PointX="3" PointY="47.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CustomerRateOptionsMapping" Width="1.5" PointX="8" PointY="50.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CustomerSetup" Width="1.5" PointX="0.75" PointY="44.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.RateOption" Width="1.5" PointX="5.75" PointY="54.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.TrackingDetail" Width="1.5" PointX="22.75" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CustomReport" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CustomReportServicesMapping" Width="1.5" PointX="3" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.CustomReportStatusMapping" Width="1.5" PointX="6" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.UserCustomReportsMapping" Width="1.5" PointX="3" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.Address" Width="1.5" PointX="13.25" PointY="43.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.Item" Width="1.5" PointX="5.25" PointY="80.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.QuoteReferenceNumber" Width="1.5" PointX="21.75" PointY="24.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.Document" Width="1.5" PointX="13.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.DocumentRolesMapping" Width="1.5" PointX="16" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.Folder" Width="1.5" PointX="9.25" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.ReferenceMapping" Width="1.5" PointX="11.5" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.Privilege" Width="1.5" PointX="16.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.SecurityGroup" Width="1.5" PointX="13.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProxyEntities.SecurityGroupPrivilegeRelationship" Width="1.5" PointX="19" PointY="4.125" IsExpanded="true" />
+        <AssociationConnector Association="ProxyEntities.FK__CustomRep__Servi__75634D2A" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK__CustomRep__Statu__774B959C" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_Csr_ActivityLogs_CustomerAccount" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_Contact_CustomerAccount" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_Contact_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_CorporateBillingReferenceNumbers_CustomerAccount" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_Address_CustomerAccount_CustomerAccountId1" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_CsrCustomerAccountMapping_CustomerAccount_Primary" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_CsrStationCustomerAccountMapping_StationAccountId" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_CustomerAccount_CustomerSetup" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_CustomerAccountMapping_CustomerAccount_Primary" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_CustomerAccountMapping_CustomerAccount_Sub" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_CustomerAccountMapping_CustomerSpecificReference" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_CustomerServiceSpecificEmails_CustomerAccount" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_GainsharePricingModel_CustomerAccount" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_InvoicePreference_CustomerAccount" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_Item_CustomerAccount_CustomerAccountId1" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_Location_CustomerAccount" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_PricingModel_CustomerAccount" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_TariffPricingModel_CustomerAccount" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_ServiceReferenceTypeMapping_CustomerSpecificReference" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_Fak_TariffPricingModel" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_GainsharePricingModel_GainsharePricingModelId" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_Location_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_Address_Type1" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_PricingModel_PricingTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_ServiceReferenceTypeMapping_ReferenceType" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_UserCustomerAccountMapping_CustomerSetup" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_CsrActivityLogs_CsrSetup" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_Address_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_CsrContact_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_CsrFak_CsrTariffPricingModel" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_GainsharePricingModel_GainsharePricingModelId1" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_CsrLocation_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_CsrPricingModel_CsrPricingTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_Users_CsrSetup" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_CsrStatus_CsrSetup" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_CustomerEndPointMapping_ApiEndPoint" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_CustomerApiKey_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_CustomerEmail_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_CustomerEndPointMapping_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_CustomerRateOptionsMapping_CustomerSetup" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_CustomerRateOptionsMapping_RateOptions" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK__CustomRep__Custo__746F28F1" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK__CustomRep__Custo__76577163" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK__UserCusto__Custo__783FB9D5" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_Document_ReferenceMapping" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_DocumentRolesMapping_Document" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_DocumentRolesMapping_SecurityGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_ReferenceMapping_Folder" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_SecurityGroupPrivilegeRelationship_Privilege" ManuallyRouted="false" />
+        <AssociationConnector Association="ProxyEntities.FK_SecurityGroupPrivilegeRelationship_SecurityGroup" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ProxyEntities.AccessorialSetUp" Width="1.5" PointX="13.375" PointY="0.75" />
+        <EntityTypeShape EntityType="ProxyEntities.BumpSurgeCustomerSetUp" Width="1.5" PointX="5.25" PointY="67.875" />
+        <EntityTypeShape EntityType="ProxyEntities.BumpSurgeStationSetUp" Width="1.5" PointX="15.375" PointY="0.75" />
+        <EntityTypeShape EntityType="ProxyEntities.CarrierWebsite" Width="1.5" PointX="24.375" PointY="19.75" />
+        <EntityTypeShape EntityType="ProxyEntities.ExternalServiceErrorDetail" Width="1.5" PointX="26.625" PointY="1" />
+        <EntityTypeShape EntityType="ProxyEntities.ExternalService" Width="1.5" PointX="24.375" PointY="10.375" />
+        <EntityTypeShape EntityType="ProxyEntities.RequestType" Width="1.5" PointX="24.375" PointY="1.375" />
+        <EntityTypeShape EntityType="ProxyEntities.StationSalesCode" Width="1.5" PointX="10.375" PointY="0.75" />
+        <EntityTypeShape EntityType="ProxyEntities.UserAutoLogin" Width="1.5" PointX="5.25" PointY="75.25" />
+        <EntityTypeShape EntityType="ProxyEntities.AccessorialCarrierSetUp" Width="1.5" PointX="5.25" PointY="71.5" />
+        <EntityTypeShape EntityType="ProxyEntities.AccessorialCustomerSetUp" Width="1.5" PointX="5.25" PointY="88.5" />
+        <EntityTypeShape EntityType="ProxyEntities.CsrAccessorialCarrierSetUp" Width="1.5" PointX="8.25" PointY="76.5" />
+        <EntityTypeShape EntityType="ProxyEntities.CsrAccessorialCustomerSetUp" Width="1.5" PointX="8.25" PointY="73" />
+        <EntityTypeShape EntityType="ProxyEntities.RmApprovalStatu" Width="1.5" PointX="6" PointY="58.875" />
+        <AssociationConnector Association="ProxyEntities.FK__BumpSurge__Custo__6C390A4C" />
+        <AssociationConnector Association="ProxyEntities.FK_RequestPageId" />
+        <AssociationConnector Association="ProxyEntities.FK_ServiceId" />
+        <AssociationConnector Association="ProxyEntities.FK_Common_UserAutoLogin_CustomerAccount" />
+        <AssociationConnector Association="ProxyEntities.FK__Accessori__Custo__6D2D2E85" />
+        <AssociationConnector Association="ProxyEntities.FK__Accessori__Custo__6E2152BE" />
+        <AssociationConnector Association="ProxyEntities.FK_RmApprovalStatus_CsrSetup" />
+        <EntityTypeShape EntityType="ProxyEntities.ImageNowSetUp" Width="1.5" PointX="24.375" PointY="24.75" />
+        <EntityTypeShape EntityType="ProxyEntities.captured_columns" Width="1.5" PointX="17.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ProxyEntities.change_tables" Width="1.5" PointX="25.75" PointY="4.75" />
+        <EntityTypeShape EntityType="ProxyEntities.ddl_history" Width="1.5" PointX="24.75" PointY="12.75" />
+        <EntityTypeShape EntityType="ProxyEntities.index_columns" Width="1.5" PointX="13.75" PointY="7.75" />
+        <EntityTypeShape EntityType="ProxyEntities.lsn_time_mapping" Width="1.5" PointX="25.75" PointY="15.75" />
+        <EntityTypeShape EntityType="ProxyEntities.Common_BumpSurgeCustomerSetUp_CT" Width="1.5" PointX="15.75" PointY="25.75" />
+        <EntityTypeShape EntityType="ProxyEntities.Common_BumpSurgeStationSetUp_CT" Width="1.5" PointX="17.75" PointY="25.75" />
+        <EntityTypeShape EntityType="ProxyEntities.Csr_AccessorialCarrierSetUp_CT" Width="1.5" PointX="26.75" PointY="9.75" />
+        <EntityTypeShape EntityType="ProxyEntities.Csr_AccessorialCustomerSetUp_CT" Width="1.5" PointX="26.75" PointY="18.75" />
+        <EntityTypeShape EntityType="ProxyEntities.Csr_CarrierDetails_CT" Width="1.5" PointX="26.75" PointY="22.75" />
+        <EntityTypeShape EntityType="ProxyEntities.Csr_CustomerAccount_CT" Width="1.5" PointX="0.75" PointY="27.75" />
+        <EntityTypeShape EntityType="ProxyEntities.Csr_Fak_CT" Width="1.5" PointX="2.75" PointY="27.75" />
+        <EntityTypeShape EntityType="ProxyEntities.Csr_GainsharePricingModel_CT" Width="1.5" PointX="19.75" PointY="27.75" />
+        <EntityTypeShape EntityType="ProxyEntities.Csr_GainShareScacCode_CT" Width="1.5" PointX="27.75" PointY="4.75" />
+        <EntityTypeShape EntityType="ProxyEntities.Csr_PricingModel_CT" Width="1.5" PointX="27.75" PointY="14.75" />
+        <EntityTypeShape EntityType="ProxyEntities.Csr_TariffPricingModel_CT" Width="1.5" PointX="21.75" PointY="27.75" />
+        <EntityTypeShape EntityType="ProxyEntities.CsrStage_CsrCustomerAccount_CT" Width="1.5" PointX="26.75" PointY="27.75" />
+        <EntityTypeShape EntityType="ProxyEntities.CsrStage_CsrFak_CT" Width="1.5" PointX="28.75" PointY="9.75" />
+        <EntityTypeShape EntityType="ProxyEntities.CsrStage_CsrGainsharePricingModel_CT" Width="1.5" PointX="11.75" PointY="28.75" />
+        <EntityTypeShape EntityType="ProxyEntities.CsrStage_CsrPricingModel_CT" Width="1.5" PointX="28.75" PointY="18.75" />
+        <EntityTypeShape EntityType="ProxyEntities.CsrStage_CsrTariffPricingModel_CT" Width="1.5" PointX="28.75" PointY="23.75" />
+        <EntityTypeShape EntityType="ProxyEntities.Proxy_CustomerSetUp_CT" Width="1.5" PointX="29.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ProxyEntities.IntegrationRequestComment" Width="1.5" PointX="16.5" PointY="40.125" />
+        <EntityTypeShape EntityType="ProxyEntities.IntegrationRequestTypeMapping" Width="1.5" PointX="16.5" PointY="36.875" />
+        <EntityTypeShape EntityType="ProxyEntities.IntegrationStage" Width="1.5" PointX="12" PointY="61.5" />
+        <EntityTypeShape EntityType="ProxyEntities.IntegrationStatu" Width="1.5" PointX="9.75" PointY="61.5" />
+        <EntityTypeShape EntityType="ProxyEntities.IntegrationType" Width="1.5" PointX="14.25" PointY="31.625" />
+        <AssociationConnector Association="ProxyEntities.FK__Integrati__Integ__0F4D3C5F" />
+        <AssociationConnector Association="ProxyEntities.FK_IntegrationStage_IntegrationStatus" />
+        <EntityTypeShape EntityType="ProxyEntities.AllStationsBumpSurgeSetup" Width="1.5" PointX="30.375" PointY="5.75" />
+        <EntityTypeShape EntityType="ProxyEntities.DefaultAccessorialSetup" Width="1.5" PointX="30.375" PointY="14.75" />
+        <EntityTypeShape EntityType="ProxyEntities.CustomerCredit" Width="1.5" PointX="29.375" PointY="29.75" />
+        <EntityTypeShape EntityType="ProxyEntities.CustomerInvoice" Width="1.5" PointX="31.375" PointY="18.75" />
+        <EntityTypeShape EntityType="ProxyEntities.systranschema" Width="1.5" PointX="16.375" PointY="30.75" />
+        <AssociationConnector Association="ProxyEntities.FK_CustomerCredit_CustomerCredit" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceClaim" Width="1.875" PointX="3" PointY="51.5" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceClaimArticleType" Width="1.5" PointX="8" PointY="80.375" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceClaimCarrier" Width="1.5" PointX="5.25" PointY="97.625" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceClaimFreight" Width="1.5" PointX="5.25" PointY="92.75" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceClaimItem" Width="1.5" PointX="10.25" PointY="49.125" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceClaimStatu" Width="1.5" PointX="0.75" PointY="54.875" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceClaimType" Width="1.5" PointX="8" PointY="83.5" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaim_CustomerSetUpId" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimCarrier_ClaimNumber" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimFreight_ClaimNumber" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimItems_ClaimNumber" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimStatus_Id" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimItems_InsuranceClaimArticleTypeId" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimItems_InsuranceClaimTypeId" />
+        <EntityTypeShape EntityType="ProxyEntities.Country" Width="1.5" PointX="31.375" PointY="33" />
+        <EntityTypeShape EntityType="ProxyEntities.DocumentType" Width="1.5" PointX="31.375" PointY="9.75" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceClaimConsigneeAddress" Width="1.5" PointX="36.625" PointY="43" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceClaimPayableTo" Width="1.5" PointX="33.625" PointY="42.5" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceClaimShipperAddress" Width="1.5" PointX="36.625" PointY="38" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimConsigneeAddress_CountryId" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimPayableTo_CountryId" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimShipperAddress_CountryId" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimConsigneeAddress_ClaimNumber" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimPayableTo_ClaimNumber" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimShipperAddress_ClaimNumber" />
+        <EntityTypeShape EntityType="ProxyEntities.Batch" Width="1.5" PointX="31.375" PointY="26.75" />
+        <EntityTypeShape EntityType="ProxyEntities.ApplicationConfiguration" Width="1.5" PointX="31.375" PointY="29.75" />
+        <EntityTypeShape EntityType="ProxyEntities.CustomReportCustomerMapping" Width="1.5" PointX="37.875" PointY="26.375" />
+        <EntityTypeShape EntityType="ProxyEntities.CustomReportStationMapping" Width="1.5" PointX="37.875" PointY="14.625" />
+        <EntityTypeShape EntityType="ProxyEntities.InvoiceCustomReport" Width="1.5" PointX="35.625" PointY="6" />
+        <EntityTypeShape EntityType="ProxyEntities.InvoiceRangeType" Width="1.5" PointX="33.375" PointY="3.125" />
+        <EntityTypeShape EntityType="ProxyEntities.InvoiceType" Width="1.5" PointX="33.375" PointY="7.125" />
+        <EntityTypeShape EntityType="ProxyEntities.MonthlyScheduledReport" Width="1.5" PointX="40.125" PointY="4.875" />
+        <EntityTypeShape EntityType="ProxyEntities.ReportFrequency" Width="1.5" PointX="35.625" PointY="2.125" />
+        <EntityTypeShape EntityType="ProxyEntities.ScheduledReport" Width="1.5" PointX="37.875" PointY="6.125" />
+        <EntityTypeShape EntityType="ProxyEntities.WeeklyScheduledReport" Width="1.5" PointX="40.125" PointY="9" />
+        <AssociationConnector Association="ProxyEntities.FK_CustomReportCustomerMapping_CustomerSetup" />
+        <AssociationConnector Association="ProxyEntities.FK_CustomReportCustomerMapping_InvoiceCustomReport" />
+        <AssociationConnector Association="ProxyEntities.FK_CustomReportStationMapping_InvoiceCustomReport" />
+        <AssociationConnector Association="ProxyEntities.FK_InvoiceCustomReport_InvoiceRangeType" />
+        <AssociationConnector Association="ProxyEntities.FK_InvoiceCustomReportt_InvoiceType" />
+        <AssociationConnector Association="ProxyEntities.FK_ScheduledReport_InvoiceCustomReport" />
+        <AssociationConnector Association="ProxyEntities.FK_ScheduledReportId" />
+        <AssociationConnector Association="ProxyEntities.FK_ScheduledReport_ReportFrequency" />
+        <AssociationConnector Association="ProxyEntities.FK_WeeklyScheduledReport_ScheduledReport" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceClaimReasonCode" Width="2.125" PointX="0.75" PointY="58.5" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceClaimRep" Width="2.375" PointX="32.375" PointY="13" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaim_InsuranceClaimReasonCodes" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaim_InsuranceClaimRep" />
+        <EntityTypeShape EntityType="ProxyEntities.AccessType" Width="1.5" PointX="33.375" PointY="37.125" />
+        <EntityTypeShape EntityType="ProxyEntities.IntegrationUser" Width="1.5" PointX="33.375" PointY="19" />
+        <EntityTypeShape EntityType="ProxyEntities.IntegrationUserAccessMapping" Width="1.5" PointX="35.625" PointY="19" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceCarrierOsdAction" Width="1.5" PointX="5.25" PointY="105.625" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceClaimCompany" Width="1.5" PointX="9" PointY="87.375" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceClaimProgram" Width="1.5" PointX="9" PointY="90.5" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceDlswOsdAction" Width="1.5" PointX="5.25" PointY="101.875" />
+        <EntityTypeShape EntityType="ProxyEntities.InusranceFtlMode" Width="1.5" PointX="5.25" PointY="109.25" />
+        <AssociationConnector Association="ProxyEntities.FK_IntegrationUserAccessMapping_AccessTypeId" />
+        <AssociationConnector Association="ProxyEntities.FK_IntegrationUserAccessMapping_IntegrationUserId" />
+        <AssociationConnector Association="ProxyEntities.FK__Insurance__Claim__28D80438" />
+        <AssociationConnector Association="ProxyEntities.FK__Inusrance__Claim__2BB470E3" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceDlswOsdActions_ClaimNumber" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceCarrierList" Width="1.5" PointX="22.375" PointY="32.75" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceForwardingMode" Width="1.5" PointX="5.25" PointY="113.375" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceForwardingMode_InsuranceClaim" />
+        <EntityTypeShape EntityType="ProxyEntities.Cookie" Width="1.5" PointX="35.625" PointY="31" />
+        <EntityTypeShape EntityType="ProxyEntities.CookieCategory" Width="1.5" PointX="33.375" PointY="48.5" />
+        <EntityTypeShape EntityType="ProxyEntities.PartType" Width="1.5" PointX="33.375" PointY="31.5" />
+        <AssociationConnector Association="ProxyEntities.FK_Cookie_CookieCategory" />
+        <AssociationConnector Association="ProxyEntities.FK_Cookie_PartType" />
+        <EntityTypeShape EntityType="ProxyEntities.CsrCustomerAccount" Width="1.5" PointX="6" PointY="117.75" />
+        <EntityTypeShape EntityType="ProxyEntities.IntegrationRequest" Width="1.5" PointX="14.25" PointY="49.375" />
+        <AssociationConnector Association="ProxyEntities.FK_IntegrationRequest_CustomerAccount" />
+        <AssociationConnector Association="ProxyEntities.FK__CsrAccess__Custo__6F1576F7" />
+        <AssociationConnector Association="ProxyEntities.FK__CsrAccess__Custo__70099B30" />
+        <AssociationConnector Association="ProxyEntities.FK_Address_CustomerAccount_CustomerAccountId" />
+        <AssociationConnector Association="ProxyEntities.FK_CsrContact_CsrCustomerAccount" />
+        <AssociationConnector Association="ProxyEntities.FK_CsrCorporateBillingReferenceNumbers_CsrCustomerAccount" />
+        <AssociationConnector Association="ProxyEntities.FK_CsrCustomerAccount_CsrSetup" ManuallyRouted="true" >
+          <ConnectorPoint PointX="5.25" PointY="16.125" />
+          <ConnectorPoint PointX="6" PointY="121.81850166156009" />
+        </AssociationConnector>
+        <AssociationConnector Association="ProxyEntities.FK_CsrCustomerAccountMapping_CsrCustomerAccount_Sub" />
+        <AssociationConnector Association="ProxyEntities.FK_CsrGainsharePricingModel_CsrCustomerAccount" />
+        <AssociationConnector Association="ProxyEntities.FK_CsrInvoicePreference_CsrCustomerAccount" />
+        <AssociationConnector Association="ProxyEntities.FK_CsrLocation_CsrCustomerAccount" />
+        <AssociationConnector Association="ProxyEntities.FK_CsrPricingModel_CsrCustomerAccount" />
+        <AssociationConnector Association="ProxyEntities.FK_CsrStationCustomerAccountMapping_CustomerAccountId" />
+        <AssociationConnector Association="ProxyEntities.FK_CsrTariffPricingModel_CsrCustomerAccount" />
+        <AssociationConnector Association="ProxyEntities.FK_CustomerServiceSpecificEmails_CustomerAccount1" />
+        <AssociationConnector Association="ProxyEntities.FK_Item_CustomerAccount_CustomerAccountId" />
+        <AssociationConnector Association="ProxyEntities.FK__Integrati__Integ__05C3D225" />
+        <AssociationConnector Association="ProxyEntities.FK__Integrati__Integ__0E591826" />
+        <AssociationConnector Association="ProxyEntities.FK_IntegrationRequest_IntegrationStatus" />
+        <AssociationConnector Association="ProxyEntities.FK_IntegrationRequestComment_IntegrationRequest" />
+        <EntityTypeShape EntityType="ProxyEntities.CustomerDocumentDirectoryUrlMapping" Width="1.5" PointX="3" PointY="33" />
+        <AssociationConnector Association="ProxyEntities.FK_CustomerDocumentDirectoryUrlMapping_CustomerSetup" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaim_InsuranceClaimCompany" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaim_InsuranceClaimProgram" />
+        <EntityTypeShape EntityType="ProxyEntities.Category" Width="1.5" PointX="12" PointY="72.625" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceClaimCarrierCopy" Width="1.5" PointX="38.75" PointY="63.75" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceClaimConsigneeAddressCopy" Width="1.5" PointX="42.75" PointY="43.375" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceClaimCopy" Width="1.5" PointX="36.5" PointY="50.5" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceClaimFreightCopy" Width="1.5" PointX="38.75" PointY="68.125" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceClaimHistory" Width="1.5" PointX="14.25" PointY="57.375" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceClaimItemsCopy" Width="1.5" PointX="41.75" PointY="69.25" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceClaimPayableToCopy" Width="1.5" PointX="39.75" PointY="37" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceClaimPayment" Width="1.5" PointX="11.25" PointY="54.125" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceClaimPaymentType" Width="1.5" PointX="9" PointY="94.75" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceClaimShipperAddressCopy" Width="1.5" PointX="39.75" PointY="43.375" />
+        <EntityTypeShape EntityType="ProxyEntities.InsuranceClaimStatusCode" Width="1.5" PointX="0.75" PointY="62.5" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimConsigneeAddressCopy_CountryId" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimPayableToCopy_CountryId" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimShipperAddressCopy_CountryId" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimHistory_CategoryId" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaim_InsuranceClaimStatusCodeId" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimHistory_ClaimNumber" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimPayment_ClaimNumber" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimItemsCopy_InsuranceClaimArticleTypeId" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimCarrierCopy_ClaimNumber" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimCopy_InsuranceClaimCompanyId" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimConsigneeAddressCopy_ClaimNumber" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimCopy_CustomerSetUpId" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimCopy_InsuranceClaimProgramId" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimCopy_InsuranceClaimReasonCodeId" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimCopy_InsuranceClaimRepId" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimCopy_InsuranceClaimStatusCopyId" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimFreightCopy_ClaimNumber" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimItemsCopy_ClaimNumber" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimPayableToCopy_ClaimNumber" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimShipperAddressCopy_ClaimNumber" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimItemsCopy_InsuranceClaimTypeId" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimPayment_InsuranceClaimPaymentTypeId" />
+        <AssociationConnector Association="ProxyEntities.FK_InsuranceClaimStatusCode_InsuranceClaimStatusId" />
+        <EntityTypeShape EntityType="ProxyEntities.AccessorialDirection" Width="1.5" PointX="11.125" PointY="62.75" />
+        <EntityTypeShape EntityType="ProxyEntities.AccessorialMGDescription" Width="1.5" PointX="15.625" PointY="48.625" />
+        <EntityTypeShape EntityType="ProxyEntities.AccessorialServiceTypeMapping" Width="1.5" PointX="15.625" PointY="0.75" />
+        <EntityTypeShape EntityType="ProxyEntities.CarrierAndAccessorialThresholdMapping" Width="1.5" PointX="25" PointY="0.75" />
+        <AssociationConnector Association="ProxyEntities.FK_AccessorialSetUp_AccessorialDirection" />
+        <AssociationConnector Association="ProxyEntities.FK_Common_AccessorialSetUp_1" />
+        <AssociationConnector Association="ProxyEntities.FK_Common_AccessorialSetUp" />
+        <AssociationConnector Association="ProxyEntities.FK_Common_Services" />
+        <AssociationConnector Association="ProxyEntities.FK__CarrierAn__Acces__39CD8610" />
+        <AssociationConnector Association="ProxyEntities.FK__CarrierAn__Carri__38D961D7" />
+        <EntityTypeShape EntityType="ProxyEntities.CustomerShippingReference" Width="1.5" PointX="25.25" PointY="35.5" />
+        <AssociationConnector Association="ProxyEntities.FK__CustomerS__Custo__0307610B" />
+        <AssociationConnector Association="ProxyEntities.FK__CustomerS__Refer__03FB8544" />
+        <EntityTypeShape EntityType="ProxyEntities.DagrtNumberLookup" Width="1.5" PointX="5.25" PointY="128" />
+        <EntityTypeShape EntityType="ProxyEntities.GainshareCostingType" Width="1.5" PointX="28.125" PointY="39" />
+        <EntityTypeShape EntityType="ProxyEntities.CreditHoldHistory" Width="1.5" PointX="3" PointY="24" />
+        <AssociationConnector Association="ProxyEntities.FK_csr_CustomerAccount" />
+        <AssociationConnector Association="ProxyEntities.FK__DefaultAc__Gains__292D09F3" />
+        <AssociationConnector Association="ProxyEntities.FK__CreditHol__Custo__6482D9EB" />
+        <EntityTypeShape EntityType="ProxyEntities.CustomerRatingLogicAudit" Width="1.5" PointX="5.25" PointY="131.75" />
+        <AssociationConnector Association="ProxyEntities.FK__CustomerR__Custo__2CFD9AD7" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

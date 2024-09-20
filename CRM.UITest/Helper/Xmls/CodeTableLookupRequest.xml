@@ -1,0 +1,7 @@
+<service-request>
+  <service-id>CodeTable</service-id>
+<request-id>123456789</request-id>
+<data>
+      <codeTableName>LocationType</codeTableName >
+</data>
+</service-request>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<QuantityUnits>
+
+  <QuantityUnit name ="Bags" code="BAG" isdefault="false"/>
+  <QuantityUnit name ="Bundles" code="BDL" isdefault="false"/>
+  <QuantityUnit name ="Boxes" code="BOX" isdefault="false"/>
+  <QuantityUnit name ="Cabinets" code="CAB" isdefault="false"/>
+  <QuantityUnit name ="Cans" code="CAN" isdefault="false"/>
+  <QuantityUnit name ="Cases" code="CAS" isdefault="false"/>
+  <QuantityUnit name ="Crates" code="CRT" isdefault="false"/>
+  <QuantityUnit name ="Cartons" code="CTN" isdefault="false"/>
+  <QuantityUnit name ="Cylinders" code="CYL" isdefault="false"/>
+  <QuantityUnit name ="Drums" code="DRM" isdefault="false"/>
+  <QuantityUnit name ="Pails" code="PAL" isdefault="false"/>
+  <QuantityUnit name ="Pieces" code="PCS" isdefault="false"/>
+  <QuantityUnit name ="Pallets" code="PLT" isdefault="false"/>
+  <QuantityUnit name ="Flat Racks" code="RCK" isdefault="false"/>
+  <QuantityUnit name ="Reels" code="REL" isdefault="false"/>
+  <QuantityUnit name ="Rolls" code="ROL" isdefault="false"/>
+  <QuantityUnit name ="Skids" code="SKD" isdefault="true"/>
+  <QuantityUnit name ="Slip Sheets" code="SLP" isdefault="false"/>
+  <QuantityUnit name ="Stacks" code="STK" isdefault="false"/>
+  <QuantityUnit name ="Totes" code="TBN" isdefault="false"/>
+
+</QuantityUnits>

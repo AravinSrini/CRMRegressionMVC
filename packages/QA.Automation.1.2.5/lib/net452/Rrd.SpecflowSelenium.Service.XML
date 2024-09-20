@@ -1,0 +1,1181 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Rrd.SpecflowSelenium.Service</name>
+    </assembly>
+    <members>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.Start_Scenario">
+            <summary>
+            This method called implicitly BEFORE each test run.
+            This also calls the start() method to launch the browser.
+            </summary>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.end">
+            <summary>
+            This method is called implicitly AFTER each test run.
+            The HTML and Excel test reports are created and appended in the end() method.
+            </summary>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.start">
+            <summary>
+            Launches the browser specified in the application.
+            The start() method is called implicitly in the Before Scenario before each test run.
+            </summary>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.attributeNameValue(System.String,System.String)">
+            <summary>
+            Finds the element by the attribute value specified.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.setBrowserSize(System.Int32,System.Int32)">
+            <summary>
+            To re-size the browser window.
+            </summary>
+            <param name="width"></param>
+            <param name="height"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.LaunchURL">
+            <summary>
+            To launch URL.
+            </summary>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.refreshBrowser">
+            <summary>
+            To refresh a browser window.
+            </summary>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.enterUrlInNewTab(System.String)">
+            <summary>
+            To enter a URL in a new tab.
+            </summary>
+            <param name="Url"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.Click(System.String,System.String)">
+            <summary>
+            Performs click action.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.DoubleClick(System.String,System.String)">
+            <summary>
+            Performs double click action.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.SendKeys(System.String,System.String,System.String)">
+            <summary>
+            Use to enter text in edit boxes
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="value"> Value of the text to be entered. </param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.Check(System.String,System.String)">
+            <summary>
+            Use to enable the checkbox.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.uncheck(System.String,System.String)">
+            <summary>
+            Use to disable the checkbox.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.radio(System.String,System.String)">
+            <summary>
+            Use to enable the radio button.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.alertAccept">
+            <summary>
+            Use to accept any alert pop up messages.
+            </summary>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.alertDismiss">
+            <summary>
+            Use to dismiss any alert messages.
+            </summary>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.Clear(System.String,System.String)">
+            <summary>
+            Use to perform clear operation
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.Submit(System.String,System.String)">
+            <summary>
+            Use to submit forms.
+            There are some restrictions; Element “type” should be “Submit” and the button should be inside the "form" tag. 
+            If the “type” is button and the "form" is outside the tag then use the “Click” method.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.CloseWindow">
+            <summary>
+            Use to close the browser window that the driver has focus of.
+            </summary>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.Quit">
+            <summary>
+            Closes all the browser windows and calls Dispose method which will safely end the session.
+            </summary>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.Display(System.String,System.String)">
+            <summary>
+            Gets a value indicating whether or not this element is displayed.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.RoundUp(System.DateTime,System.TimeSpan)">
+            <summary>
+            To Round Up time to nearest half hour.
+            </summary>
+            <param name="dt"></param>
+            <param name="d"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.RadiobuttonSelection(System.String,System.String)">
+            <summary>
+            Use to check or uncheck a radio button
+            </summary>
+            <param name="radioButtonAttributeName"></param>
+            <param name="radioButtonAttributeValue"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.RadiobuttonChecked(System.String,System.String)">
+            <summary>
+            Use to verify if a radio button is checked as expected.
+            </summary>
+            <param name="radioButtonAttributeName">Radio Button inputs</param>
+            <param name="radioButtonAttributeValue">Radio Button inputs</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.IsValidEmail(System.String)">
+            <summary>
+            Use to verify the format of an email address.
+            </summary>
+            <param name="emailaddress"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.IsHtmlElementIsExist(System.String,System.String)">
+            <summary>
+            Use to verify if Html element exists.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.scrollAndClick">
+            <summary>
+            Scrolls to an element: scroll value "scroll(0,1000)"
+            </summary>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.WindowHandling(System.String)">
+            <summary>
+            Switches the focus of future commands for this driver to the window with the given name.
+            </summary>
+            <param name="ChildWindowUrl">The name of the window to select.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.multipleWindowHandling(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Use to verify that multiple windows are opened based on the number of clicks.
+            </summary>
+            <param name="ChildWindowUrl">URL to be verified in the new windows opened.</param>
+            <param name="attributeName">Attribute name to perform click action. Ex: Xpath, Id or Linktext.</param>
+            <param name="ClickLinkPath">Attribute value of the element to be clicked.</param>
+            <param name="PassMessage">Pass the message to be displayed if test passes.</param>
+            <param name="FailMessage">Pass the message to be displayed if test fails.</param>
+            <returns>countBrowserWindow.</returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.DeleteFilesFromFolder(System.String)">
+            <summary>
+            Use to delete a file from a given folder.
+            </summary>
+            <param name="filepathTodelete">File path including the filename to be deleted.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.CheckFileExists(System.String,System.String)">
+            <summary>
+            Use to move a file to a new location and verify if the file is downloaded with the expected name.
+            </summary>
+            <param name="sourceFile">Source file location.</param>
+            <param name="ActualFile">Destination file location.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.ElementClickableLink(System.String,System.String)">
+            <summary>
+            An expectation for checking that all elements present on the web page that match the locator are visible.
+            Visibility means that the elements are not only displayed but also have a height and width that is greater than 0
+            </summary>
+            <param name="attributeName">This method currently takes the Id as the locator.</param>
+            <param name="attributeValue">Value of the locator Id.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.ElementRightClick(System.String,System.String)">
+            <summary>
+            Use to right click on an element.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.FileUpload(System.String,System.String,System.String)">
+            <summary>
+            Use to upload a file.
+            </summary>
+            <param name="AttributeName"></param>
+            <param name="attributeValue"></param>
+            <param name="FilePath">File path including the file name</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.GetHeight(System.String,System.String)">
+            <summary>
+            Use to get the height of an element
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.GetWidth(System.String,System.String)">
+            <summary>
+            Use to get the width of an element
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.GetAttribute(System.String,System.String,System.String)">
+            <summary>
+            Gets the value of the specified attribute for this element.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="elementattributename">The name of the attribute. Ex: attribute "alt" inside img tag</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.Gettext(System.String,System.String)">
+            <summary>
+            Gets the innerText of this element, without any leading or trailing whitespace, and with other whitespace collapsed.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.HiddenGettext(System.String,System.String)">
+            <summary>
+            Use to get the hidden text in the "innerHTML" of an element.
+            </summary>
+            <param name="attributename">This method currently uses class name as the attribute.</param>
+            <param name="attributevalue">Value of class name.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.HiddenGetValue(System.String,System.String)">
+            <summary>
+            Use to get the hidden text in the "value" tag of an element.
+            </summary>
+            <param name="attributename">This method currently uses Id as the attribute.</param>
+            <param name="attributevalue">Value of Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.HiddenDocumentListUI(System.String,System.String)">
+            <summary>
+            Use to get the list of documents in the UI element in the innerHTML tag
+            </summary>
+            <param name="attributename">This method currently uses Xpath as the attribute.</param>
+            <param name="attributevalue">Value of Xpath</param>
+            <returns>The list of files.</returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.getSelectedLabel(System.String,System.String)">
+            <summary>
+             Use to get the selected item within the select element. Performs similar action as Gettext().
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.GetValue(System.String,System.String,System.String)">
+            <summary>
+            Use to get the value of a specified back end attribute of the element.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="BackEndAttribute">Ex: "value"</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.GetCSSValue(System.String,System.String,System.String)">
+            <summary>
+            Use to get the value of a CSS property of this element.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="elementattributename"> The name of the CSS property to get the value of. Ex: background-color.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.GetOptions(System.String,System.String)">
+            <summary>
+            Use to get the list of options for the select element.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.GetOptionstextbyIndex(System.String,System.String,System.Int32)">
+            <summary>
+            Use to get the list of options for the select element by Index.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.GetBrowserName">
+            <summary>
+            Use to get the browser name.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.GetURL">
+            <summary>
+            Use to get the URL.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.GetCount(System.String,System.String)">
+            <summary>
+            Use to get the count of the number of elements contained in the System.Collections.ObjectModel.ReadOnlyCollection`1 instance.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.GetPageSource">
+            <summary>
+            Use to get the source of the page last loaded by the browser.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.GetListOfHours(System.String,System.String)">
+            <summary>
+            Use to verify if a drop down contains the list of hours in the 12-hour clock format with half hour intervals.
+            </summary>
+            <param name="attributename">This method currently uses the Xpath as locator of the drop down.</param>
+            <param name="attributeValue">Value of Xpath.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.GetSelectedOption(System.String,System.String)">
+            <summary>
+             Use to get the selected item within the select element. Performs similar action as Gettext().
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.GetTitle">
+            <summary>
+            Use to get the title of the current browser window.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.GetDropdownValues(System.String,System.String,System.String)">
+            <summary>
+            Use to get the values in a drop down. GetDropdownValues() and DisplayDropdownOptions() perform the same function.
+            </summary>
+            <param name="attributename">This method uses Id as the attribute.</param>
+            <param name="attributevalue">Value of Id</param>
+            <param name="TagValue">Pass the tag value to find elements. Ex: "li" or "option"</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.DisplayDropdownOptions(System.String,System.String,System.String)">
+            <summary>
+            Use to get the values in a drop down. DisplayDropdownOptions() and GetDropdownValues() perform the same function.
+            </summary>
+            <param name="attributename">This method uses Id as the attribute.</param>
+            <param name="attributevalue">Value of Id</param>
+            <param name="TagValue">Pass the tag value to find elements. Ex: "li" or "option"</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.GetDropdownListValues(System.String,System.String,System.String)">
+            <summary>
+            Use to get the values in a drop down.
+            </summary>
+            <param name="attributename">This method uses Xpath as the attribute.</param>
+            <param name="attributevalue">Value of Xpath</param>
+            <param name="TagValue">Pass the tag value to find elements. Ex: "li" or "option"</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.GetDropdownOptions(System.String,System.String,System.String)">
+            <summary>
+            Use to get the values in a drop down.
+            </summary>
+            <param name="attributename">This method takes any locator.Ex: Id, Xpath and so on...</param>
+            <param name="attributevalue">Value of the locator</param>
+            <param name="TagValue">Pass the tag value to find elements. Ex: "li" or "option"</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.GetSelectedListDisplayedOnMultiSelectDropDown(System.String,System.String)">
+            <summary>
+            Use to get the list of options displayed in an edit box after multiple selections have been made from a multi-select drop down.
+            </summary>
+            <param name="attributename">This method takes Xpath as the locator</param>
+            <param name="attributevalue">Value of Xpath</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.getActivePageElement">
+            <summary>
+            Use to get web element that currently has the focus.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.getIndividiualRows(System.String,System.String,System.String,System.String)">
+            <summary>
+            Use to get the individual row data in a grid.
+            </summary>
+            <param name="attributename">This method takes any locator.Ex: Id, Xpath and so on...</param>
+            <param name="attributevalue">Value of the locator.</param>
+            <param name="rowtype">The row type can be the locator to find by tag name or class name</param>
+            <param name="rowvalue">Ex: "tr" or a class name</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.IndividualColumnData(System.String)">
+            <summary>
+            Use to get the individual column data in a grid.
+            </summary>
+            <param name="attributevalue">Pass the Xpath as attribute value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.GetListOfOptionsFromMultiSelectDropDown(System.String,System.String)">
+            <summary>
+            Use to get the options available in a multi select dropdown.
+            </summary>
+            <param name="PathForListOfMultiSelectOptions">Xpath of the multi select drop down</param>
+            <param name="PathForList">Xpath of the li</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.CountOfNoOfRows(System.String,System.String)">
+            <summary>
+            Use to get the count of rows in a grid table. CountOfNoOfRows() and CountOfTableRows() perform the same function.
+            </summary>
+            <param name="attributename">Pass the locator for the grid</param>
+            <param name="attributevalue">Value of the locator</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.CountOfTableRows(System.String,System.String)">
+            <summary>
+            Use to get the count of rows in a grid table. CountOfTableRows() and CountOfNoOfRows() perform the same function.
+            </summary>
+            <param name="attributename">Pass the locator for the grid</param>
+            <param name="attributevalue">Value of the locator</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.SelectByVisibleText(System.String,System.String,System.String)">
+            <summary>
+             Select an option by the text displayed.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="text">Pass the text to be selected.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.SelectByValue(System.String,System.String,System.String)">
+            <summary>
+             Select an option by the value.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="value">Pass the value to be selected.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.SelectByIndex(System.String,System.String,System.Int32)">
+            <summary>
+            Select an option by the index, as determined by the "index" attribute of the element.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.SelectDropdownlistvalue(System.String,System.String,System.String,System.String)">
+            <summary>
+            Use to make a selection from a dropdown list.
+            May require to perform Click() funtionality on the drop down before selecting an element using this method.
+            </summary>
+            <param name="attributename">This method takes any locator.Ex: Id, Xpath and so on...</param>
+            <param name="attributevalue">Value of the locator.</param>
+            <param name="Elementname">The value of the element that you would like to select</param>
+            <param name="DropDownOptionsPath">Pass the option or li tag depending on the list</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.SelectDropdownlistvalue(System.String,System.String,System.String)">
+            <summary>
+            Use to make a selection from a dropdown list.
+            May require to perform Click() funtionality on the drop down before selecting an element using this method.
+            This method implicitly uses the "option" tag to find the element specified
+            </summary>
+            <param name="attributename">This method takes any locator.Ex: Id, Xpath and so on...</param>
+            <param name="attributevalue">Value of the locator.</param>
+            <param name="Elementname">The value of the element that you would like to select</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.SelectDropdownValueFromList(System.String,System.String,System.String)">
+            <summary>
+            Use to make a selection from a dropdown list.
+            May require to perform Click() funtionality on the drop down before selecting an element using this method.
+            This method implicitly uses the "li" tag to find the element specified.
+            </summary>
+            <param name="attributename">This method takes any locator.Ex: Id, Xpath and so on...</param>
+            <param name="attributevalue">Value of the locator.</param>
+            <param name="Elementname">The value of the element that you would like to select</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.SelectOptionFromMultiSelectDropDown(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Use to select an option from a multi select drop down.
+            Click() not required before this method.
+            
+            </summary>
+            <param name="attributename">This method takes any locator.Ex: Id, Xpath and so on... This parameter can be Id.</param>
+            <param name="attributevalue">Value of the locator.</param>
+            <param name="attributename1">This parameter can be the Xpath to the list.</param>
+            <param name="attributevalue1">Value of the locator.</param>
+            <param name="tagName">Pass the tag value containing the elements. option or li tag.</param>
+            <param name="OptionToSelect">Pass the value of the element to be selected.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.SelectTimeDropDownList(System.String,System.String,System.String)">
+            <summary>
+            Use to select a value from a drop down that contains a list of hours in the 12-hour clock format with half hour intervals.
+            </summary>
+            <param name="validTimetoSelect">Pass the value to be selected from the list</param>
+            <param name="attributevalue">Pass the Xpath of the dropdown list including the tag.</param>
+            <param name="LocatorToclickDropdown">Pass the css selector of the drop down.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.timeSelectFromDropDownlist(System.String,System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Use to select a value from a drop down that contains a list of hours.
+            Performs the same function as the method SelectTimeDropDownList() with different parameters.
+            </summary>
+            <param name="invokeDropDownListAttributeName">Locator to invoke the drop down.</param>
+            <param name="invokeDropDownListAttributeValue">Value of the locator/input to click on drop down list</param>
+            <param name="commonxpath1">Pass the Xpath including the tag value</param>
+            <param name="commonxpath2">Any value of the Xpath if it needs to be split to access the element. Ex: The value passed using this method has been "]"</param>
+            <param name="inputTime">Particular input time user wants to select</param>
+            <param name="periodTimeCount">To specify the count as 12 or 48 depending on the clock format for the list.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.UnSelectDropdown(System.String,System.String)">
+            <summary>
+            Use to unselect a value.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.switchToMainWindow">
+            <summary>
+            Use to instruct the driver to send future commands to a the main window.
+            </summary>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.switchToFrameIndex(System.Int32)">
+            <summary>
+            Use to instruct the driver to send future commands to the selected frame by its (zero-based) index.
+            </summary>
+            <param name="frameindex"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.switchToFrameNameId(System.String)">
+            <summary>
+            Use to instruct the driver to send future commands to the selected frame by its name or ID.
+            </summary>
+            <param name="framenameid"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.switchToFrameByWebelement(System.String,System.String)">
+            <summary>
+            Use to instruct the driver to send future commands to the selected frame by using its previously located OpenQA.Selenium.IWebElement
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.switchToDefaultContent">
+            <summary>
+            Use to select either the first frame on the page or the main document when a page contains iFrames.
+            </summary>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.IsElementPresent(System.String,System.String,System.String)">
+            <summary>
+            Use to find if an element is present. This method uses findElement(By.) by the attribute value specified.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="ElementName">Pass the name of the element. This parameter is for reporting only.</param>
+            <returns>Returns true if the element is found on the page.</returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.ElementNotPresent(System.String,System.String,System.String)">
+            <summary>
+            Use to find if an element is NOT present.This method uses findElement(By.) by the attribute value specified.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="elementname">Pass the name of the element. This parameter is for reporting only.</param>
+            <returns>Returns true if the specified element is not found on the page.</returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.IsElementVisible(System.String,System.String,System.String)">
+            <summary>
+            Use to find if an element is displayed. This method uses Dispayed() to get a value indicating whether or not this element is displayed.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="ElementName">Pass the name of the element. This parameter is for reporting only.</param>
+            <returns>Returns true if the element is displayed on the page</returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.IsElementEnabled(System.String,System.String,System.String)">
+            <summary>
+             Use to get a value indicating whether element is enabled.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="ElementName">Pass the name of the element. This parameter is for reporting only.</param>
+            <returns>Returns true if the element is enabled on the page</returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.IsElementDisabled(System.String,System.String,System.String)">
+            <summary>
+            Use to get a value indicating whether this element is disabled.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="ElementName">Pass the name of the element. This parameter is for reporting only.</param>
+            <returns>Returns true if the element is disabled on the page</returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.VerifytableSorting(System.String,System.String,System.String)">
+            <summary>
+            Use to verify if a table is sorted.
+            </summary>
+            <param name="attributename">Locator for the grid.</param>
+            <param name="attributevalue">Value of the locator.</param>
+            <param name="attributeXpathOfTable">Xpath of the table.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.Verifytext(System.String,System.String,System.String)">
+            <summary>
+            Use to verify expected text.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="expectedtext"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.VerifyFilePresence(System.String,System.String)">
+            <summary>
+            Use to verify if a file is present.
+            </summary>
+            <param name="Format"></param>
+            <param name="FileName"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.VerifySelectContainsOptions(System.String,System.String,System.String,System.String)">
+            <summary>
+            Use to verify if a drop down contains the expected values after clicking on it.
+            Get the list of options and verifies against the expected value.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="elementoptions">Pass the expected values in the drop down. May be ';' separated.</param>
+            <param name="elementname">Pass the name of the element. This parameter is for reporting only.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.VerifySelectNotContainsOptions(System.String,System.String,System.String,System.String)">
+            <summary>
+            Use to verify that the list does not have the options listed. 
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="elementoptions">Pass the values that are not supposed to be listed in the drop down. May be ';' separated.</param>
+            <param name="elementname">Pass the name of the element. This parameter is for reporting only.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.VerifyElementPresent(System.String,System.String,System.String)">
+            <summary>
+            Use to find if an element is present. This method uses findElement(By.) by the attribute value specified.
+            This method does has no return value, uses reporting when a test fails. IsElementPresent() performs the same function and has a return value.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="elementname">Pass the name of the element. This parameter is for reporting only.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.VerifyElementNotPresent(System.String,System.String,System.String)">
+            <summary>
+            Use to find if an element is NOT present.This method uses findElement(By.) by the attribute value specified.
+            This method does has no return value, uses reporting when a test fails. ElementNotPresent() performs the same function and has a return value.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="elementname">Pass the name of the element. This parameter is for reporting only.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.VerifyElementVisible(System.String,System.String,System.String)">
+            <summary>
+            Use to find if an element is displayed. This method uses Dispayed() to get a value indicating whether or not this element is displayed.
+            This method does has no return value, uses reporting when a test fails. IsElementVisible() performs the same function and has a return value.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="elementname">Pass the name of the element. This parameter is for reporting only.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.VerifyElementNotVisible(System.String,System.String,System.String)">
+            <summary>
+            Use to find if an element is NOT displayed. This method uses Dispayed() to get a value indicating whether or not this element is displayed.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="elementname">Pass the name of the element. This parameter is for reporting only.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.VerifyElementChecked(System.String,System.String,System.String)">
+            <summary>
+            Use to verify if this element is selected.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="elementname">Pass the name of the element. This parameter is for reporting only.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.VerifyElementNotChecked(System.String,System.String,System.String)">
+            <summary>
+            Use to verify if this element is NOT selected.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="elementname">Pass the name of the element. This parameter is for reporting only.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.VerifyElementEnabled(System.String,System.String,System.String)">
+            <summary>
+            Use to get a value indicating whether element is enabled.
+            This method does has no return value, uses reporting when a test fails. IsElementEnabled() performs the same function and has a return value.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="elementname">Pass the name of the element. This parameter is for reporting only.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.VerifyElementNotEnabled(System.String,System.String,System.String)">
+            <summary>
+            Use to get a value indicating whether this element is not enabled.
+            This method does has no return value, uses reporting when a test fails. IsElementDisabled() performs the same function and has a return value.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="elementname">Pass the name of the element. This parameter is for reporting only.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.VerifyCssValue(System.String,System.String,System.String,System.String)">
+            <summary>
+            Use to verify the Css Value of an element.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="elementname">The name of the CSS property to get the value of. Ex: background-color.</param>
+            <param name="expectedtext"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.WaitForPopup">
+            <summary>
+            Use to verify if a pop up window opens as expoected
+            </summary>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.WaitForElementVisibleVerifyTextContains(System.String,System.String,System.String,System.String)">
+            <summary>
+            Use to wait for an element to be visible and then verify the expected text
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="expectedtext"></param>
+            <param name="elementname">Pass the name of the element. This parameter is for reporting only.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.WaitForElementPresent(System.String,System.String,System.String)">
+            <summary>
+            Use to wait for an element to be present on the page.This method uses findElement(By.) by the attribute value specified.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="elementname">Pass the name of the element. This parameter is for reporting only.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.WaitForElementNotPresent(System.String,System.String,System.String)">
+            <summary>
+            Use to wait for an element to not be present on the page.This method uses findElement(By.) by the attribute value specified.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="elementname">Pass the name of the element. This parameter is for reporting only.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.WaitForElementNotPresentVisible(System.String,System.String,System.String)">
+            <summary>
+            Use to verify if an element is not present as expected. 
+            If the element is found, the test fails.
+            This method uses Dispayed() to get a value indicating whether or not this element is displayed.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="elementname">Pass the name of the element. This parameter is for reporting only.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.WaitForElementVisible(System.String,System.String,System.String)">
+            <summary>
+            Use to wait for an element to be visible on the screen.
+            This method uses Dispayed() to get a value indicating whether or not this element is displayed.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="elementname">Pass the name of the element. This parameter is for reporting only.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.WaitForElementNotVisible(System.String,System.String,System.String)">
+            <summary>
+            Use to verify that an element is NOT visible on the page.
+            This method uses Dispayed() to get a value indicating whether or not this element is displayed.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="elementname">Pass the name of the element. This parameter is for reporting only.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.Wait_ajax">
+            <summary>
+            Use to wait for Ajax calls to complete.
+            </summary>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.ImplicitWait">
+            <summary>
+            Implicit wait for page to load
+            </summary>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.ExplicitWAit(System.String,System.String)">
+            <summary>
+            Use to check if an element is visible and enabled such that you can click it.
+            </summary>
+            <param name="attributeName"></param>
+            <param name="attributeValue"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.DefineTimeOut(System.Int32)">
+            <summary>
+            Use to specify the time to wait for an element before throwing an exception
+            </summary>
+            <param name="milliseconds"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.ActionsClick(System.String,System.String)">
+            <summary>
+            Alterate method for click operation
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.ActionsSendKeys(System.String,System.String,System.String)">
+            <summary>
+            Alterate method for Send Keys operation
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.MoveToElement(System.String,System.String)">
+            <summary>
+            Use to move control to a particular element
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.scrollElementIntoView(System.String,System.String)">
+            <summary>
+            Use to scroll an element into view by passing the UI locator value
+            </summary>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.scrollpagedown">
+            <summary>
+            Use to scroll down a page
+            </summary>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.scrollPageup">
+            <summary>
+            Use to scroll up a page
+            </summary>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.OnMouseOver(System.String,System.String)">
+            <summary>
+            Use to perform OnMouseOver() operation on an element.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.MoveToElementClick(System.String,System.String)">
+            <summary>
+            Use to move to a specified element and perform Click operation.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.DragAndDrop(System.String,System.String,System.String,System.String)">
+            <summary>
+            Use to perform a drag-and-drop operation from one element to another.
+            </summary>
+            <param name="sourceattributename"></param>
+            <param name="sourceattributevalue"></param>
+            <param name="targetattributename"></param>
+            <param name="targetattributevalue"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.OpenContextMenu(System.String,System.String)">
+            <summary>
+            Right-clicks the mouse on the specified element.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.ContextClickjavascript(System.String,System.String)">
+            <summary>
+            Use to right click using java script.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.ContextClickCut(System.String,System.String)">
+            <summary>
+            Use to perform Cut operation.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.ContextClickCopy(System.String,System.String)">
+            <summary>
+            Use to perform Copy operation.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.ContextClickPaste(System.String,System.String)">
+            <summary>
+            Use to perform Paste operation.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.ContextClickSelectAll(System.String,System.String)">
+            <summary>
+            Use to perform Select All operation.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.ScrollToTopElement(System.String,System.String)">
+            <summary>
+            Alternate method for scroll page up.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.Selectall(System.String,System.String)">
+            <summary>
+            Alternate method for performing Select All operation.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.SelectAllCopyKeystroke(System.String,System.String)">
+            <summary>
+            Use to perform Select All and Copy operation.
+            </summary>
+            <param name="attributename"></param>
+            <param name="attributevalue"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.PasteKeystroke">
+            <summary>
+            Use to perform Paste operation.
+            </summary>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.cookieString(OpenQA.Selenium.IWebDriver)">
+            <summary>
+             Gets an object allowing the user to manipulate cookies on the page.
+            </summary>
+            <param name="webDriver"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.DownloadPdfFile_CheckInput(System.String,System.String)">
+            <summary>
+            Use to download a Pdf file with a specified Url and verify the contents.
+            This method creates a local folder called "test" in the current directory and downloads the Pdf.
+            </summary>
+            <param name="url">Url from where the Pdf must be downloaded.</param>
+            <param name="inputToBeChecked">Text to be verified in the Pdf.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.DownloadPdfFile(System.String)">
+            <summary>
+            Use to download a Pdf file from a specified Url.
+            This method creates a local folder called "test" in the current directory and downloads the Pdf.
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.GetDownloadedFilePath(System.String)">
+            <summary>
+            Use to get the path of a file that is downloaded in the "Downloads" folder by default combined with the FileName.
+            </summary>
+            <param name="FileName">Expected file name.</param>
+            <returns>Returns the path.</returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.VerifyValuesinPdfFile(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            Use to read the contents of a Pdf file that is present in a specified path and verify. Performs a similar function as ReadPdfFile().
+            </summary>
+            <param name="filePath">The path where the Pdf to be verified is present along with the file name.</param>
+            <param name="inputToBeChecked">The text to be verified in the Pdf.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.ReadPdfFile(System.String,System.String)">
+            <summary>
+            Use to read the contents of a Pdf file that is present in a specified path and verify. Performs a similar function as VerifyValuesinPdfFile().
+            </summary>
+            <param name="fileName">The path where the Pdf to be verified is present along with the file name.</param>
+            <param name="expected_text">The text to be verified in the Pdf.</param>
+            <returns>Returns the text in the Pdf.</returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.ExtractTextFromPDF(System.String,System.String)">
+            <summary>
+            Use to extract text from a Pdf.
+            </summary>
+            <param name="filePath">The path where the Pdf to be verified is present.</param>
+            <param name="fileName">The name of the Pdf file WITHOUT .pdf extension.</param>
+            <returns>Returns the text in the Pdf.</returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.DatePickerFromCalander(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Use to pick a future date from the calendar date picker.
+            </summary>
+            <param name="attributename">Use Xpath as the locator.</param>
+            <param name="attributevalue">Value of the Xpath of the date picker.</param>
+            <param name="NumberOfDays">Number of days from the current date.</param>
+            <param name="AtributeForRightClickOfCalander">Xpath of the right arrow of the date picker.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.PreviousDatePickerFromCalander(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Use to pick a previous date from the calendar date picker.
+            </summary>
+            <param name="attributename">Use Xpath as the locator.</param>
+            <param name="attributevalue">Value of the Xpath of the date picker.</param>
+            <param name="NumberOfDaysToGoBack">Number of days to go back from the current date.</param>
+            <param name="AtributeForLeftClickOfCalander">Xpath of the left arrow of the date picker.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.MonthPickerFromSingleCalendarControl(System.String,System.String,System.String)">
+            <summary>
+            Use to pick a month from a calendar that allows you to select a month
+            </summary>
+            <param name="attributename">Use Xpath as the locator.</param>
+            <param name="attributevalue">Value of the Xpath of the calendar month picker.</param>
+            <param name="MonthToSelect">Value of the month to select from the calendar.Input format depends on the calendar.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.DisabledMonth(System.String,System.String,System.String)">
+            <summary>
+            Use to verify if the specified month is disabled as expected.
+            </summary>
+            <param name="attributename">Use Xpath as the locator.</param>
+            <param name="attributevalue">Value of the Xpath of the calendar month picker.</param>
+            <param name="DisabledMonth">Value of the month to verify.Input format depends on the calendar.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.NextDatePickerFromDoubleGridCalander(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Use to pick a future date from the calendar date picker. 
+            Performs similar function as DatePickerFromCalander().
+            </summary>
+            <param name="attributename">Use Xpath as the locator.</param>
+            <param name="attributevalue">Value of the Xpath of the calendar date picker.</param>
+            <param name="NumberOfDays">Number of days from the current date.</param>
+            <param name="AtributeForRightClickOfCalander">Xpath of the right arrow of the date picker.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.AnyPreviousDatePickerFromCalander(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Use to pick a previous date from the calendar date picker.
+            Performs similar function as PreviousDatePickerFromCalander().
+            </summary>
+            <param name="attributename">Use Xpath as the locator.</param>
+            <param name="attributevalue">Value of the Xpath of the date picker.</param>
+            <param name="NumberOfDaysToGoBack">Number of days to go back from the current date.</param>
+            <param name="AtributeForLeftClickOfCalander">>Xpath of the left arrow of the date picker.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.AnyNextDatePickerFromDoubleGridCalander(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Use to pick a future date from the calendar date picker. 
+            Performs similar function as DatePickerFromCalander() and  NextDatePickerFromDoubleGridCalander().
+            </summary>
+            <param name="attributename">Use Xpath as the locator.</param>
+            <param name="attributevalue">Value of the Xpath of the calendar date picker.</param>
+            <param name="NumberOfDays">Number of days from the current date.</param>
+            <param name="AtributeForRightClickOfCalander">Xpath of the right arrow of the date picker.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.FutureCalendarDateCheckForDisabled(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Use to verify if a future date is disabled as expected.
+            </summary>
+            <param name="attributename">Use Xpath as the locator.</param>
+            <param name="attributevalue">Value of the Xpath of the calendar date picker.</param>
+            <param name="NumberOfDays">Number of days from the current date.</param>
+            <param name="AtributeForRightClickOfCalander">Xpath of the right arrow of the date picker.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.CheckForFutureDisabledDate(System.String,System.String,System.Int32,System.DateTime)">
+            <summary>
+            Use to verify if the date following current date is disabled.
+            </summary>
+            <param name="attributename">Use Xpath as the locator.</param>
+            <param name="attributevalue">Value of the Xpath of the calendar date picker.</param>
+            <param name="NumberOfDays">Number of days from the current date.</param>
+            <param name="SelectedDate">Current date</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.monthselection(System.String,System.String,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Use to select a month.
+            </summary>
+            <param name="forwardArrowAttributeName">Forward arrow input locator to navigate particular month</param>
+            <param name="forwardArrowAttributeValue">Value of forward arrow input to navigate particular month </param>
+            <param name="monthYearSectionAttributeName">Input locator for month to be selected.</param>
+            <param name="monthYearSectionAttributeValue">Value of the input locator for month to be selected.</param>
+            <param name="periodCount">No of months need to verified(count for loop)</param>
+            <param name="monthToBeSelected">Month user needs to select</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.dateSelection(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            To select a date in a calendar.
+            xpathpart1,xpathpart2,xpathpart3->Spliting xpath inputs.
+            </summary>
+            <param name="xpathpart1"></param>
+            <param name="xpathpart2"></param>
+            <param name="xpathpart3"></param>
+            <param name="dateToBeSelected">Value of date</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.DatePickerDoubleGridCalander(System.String,System.String,System.Int32,System.DateTime,System.String)">
+            <summary>
+            Use to pick a future date from the calendar date picker. 
+            </summary>
+            <param name="attributename">Use Xpath as the locator.</param>
+            <param name="attributevalue">Value of the Xpath of the calendar date picker.</param>
+            <param name="NumberOfDays">Number of days from selected date.</param>
+            <param name="SelectedDate">Particular date.</param>
+            <param name="AtributeForRightClickOfCalander">Xpath of the right arrow of the date picker.</param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.releaseObject(System.Object)">
+            <summary>
+            Decrements the reference count of the specified Runtime Callable Wrapper (RCW) associated with the specified COM object.
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.open_excel(System.String,System.Int32)">
+            <summary>
+            Use to open an excel file
+            </summary>
+            <param name="FilePath">File path including file name</param>
+            <param name="SheetIndex">Opens the first sheet.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.Excel_ReadAllData(System.String)">
+            <summary>
+            Use to read the data in an excel file
+            </summary>
+            <param name="workbookPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.Excel_ReadColumnname(System.String)">
+            <summary>
+            Use to read the columns in an excel file.
+            </summary>
+            <param name="workbookPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Rrd.SpecflowSelenium.Service.GenericService.GenericMethods.ReadDataFromExcel(System.String,System.String)">
+            <summary>
+            Use to read the rows in an excel file.
+            </summary>
+            <param name="workbookPath"></param>
+            <param name="datalabel"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

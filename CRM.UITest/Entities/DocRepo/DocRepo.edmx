@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DocRepositoryModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Application">
+          <Key>
+            <PropertyRef Name="ApplicationId" />
+          </Key>
+          <Property Name="ApplicationId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ApplicationName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ApplicationGuid" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="AppMetaDataFileMapping">
+          <Key>
+            <PropertyRef Name="AppMetaDataFileMappingId" />
+          </Key>
+          <Property Name="AppMetaDataFileMappingId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MetaDataName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="MetaDataValue" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="FileInfoId" Type="int" Nullable="false" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="CategoryId" />
+          </Key>
+          <Property Name="CategoryId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ApplicationId" Type="int" Nullable="false" />
+          <Property Name="CategoryName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="ModifiedDate" Type="datetime" />
+          <Property Name="CategoryCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="CustomerAccount" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Document">
+          <Key>
+            <PropertyRef Name="DocumentId" />
+          </Key>
+          <Property Name="DocumentId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FileGuid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="FileData" Type="varbinary(max)" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="FileInfo">
+          <Key>
+            <PropertyRef Name="FileInfoId" />
+          </Key>
+          <Property Name="FileInfoId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DocumentId" Type="int" Nullable="false" />
+          <Property Name="CategoryId" Type="int" Nullable="false" />
+          <Property Name="FileName" Type="nvarchar" MaxLength="70" />
+          <Property Name="FileSize" Type="int" Nullable="false" />
+          <Property Name="FileExtension" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="FileCreatedDate" Type="datetime" />
+          <Property Name="FileModifiedDate" Type="datetime" />
+          <Property Name="ExpirationDateTime" Type="datetime" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <Association Name="FK_AppMetaDataFileMapping_FileInfo">
+          <End Role="FileInfo" Type="Self.FileInfo" Multiplicity="1" />
+          <End Role="AppMetaDataFileMapping" Type="Self.AppMetaDataFileMapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FileInfo">
+              <PropertyRef Name="FileInfoId" />
+            </Principal>
+            <Dependent Role="AppMetaDataFileMapping">
+              <PropertyRef Name="FileInfoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Category_Category">
+          <End Role="Application" Type="Self.Application" Multiplicity="1" />
+          <End Role="Category" Type="Self.Category" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Application">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="Category">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FileInfo_Category">
+          <End Role="Category" Type="Self.Category" Multiplicity="1" />
+          <End Role="FileInfo" Type="Self.FileInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="CategoryId" />
+            </Principal>
+            <Dependent Role="FileInfo">
+              <PropertyRef Name="CategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FileInfo_Document">
+          <End Role="Document" Type="Self.Document" Multiplicity="1" />
+          <End Role="FileInfo" Type="Self.FileInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Document">
+              <PropertyRef Name="DocumentId" />
+            </Principal>
+            <Dependent Role="FileInfo">
+              <PropertyRef Name="DocumentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DocRepositoryModelStoreContainer">
+          <EntitySet Name="Application" EntityType="Self.Application" Schema="Docs" store:Type="Tables" />
+          <EntitySet Name="AppMetaDataFileMapping" EntityType="Self.AppMetaDataFileMapping" Schema="Docs" store:Type="Tables" />
+          <EntitySet Name="Category" EntityType="Self.Category" Schema="Docs" store:Type="Tables" />
+          <EntitySet Name="Document" EntityType="Self.Document" Schema="Docs" store:Type="Tables" />
+          <EntitySet Name="FileInfo" EntityType="Self.FileInfo" Schema="Docs" store:Type="Tables" />
+          <AssociationSet Name="FK_AppMetaDataFileMapping_FileInfo" Association="Self.FK_AppMetaDataFileMapping_FileInfo">
+            <End Role="FileInfo" EntitySet="FileInfo" />
+            <End Role="AppMetaDataFileMapping" EntitySet="AppMetaDataFileMapping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Category_Category" Association="Self.FK_Category_Category">
+            <End Role="Application" EntitySet="Application" />
+            <End Role="Category" EntitySet="Category" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FileInfo_Category" Association="Self.FK_FileInfo_Category">
+            <End Role="Category" EntitySet="Category" />
+            <End Role="FileInfo" EntitySet="FileInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FileInfo_Document" Association="Self.FK_FileInfo_Document">
+            <End Role="Document" EntitySet="Document" />
+            <End Role="FileInfo" EntitySet="FileInfo" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DocRepositoryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Application">
+          <Key>
+            <PropertyRef Name="ApplicationId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ApplicationName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ApplicationGuid" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Categories" Relationship="Self.FK_Category_Category" FromRole="Application" ToRole="Category" />
+        </EntityType>
+        <EntityType Name="AppMetaDataFileMapping">
+          <Key>
+            <PropertyRef Name="AppMetaDataFileMappingId" />
+          </Key>
+          <Property Name="AppMetaDataFileMappingId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MetaDataName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MetaDataValue" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FileInfoId" Type="Int32" Nullable="false" />
+          <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="FileInfo" Relationship="Self.FK_AppMetaDataFileMapping_FileInfo" FromRole="AppMetaDataFileMapping" ToRole="FileInfo" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="CategoryId" />
+          </Key>
+          <Property Name="CategoryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ApplicationId" Type="Int32" Nullable="false" />
+          <Property Name="CategoryName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+          <Property Name="CategoryCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CustomerAccount" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Application" Relationship="Self.FK_Category_Category" FromRole="Category" ToRole="Application" />
+          <NavigationProperty Name="FileInfoes" Relationship="Self.FK_FileInfo_Category" FromRole="Category" ToRole="FileInfo" />
+        </EntityType>
+        <EntityType Name="Document">
+          <Key>
+            <PropertyRef Name="DocumentId" />
+          </Key>
+          <Property Name="DocumentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FileGuid" Type="Guid" Nullable="false" />
+          <Property Name="FileData" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="FileInfoes" Relationship="Self.FK_FileInfo_Document" FromRole="Document" ToRole="FileInfo" />
+        </EntityType>
+        <EntityType Name="FileInfo">
+          <Key>
+            <PropertyRef Name="FileInfoId" />
+          </Key>
+          <Property Name="FileInfoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DocumentId" Type="Int32" Nullable="false" />
+          <Property Name="CategoryId" Type="Int32" Nullable="false" />
+          <Property Name="FileName" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Name="FileSize" Type="Int32" Nullable="false" />
+          <Property Name="FileExtension" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="FileCreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="FileModifiedDate" Type="DateTime" Precision="3" />
+          <Property Name="ExpirationDateTime" Type="DateTime" Precision="3" />
+          <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="AppMetaDataFileMappings" Relationship="Self.FK_AppMetaDataFileMapping_FileInfo" FromRole="FileInfo" ToRole="AppMetaDataFileMapping" />
+          <NavigationProperty Name="Category" Relationship="Self.FK_FileInfo_Category" FromRole="FileInfo" ToRole="Category" />
+          <NavigationProperty Name="Document" Relationship="Self.FK_FileInfo_Document" FromRole="FileInfo" ToRole="Document" />
+        </EntityType>
+        <Association Name="FK_Category_Category">
+          <End Role="Application" Type="Self.Application" Multiplicity="1" />
+          <End Role="Category" Type="Self.Category" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Application">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="Category">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AppMetaDataFileMapping_FileInfo">
+          <End Role="FileInfo" Type="Self.FileInfo" Multiplicity="1" />
+          <End Role="AppMetaDataFileMapping" Type="Self.AppMetaDataFileMapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FileInfo">
+              <PropertyRef Name="FileInfoId" />
+            </Principal>
+            <Dependent Role="AppMetaDataFileMapping">
+              <PropertyRef Name="FileInfoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FileInfo_Category">
+          <End Role="Category" Type="Self.Category" Multiplicity="1" />
+          <End Role="FileInfo" Type="Self.FileInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="CategoryId" />
+            </Principal>
+            <Dependent Role="FileInfo">
+              <PropertyRef Name="CategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FileInfo_Document">
+          <End Role="Document" Type="Self.Document" Multiplicity="1" />
+          <End Role="FileInfo" Type="Self.FileInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Document">
+              <PropertyRef Name="DocumentId" />
+            </Principal>
+            <Dependent Role="FileInfo">
+              <PropertyRef Name="DocumentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DocRepositoryEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Applications" EntityType="Self.Application" />
+          <EntitySet Name="AppMetaDataFileMappings" EntityType="Self.AppMetaDataFileMapping" />
+          <EntitySet Name="Categories" EntityType="Self.Category" />
+          <EntitySet Name="Documents" EntityType="Self.Document" />
+          <EntitySet Name="FileInfoes" EntityType="Self.FileInfo" />
+          <AssociationSet Name="FK_Category_Category" Association="Self.FK_Category_Category">
+            <End Role="Application" EntitySet="Applications" />
+            <End Role="Category" EntitySet="Categories" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AppMetaDataFileMapping_FileInfo" Association="Self.FK_AppMetaDataFileMapping_FileInfo">
+            <End Role="FileInfo" EntitySet="FileInfoes" />
+            <End Role="AppMetaDataFileMapping" EntitySet="AppMetaDataFileMappings" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FileInfo_Category" Association="Self.FK_FileInfo_Category">
+            <End Role="Category" EntitySet="Categories" />
+            <End Role="FileInfo" EntitySet="FileInfoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FileInfo_Document" Association="Self.FK_FileInfo_Document">
+            <End Role="Document" EntitySet="Documents" />
+            <End Role="FileInfo" EntitySet="FileInfoes" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DocRepositoryModelStoreContainer" CdmEntityContainer="DocRepositoryEntities">
+          <EntitySetMapping Name="Applications">
+            <EntityTypeMapping TypeName="DocRepositoryModel.Application">
+              <MappingFragment StoreEntitySet="Application">
+                <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+                <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+                <ScalarProperty Name="ApplicationGuid" ColumnName="ApplicationGuid" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AppMetaDataFileMappings">
+            <EntityTypeMapping TypeName="DocRepositoryModel.AppMetaDataFileMapping">
+              <MappingFragment StoreEntitySet="AppMetaDataFileMapping">
+                <ScalarProperty Name="AppMetaDataFileMappingId" ColumnName="AppMetaDataFileMappingId" />
+                <ScalarProperty Name="MetaDataName" ColumnName="MetaDataName" />
+                <ScalarProperty Name="MetaDataValue" ColumnName="MetaDataValue" />
+                <ScalarProperty Name="FileInfoId" ColumnName="FileInfoId" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Categories">
+            <EntityTypeMapping TypeName="DocRepositoryModel.Category">
+              <MappingFragment StoreEntitySet="Category">
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+                <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="CategoryCode" ColumnName="CategoryCode" />
+                <ScalarProperty Name="CustomerAccount" ColumnName="CustomerAccount" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Documents">
+            <EntityTypeMapping TypeName="DocRepositoryModel.Document">
+              <MappingFragment StoreEntitySet="Document">
+                <ScalarProperty Name="DocumentId" ColumnName="DocumentId" />
+                <ScalarProperty Name="FileGuid" ColumnName="FileGuid" />
+                <ScalarProperty Name="FileData" ColumnName="FileData" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FileInfoes">
+            <EntityTypeMapping TypeName="DocRepositoryModel.FileInfo">
+              <MappingFragment StoreEntitySet="FileInfo">
+                <ScalarProperty Name="FileInfoId" ColumnName="FileInfoId" />
+                <ScalarProperty Name="DocumentId" ColumnName="DocumentId" />
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+                <ScalarProperty Name="FileExtension" ColumnName="FileExtension" />
+                <ScalarProperty Name="FileCreatedDate" ColumnName="FileCreatedDate" />
+                <ScalarProperty Name="FileModifiedDate" ColumnName="FileModifiedDate" />
+                <ScalarProperty Name="ExpirationDateTime" ColumnName="ExpirationDateTime" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,74 @@
+Verify the existence of dropdown arrow in the search field
+Given I am a DLS user and login into application with valid <Username> and <Password>
+And I have access to Quotes button
+When I arrive on quotes list page
+Then I must be able to view dropdown arrow in the search field
+
+Verify search quotes field dropdown options for Operations, Sales, Sales Management, or Station Owner user in the quote list page
+Given I am a DLS user and login into application with valid <Username> and <Password>
+And I have access to Quotes button
+When I arrive on quotes list page
+And I click on dropdown arrow in the search field
+Then I must be able to view options such as <SelecTAll>,<DateSubmitted>,StationName>,CustomerName>,<RequestNumber>,<Status>,<Service>,<ServiceLevel>,<ServiceType>,<CarrierName>,<Quote>,<EstCost>,<ESTMargin>
+
+
+Try selecting multiple fields from the search quote field dropdown and verify the same in the grid
+Given I am a DLS user and login into application with valid <Username> and <Password>
+And I have access to Quotes button
+When I arrive on quotes list page
+And I click on dropdown arrow in the search field
+Then I must be able to select multiple fields such as <DateSubmitted>,<CustomerName>,<StationName>,<Service> from the dropdown
+And I must be able to view only the selected fields in the grid
+
+Try selecting all fields by clicking on select all checkbox from the dropdown
+Given I am a DLS user and login into application with valid <Username> and <Password>
+And I have access to Quotes button
+When I arrive on quotes list page
+And I click on dropdown arrow in the search field
+Then I must be able to click on Select all checkbox and all the fields should be selected
+And The grid should display all the fields in the quote list page
+
+Verify the existence of Clear button in the search dropdown
+Given I am a DLS user and login into application with valid <Username> and <Password>
+And I have access to Quotes button
+When I arrive on quotes list page
+And I click on dropdown arrow in the search field
+Then I must be able to view Clear button in the Search dropdown
+
+Verify the functionality of Clear buttton in the search quote field dropdown
+Given I am a DLS user and login into application with valid <Username> and <Password>
+And I have access to Quotes button
+When I arrive on quotes list page
+And I click on dropdown arrow in the search field
+And I click on Select all checkbox from the search dropdown
+And I click on Clear All button
+Then All the selected fieds must be cleared in the search quote field dropdown
+
+Verify the search quote field functionality by typing any value in the field
+Given I am a DLS user and login into application with valid <Username> and <Password>
+And I have access to Quotes button
+When I arrive on quotes list page
+Then I must be able to search quotes by typing values in the search quote field
+And The searched value must get highlighted in the grid
+
+Verify search quotes field dropdown options for shp.inquiry or shp.entry user
+Given I am a DLS user and login into application with valid <Username> and <Password>
+And I have access to Quotes button
+When I arrive on quotes list page
+And I click on dropdown arrow in the search field
+Then I must be able to view options such as <SelecTAll>,<DateSubmitted>,<RequestNumber>,<Status>,<Service>,<ServiceLevel>,<ServiceType>,<CarrierName>,<Quote>
+
+
+Try unselecting all the values in search quote field dropdown and verify the grid
+Given I am a DLS user and login into application with valid <Username> and <Password>
+And I have access to Quotes button
+When I arrive on quotes list page
+And I click on dropdown arrow in the search field
+And I unselect all the options available on the search quote field dropdown
+Then I must not be able to view any option in selected mode
+And The grid should display <message> stating - No Results found
+
+
+
+
+

@@ -1,0 +1,19 @@
+1.VS tool that can export written GWT for unit test to a doc
+including class name and method name
+2.A tool that auto generates sprint level report 
+3.A small real time notification tool- 
+-say u set a notification and it will broadcast to everyone in the hub
+ and pop up on your laptop screen including remainders and also track daily tasks
+4.Saggezza Mobile App
+
+
+
+.net or other technologies
+iot- IP ISSUES PORTAL
+travekl management
+asset management
+VC - 
+
+chrome extension
+live streaming app
+

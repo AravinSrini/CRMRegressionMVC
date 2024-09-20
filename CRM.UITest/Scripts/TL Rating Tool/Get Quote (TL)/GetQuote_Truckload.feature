@@ -1,0 +1,94 @@
+﻿Feature: GetQuote_Truckload
+		
+
+@Functional @Sprint65 @24137
+Scenario Outline: Verify zipcode lookup auto populate functionality for the Shipping From section
+	Given I am a DLS user and login into application with valid <Username> and <Password>
+	And  I clicked on Rating Tool icon
+	When I enter required fields <OriginZipCode>,<DestinationZipCode>,<Weight> in rating tool page
+	And  Click on Get Rate button in rating tool page
+	And  I have click on Get Quote New button in rating tool page
+	And  I enter zipcode <ValidZip> and leave focus from the origin section in GetQuote(TL) page
+    Then City <City> and State <State> fields should be populated in origin section in GetQuote(TL) page
+	And  User have the ability to edit the city in shipping from section<ModifiedCity> in GetQuote (TL) page
+    And  User have the option to select a state from the state drop down list in shipping from section<ModifiedState> in GetQuote(TL) page
+
+Examples: 
+| Scenario | Username        | Password | Service | ValidZip | City       | State | ModifiedCity | ModifiedState |
+| S1       | nat@extuser.com | Te$t1234 | LTL     | 33126    | Miami      | FL    | test         | CA            |
+
+
+@Functional @Sprint65 @24140
+Scenario Outline: Verify zipcode lookup auto populate functionality for the Shipping To section
+	Given I am a DLS user and login into application with valid <Username> and <Password>
+	And  I clicked on Rating Tool icon
+	When I enter required fields <OriginZipCode>,<DestinationZipCode>,<Weight> in rating tool page
+	And  Click on Get Rate button in rating tool page
+	And  I have click on Get Quote New button in rating tool page
+	And  I enter zipcode <ValidZip> and leave focus from the destination section in GetQuote(TL) page
+	Then City <City> and State <State> fields should be populated in destination section in GetQuote(TL) page
+	And  User have the ability to edit the city in shipping to section <ModifiedCity> in GetQuote(TL) page
+    And  User have the option to select a state from the state drop down list in shipping to section<ModifiedState> in GetQuote(TL) page
+
+Examples: 
+| Scenario | Username        | Password | Service | ValidZip | City  | State | ModifiedCity | ModifiedState |
+| S1       | nat@extuser.com | Te$t1234 | LTL     | 85282    | Tempe | AZ    | test2        | CA            |
+
+@Functional @Sprint65 @24137
+Scenario Outline: Verify zipcode text box on entering invalid zip in Shipping From section
+	Given I am a DLS user and login into application with valid <Username> and <Password>
+	And  I clicked on Rating Tool icon
+	When I enter required fields <OriginZipCode>,<DestinationZipCode>,<Weight> in rating tool page
+	And  Click on Get Rate button in rating tool page
+	And  I have click on Get Quote New button in rating tool page
+	And  I enter zipcode <InvalidZip> and leave focus from the origin section in GetQuote(TL) page
+	Then background color of the origin zip code textbox should turn red and error message should be displayed in GetQuote(TL) page
+	And  the Origin City and State will not Auto populate in GetQuote(TL) page
+
+Examples: 
+| Scenario | Username        | Password | Service | InvalidZip |
+| S1       | nat@extuser.com | Te$t1234 | LTL     | 66666      |
+
+@Functional @Sprint65 @24140
+Scenario Outline: Verify zipcode text box on entering invalid zip in Shipping To section
+	Given I am a DLS user and login into application with valid <Username> and <Password>
+	And  I clicked on Rating Tool icon
+	When I enter required fields <OriginZipCode>,<DestinationZipCode>,<Weight> in rating tool page
+	And  Click on Get Rate button in rating tool page
+	And  I have click on Get Quote New button in rating tool page
+	And  I enter zipcode <InvalidZip> and leave focus To the zipcode text box in GetQuote(TL) page
+	Then background color of the destination zip code textbox should turn red and error message should be displayed in GetQuote(TL) page
+	And  the Destination City and State will not Auto populate in GetQuote(TL) page
+
+Examples: 
+| Scenario | Username        | Password | Service | InvalidZip |
+| S1       | nat@extuser.com | Te$t1234 | LTL     | 66666      |
+
+
+
+@Functional @Sprint65 @24140
+Scenario Outline: Verify Select State/Province drop down list will be populated with a list of Canada provinces in Shipping To section
+    Given I am a DLS user and login into application with valid <Username> and <Password>
+	And  I clicked on Rating Tool icon
+	When I enter required fields <OriginZipCode>,<DestinationZipCode>,<Weight> in rating tool page
+	And  Click on Get Rate button in rating tool page
+	And  I have click on Get Quote New button in rating tool page
+	And  I select Canada Country from destination country dropdown in GetQuote(TL) page
+    Then the Select State/Province drop down list will be populated with a list of Canada provinces  in Shipping To section in GetQuote(TL) page
+	Examples: 
+| Scenario | Username        | Password | Service | InvalidZip | Country |
+| S1       | nat@extuser.com | Te$t1234 | LTL     | 66666      | Canada  |
+
+
+	@Functional @Sprint65 @24137
+Scenario Outline: Verify Select State/Province drop down list will be populated with a list of Canada provinces in Shipping From section
+    Given I am a DLS user and login into application with valid <Username> and <Password>
+	And  I clicked on Rating Tool icon
+	When I enter required fields <OriginZipCode>,<DestinationZipCode>,<Weight> in rating tool page
+	And  Click on Get Rate button in rating tool page
+	And  I have click on Get Quote New button in rating tool page
+	And I select Canada Country from origin country dropdown in GetQuote(TL) page
+    Then the Select State/Province drop down list will be populated with a list of Canada provinces in Shipping From section in GetQuote(TL) page
+	Examples: 
+| Scenario | Username        | Password | Service | InvalidZip |
+| S1       | nat@extuser.com | Te$t1234 | LTL     | 66666      |
